@@ -22,7 +22,7 @@
 - 🍓 **Strawberry Game** - 闯关摘草莓游戏
 - 🏃‍♂️ **Running Game** - 跑步闯关游戏
 - 📚 **Idiom Hero** - 成语闯关游戏
-- 🎵 **Music Game** - 音乐游戏（开发中）
+- 🧩 **Sudoku Puzzle** - 数独游戏
 
 ## 设计理念
 
