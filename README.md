@@ -20,7 +20,7 @@
 ## 游戏列表
 
 - 🍓 **Strawberry Game** - 摘草莓游戏
-- 🧩 **Puzzle Game** - 拼图游戏
+- 🏃‍♂️ **Running Game** - 跑步闯关游戏
 - 🎨 **Color Game** - 涂色游戏（开发中）
 - 🎵 **Music Game** - 音乐游戏（开发中）
 
