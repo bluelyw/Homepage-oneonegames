@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🎮 OneOne Games - 一一的AI魔法游乐园</title>
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERJQSXTBGE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ERJQSXTBGE', {
+            'custom_map': {
+                'dimension1': 'user_type',
+                'dimension2': 'game_category'
+            }
+        });
+    </script>
     <style>
         * {
             margin: 0;
@@ -318,6 +332,110 @@
                 sparkle.style.animationDelay = Math.random() * 2 + 's';
                 container.appendChild(sparkle);
             }
+
+            // GA4 事件跟踪
+            // 1. 页面浏览跟踪
+            gtag('event', 'page_view', {
+                'page_title': 'OneOne Games Homepage',
+                'page_location': window.location.href,
+                'user_type': 'child_4_10'
+            });
+
+            // 2. 点击事件跟踪
+            const clickableElements = document.querySelectorAll('a, button, .game-card');
+            clickableElements.forEach(element => {
+                element.addEventListener('click', function(e) {
+                    const elementType = this.tagName.toLowerCase();
+                    const elementText = this.textContent.trim().substring(0, 50);
+                    const href = this.getAttribute('href') || '';
+                    
+                    // 游戏卡片特殊处理
+                    let gameCategory = '';
+                    if (this.classList.contains('game-card')) {
+                        const gameTitle = this.querySelector('.game-title');
+                        if (gameTitle) {
+                            gameCategory = gameTitle.textContent.trim();
+                        }
+                    }
+
+                    gtag('event', 'click', {
+                        'event_category': 'engagement',
+                        'event_label': elementText,
+                        'value': 1,
+                        'game_category': gameCategory,
+                        'link_url': href,
+                        'element_type': elementType
+                    });
+                });
+            });
+
+            // 3. 滚动事件跟踪
+            let scrollDepth = 0;
+            const scrollThresholds = [25, 50, 75, 100];
+            const trackedScrolls = new Set();
+
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset;
+                const docHeight = document.body.scrollHeight - window.innerHeight;
+                const scrollPercent = Math.round((scrollTop / docHeight) * 100);
+
+                // 跟踪滚动深度
+                scrollThresholds.forEach(threshold => {
+                    if (scrollPercent >= threshold && !trackedScrolls.has(threshold)) {
+                        trackedScrolls.add(threshold);
+                        gtag('event', 'scroll', {
+                            'event_category': 'engagement',
+                            'event_label': `scroll_depth_${threshold}%`,
+                            'value': threshold,
+                            'scroll_percentage': scrollPercent
+                        });
+                    }
+                });
+
+                // 跟踪滚动到底部
+                if (scrollPercent >= 95 && !trackedScrolls.has('bottom')) {
+                    trackedScrolls.add('bottom');
+                    gtag('event', 'scroll', {
+                        'event_category': 'engagement',
+                        'event_label': 'scroll_to_bottom',
+                        'value': 100,
+                        'scroll_percentage': scrollPercent
+                    });
+                }
+            });
+
+            // 4. 页面停留时间跟踪
+            let startTime = Date.now();
+            window.addEventListener('beforeunload', function() {
+                const timeSpent = Math.round((Date.now() - startTime) / 1000);
+                gtag('event', 'timing_complete', {
+                    'name': 'page_load',
+                    'value': timeSpent,
+                    'event_category': 'engagement'
+                });
+            });
+
+            // 5. 特殊游戏事件跟踪
+            const gameLinks = document.querySelectorAll('.game-card[href]');
+            gameLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const gameTitle = this.querySelector('.game-title').textContent.trim();
+                    const gameEmoji = this.querySelector('.game-emoji').textContent;
+                    const hasNewBadge = this.querySelector('.new-badge') !== null;
+                    const hasHotBadge = this.querySelector('.hot-badge') !== null;
+                    
+                    gtag('event', 'game_click', {
+                        'event_category': 'game_engagement',
+                        'event_label': gameTitle,
+                        'game_name': gameTitle,
+                        'game_emoji': gameEmoji,
+                        'has_new_badge': hasNewBadge,
+                        'has_hot_badge': hasHotBadge,
+                        'game_url': this.getAttribute('href'),
+                        'value': 1
+                    });
+                });
+            });
         });
     </script>
 </body>
