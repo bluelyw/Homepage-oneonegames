@@ -195,6 +195,158 @@
             font-size: 0.9rem;
         }
 
+        /* Donation Section Styles */
+        .donation-section {
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #fff5f8 0%, #f0f8ff 100%);
+            border-radius: 25px;
+            border: 2px dashed #ffb3d9;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .donation-section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 107, 157, 0.2);
+            border-color: #ff6b9d;
+        }
+
+        .donation-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 107, 157, 0.1) 0%, transparent 70%);
+            animation: float 6s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(180deg); }
+        }
+
+        .donation-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .donation-title {
+            font-size: 1.4rem;
+            color: #ff6b9d;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .donation-text {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .donation-note {
+            font-size: 0.9rem;
+            color: #999;
+            font-style: italic;
+        }
+
+        .donate-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b9d, #ff8fab);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(255, 107, 157, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .donate-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .donate-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
+        }
+
+        .donate-button:hover::before {
+            left: 100%;
+        }
+
+        .donate-button:active {
+            transform: translateY(-1px);
+        }
+
+        /* Floating donation button for mobile */
+        .floating-donate {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: none;
+        }
+
+        .floating-donate .donate-button {
+            padding: 12px 20px;
+            font-size: 0.9rem;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .donation-section {
+                margin: 20px 10px;
+                padding: 20px;
+            }
+            
+            .donation-title {
+                font-size: 1.2rem;
+            }
+            
+            .donation-text {
+                font-size: 0.9rem;
+            }
+            
+            .donate-button {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+            
+            .floating-donate {
+                display: block;
+            }
+            
+            .donation-section {
+                display: none;
+            }
+        }
+
         .sparkle {
             position: absolute;
             width: 4px;
@@ -305,6 +457,27 @@
             <p>💝 一一送给全世界小朋友的礼物 💝</p>
             <p>用AI魔法打造的游乐园，让每个孩子都能快乐成长！</p>
         </div>
+
+        <!-- Donation Section -->
+        <a href="https://buy.stripe.com/6oU14g8Hy3e183U7lW3Nm01" class="donation-section" target="_blank">
+            <div class="donation-content">
+                <h3 class="donation-title">Help us build magical games with AI & imagination 🎮✨</h3>
+                <p class="donation-text">
+                    We're a dad-daughter duo building creative games with AI. If you like what we're doing, consider donating $11 to support the journey! 
+                    <br><span class="donation-note">(Your donation helps us buy strawberry snacks and keep coding 🍓💻)</span>
+                </p>
+                <div class="donate-button">
+                    Donate $11 →
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- Floating Donation Button for Mobile -->
+    <div class="floating-donate">
+        <a href="https://buy.stripe.com/6oU14g8Hy3e183U7lW3Nm01" class="donate-button" target="_blank">
+            💝 Donate $11
+        </a>
     </div>
 
     <script>
@@ -433,6 +606,25 @@
                         'has_hot_badge': hasHotBadge,
                         'game_url': this.getAttribute('href'),
                         'value': 1
+                    });
+                });
+            });
+
+            // 6. 捐赠事件跟踪
+            const donationSections = document.querySelectorAll('.donation-section, .floating-donate .donate-button');
+            donationSections.forEach(element => {
+                element.addEventListener('click', function(e) {
+                    const isFloating = this.classList.contains('donate-button') && this.closest('.floating-donate');
+                    const location = isFloating ? 'floating' : 'section';
+                    
+                    gtag('event', 'donate_click', {
+                        'event_category': 'donation',
+                        'event_label': 'Donate $11',
+                        'value': 11,
+                        'currency': 'USD',
+                        'donation_amount': 11,
+                        'button_location': location,
+                        'click_area': this.classList.contains('donation-section') ? 'full_section' : 'button_only'
                     });
                 });
             });

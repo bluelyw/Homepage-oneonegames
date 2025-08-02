@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💝 Thank You! - OneOne Games</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', sans-serif;
+            background: linear-gradient(135deg, #ffe6f2 0%, #e6f3ff 50%, #e6ffe6 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .thank-you-container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 3px solid #ffb3d9;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .thank-you-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 107, 157, 0.1) 0%, transparent 70%);
+            animation: float 8s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(180deg); }
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .thank-you-emoji {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        .thank-you-title {
+            font-size: 2.5rem;
+            color: #ff6b9d;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .thank-you-message {
+            font-size: 1.2rem;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .special-note {
+            background: linear-gradient(45deg, #fff5f8, #f0f8ff);
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px dashed #ffb3d9;
+            margin: 20px 0;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #4ecdc4, #44a08d);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(78, 205, 196, 0.3);
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(78, 205, 196, 0.4);
+        }
+
+        .sparkles {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #ff6b9d;
+            border-radius: 50%;
+            animation: sparkle 2s infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; transform: scale(0); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+
+        @media (max-width: 600px) {
+            .thank-you-container {
+                padding: 30px 20px;
+            }
+            
+            .thank-you-title {
+                font-size: 2rem;
+            }
+            
+            .thank-you-message {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="content">
+            <div class="thank-you-emoji">💝</div>
+            <h1 class="thank-you-title">Thank You! 🎉</h1>
+            <p class="thank-you-message">
+                Dear friend, thank you so much for your generous donation! 💖<br>
+                Your $11 donation means the world to us and helps us continue building magical games with AI! ✨
+            </p>
+            
+            <div class="special-note">
+                <strong>🍓 From Oneone & Dad:</strong><br>
+                "Thank you for believing in our dream! Your donation helps us buy strawberry snacks and keep coding amazing games for kids around the world! 🍓💻"
+            </div>
+            
+            <p class="thank-you-message">
+                We promise to keep creating fun, educational games that bring joy to children everywhere! 🌟
+            </p>
+            
+            <a href="https://oneone.games" class="back-button">
+                ← Back to OneOne Games
+            </a>
+        </div>
+    </div>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERJQSXTBGE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ERJQSXTBGE');
+    </script>
+
+    <script>
+        // Add sparkles
+        const container = document.querySelector('.thank-you-container');
+        for (let i = 0; i < 15; i++) {
+            const sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+            sparkle.style.left = Math.random() * 100 + '%';
+            sparkle.style.top = Math.random() * 100 + '%';
+            sparkle.style.animationDelay = Math.random() * 2 + 's';
+            container.appendChild(sparkle);
+        }
+
+        // GA4 tracking for thank you page
+        gtag('event', 'page_view', {
+            'page_title': 'Thank You Page',
+            'page_location': window.location.href,
+            'event_category': 'donation_success'
+        });
+
+        // Track thank you page engagement
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track back button click
+            const backButton = document.querySelector('.back-button');
+            if (backButton) {
+                backButton.addEventListener('click', function() {
+                    gtag('event', 'click', {
+                        'event_category': 'donation_success',
+                        'event_label': 'Back to Homepage',
+                        'value': 1
+                    });
+                });
+            }
+
+            // Track page engagement time
+            let startTime = Date.now();
+            window.addEventListener('beforeunload', function() {
+                const timeSpent = Math.round((Date.now() - startTime) / 1000);
+                gtag('event', 'timing_complete', {
+                    'name': 'thank_you_page',
+                    'value': timeSpent,
+                    'event_category': 'donation_success'
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
