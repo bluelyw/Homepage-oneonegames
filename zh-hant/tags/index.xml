@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 一一遊戲 - AI魔法遊樂園</title>
+    <link>http://localhost:1313/zh-hant/tags/</link>
+    <description>Recent content in Tags on 一一遊戲 - AI魔法遊樂園</description>
+    <generator>Hugo</generator>
+    <language>zh-hant</language>
+    <atom:link href="http://localhost:1313/zh-hant/tags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
