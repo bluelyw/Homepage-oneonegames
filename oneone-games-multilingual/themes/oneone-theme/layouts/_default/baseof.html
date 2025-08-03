@@ -6,6 +6,60 @@
     <title>{{ .Site.Title }}</title>
     <meta name="description" content="{{ .Site.Params.description }}">
     
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ .Permalink }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:title" content="{{ .Site.Title }}">
+    <meta property="og:description" content="{{ .Site.Params.description }}">
+    <meta property="og:image" content="https://oneone.games/og-image.jpg">
+    <meta property="og:site_name" content="OneOne Games">
+    <meta property="og:locale" content="{{ .Site.Language.Lang }}">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ .Permalink }}">
+    <meta property="twitter:title" content="{{ .Site.Title }}">
+    <meta property="twitter:description" content="{{ .Site.Params.description }}">
+    <meta property="twitter:image" content="https://oneone.games/og-image.jpg">
+    
+    <!-- Hreflang for multilingual SEO -->
+    {{ range .Site.Languages }}
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ . | absURL }}">
+    {{ end }}
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "OneOne Games",
+        "description": "{{ .Site.Params.description }}",
+        "url": "https://oneone.games/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://oneone.games/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "OneOne Games",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://oneone.games/logo.png"
+            }
+        }
+    }
+    </script>
+    
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERJQSXTBGE"></script>
     <script>
