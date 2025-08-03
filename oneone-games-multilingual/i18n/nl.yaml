@@ -1,0 +1,58 @@
+welcome_title: "Welkom bij Oneone Games"
+welcome_subtitle: "Hallo! Ik ben Oneone 👧 Ik ben bijna 6 jaar oud en ik hou van gamen!<br>Ik heb deze spellen gemaakt met mijn vader met AI-magie.<br>Elk spel is mijn idee, ik heb het getest, en ik heb besloten het uit te brengen!<br>Welkom in mijn AI-magische speeltuin! ✨<br>Alle spellen zijn gratis voor kinderen!"
+games_kingdom: "Mijn Spellenrijk"
+footer_gift: "Oneones geschenk aan kinderen over de hele wereld"
+footer_message: "Een AI-magische speeltuin die elk kind gelukkig laat opgroeien!"
+
+# Header Navigation
+nav_home: "Home"
+nav_games: "Spellen"
+nav_about: "Over"
+
+# Footer Content
+footer_title: "🎮 OneOne Spellen"
+footer_description: "Indie hacker-stijl coderingproject door een klein meisje, aangedreven door AI-magie ✨"
+footer_built_with: "Gebouwd met ❤️ & AI"
+footer_copyright: "© 2025 OneOne.Games"
+footer_note: "Gratis te spelen, donaties welkom om onze reis te ondersteunen 🚀"
+
+# Game 1: Strawberry Game
+strawberry_game_title: "Aardbeien Spel"
+strawberry_game_description: "Voltooi levels door aardbeien te plukken, daag je reactiesnelheid uit!"
+strawberry_game_emoji: "🍓"
+strawberry_game_url: "https://strawberrygame.oneone.games"
+strawberry_game_is_hot: "true"
+strawberry_game_is_new: "false"
+
+# Game 2: Running Game
+running_game_title: "Hardloop Spel"
+running_game_description: "Ren door levels, train je lichaam en reactiesnelheid!"
+running_game_emoji: "🏃‍♂️"
+running_game_url: "https://runninggame.oneone.games"
+running_game_is_hot: "false"
+running_game_is_new: "false"
+
+# Game 3: Idiom Hero
+idiom_hero_title: "Uitdrukkingen Held"
+idiom_hero_description: "Uitdrukkingen level-spel, verbeter je uitdrukkingen vaardigheden!"
+idiom_hero_emoji: "📚"
+idiom_hero_url: "https://idiomheros.oneone.games/"
+idiom_hero_is_hot: "false"
+idiom_hero_is_new: "true"
+
+# Game 4: Sudoku Puzzle
+sudoku_puzzle_title: "Sudoku Puzzel"
+sudoku_puzzle_description: "Sudoku spel, train je logisch denken!"
+sudoku_puzzle_emoji: "🧩"
+sudoku_puzzle_url: "https://sudokupuzzle.oneone.games"
+sudoku_puzzle_is_hot: "false"
+sudoku_puzzle_is_new: "true"
+
+# Game 5: More Games Coming
+more_games_coming_title: "Meer Spellen Komt"
+more_games_coming_description: "Meer spannende spellen zijn in ontwikkeling, blijf op de hoogte!"
+more_games_coming_emoji: "🎮"
+more_games_coming_url: "#"
+more_games_coming_is_hot: "false"
+more_games_coming_is_new: "false"
+more_games_coming_is_coming: "true" 

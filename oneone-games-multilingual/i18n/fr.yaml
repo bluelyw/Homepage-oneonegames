@@ -1,0 +1,58 @@
+welcome_title: "Bienvenue aux Jeux Oneone"
+welcome_subtitle: "Bonjour ! Je suis Oneone 👧 J'ai presque 6 ans et j'adore jouer aux jeux !<br>J'ai créé ces jeux avec mon papa en utilisant la magie de l'IA.<br>Chaque jeu est mon idée, je l'ai testé, et j'ai décidé de le lancer !<br>Bienvenue dans mon terrain de jeu magique IA ! ✨<br>Tous les jeux sont gratuits pour les enfants !"
+games_kingdom: "Mon Royaume de Jeux"
+footer_gift: "Le cadeau d'Oneone aux enfants du monde entier"
+footer_message: "Un terrain de jeu magique IA qui permet à chaque enfant de grandir heureux !"
+
+# Header Navigation
+nav_home: "Accueil"
+nav_games: "Jeux"
+nav_about: "À propos"
+
+# Footer Content
+footer_title: "🎮 Jeux OneOne"
+footer_description: "Projet de codage style indie hacker par une petite fille, alimenté par la magie IA ✨"
+footer_built_with: "Construit avec ❤️ & IA"
+footer_copyright: "© 2025 OneOne.Games"
+footer_note: "Jeu gratuit, bienvenue pour faire un don pour soutenir notre voyage 🚀"
+
+# Game 1: Strawberry Game
+strawberry_game_title: "Jeu de Fraises"
+strawberry_game_description: "Débloquez les niveaux en cueillant des fraises, défiez votre vitesse de réaction !"
+strawberry_game_emoji: "🍓"
+strawberry_game_url: "https://strawberrygame.oneone.games"
+strawberry_game_is_hot: "true"
+strawberry_game_is_new: "false"
+
+# Game 2: Running Game
+running_game_title: "Jeu de Course"
+running_game_description: "Courez à travers les niveaux, exercez votre corps et votre vitesse de réaction !"
+running_game_emoji: "🏃‍♂️"
+running_game_url: "https://runninggame.oneone.games"
+running_game_is_hot: "false"
+running_game_is_new: "false"
+
+# Game 3: Idiom Hero
+idiom_hero_title: "Héros des Expressions"
+idiom_hero_description: "Jeu de déblocage d'expressions, améliorez vos compétences en expressions !"
+idiom_hero_emoji: "📚"
+idiom_hero_url: "https://idiomheros.oneone.games/"
+idiom_hero_is_hot: "false"
+idiom_hero_is_new: "true"
+
+# Game 4: Sudoku Puzzle
+sudoku_puzzle_title: "Puzzle Sudoku"
+sudoku_puzzle_description: "Jeu de sudoku, exercez votre pensée logique !"
+sudoku_puzzle_emoji: "🧩"
+sudoku_puzzle_url: "https://sudokupuzzle.oneone.games"
+sudoku_puzzle_is_hot: "false"
+sudoku_puzzle_is_new: "true"
+
+# Game 5: More Games Coming
+more_games_coming_title: "Plus de Jeux à Venir"
+more_games_coming_description: "Plus de jeux passionnants sont en cours de développement, restez à l'écoute !"
+more_games_coming_emoji: "🎮"
+more_games_coming_url: "#"
+more_games_coming_is_hot: "false"
+more_games_coming_is_new: "false"
+more_games_coming_is_coming: "true" 

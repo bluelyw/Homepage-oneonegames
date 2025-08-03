@@ -1,0 +1,58 @@
+welcome_title: "Oneone 게임에 오신 것을 환영합니다"
+welcome_subtitle: "안녕하세요! 저는 「Oneone」👧 올해 6살 미만이고 게임을 정말 좋아해요.<br>아빠와 함께 AI 마법으로 이 게임들을 만들었어요.<br>각 게임은 제 아이디어이고, 제가 테스트하고, 제가 출시를 결정한 거예요!<br>제 AI 마법 놀이터에 오신 것을 환영합니다! ✨<br>모든 게임은 아이들이 무료로 즐길 수 있어요!"
+games_kingdom: "내 게임 왕국"
+footer_gift: "Oneone이 전 세계 아이들에게 주는 선물"
+footer_message: "AI 마법으로 만든 놀이터로 모든 아이가 행복하게 성장할 수 있어요!"
+
+# Header Navigation
+nav_home: "홈"
+nav_games: "게임"
+nav_about: "소개"
+
+# Footer Content
+footer_title: "🎮 OneOne 게임"
+footer_description: "어린 소녀가 만든 인디 해커 분위기의 코딩 프로젝트, AI 마법으로 파워업 ✨"
+footer_built_with: "❤️ 와 AI로 구축"
+footer_copyright: "© 2025 OneOne.Games"
+footer_note: "무료로 즐기세요, 우리의 여정을 지원하는 기부를 환영합니다 🚀"
+
+# Game 1: Strawberry Game
+strawberry_game_title: "딸기 게임"
+strawberry_game_description: "딸기를 따서 레벨을 클리어하고 반응 속도에 도전하세요!"
+strawberry_game_emoji: "🍓"
+strawberry_game_url: "https://strawberrygame.oneone.games"
+strawberry_game_is_hot: "true"
+strawberry_game_is_new: "false"
+
+# Game 2: Running Game
+running_game_title: "달리기 게임"
+running_game_description: "레벨을 달려서 몸과 반응 속도를 단련하세요!"
+running_game_emoji: "🏃‍♂️"
+running_game_url: "https://runninggame.oneone.games"
+running_game_is_hot: "false"
+running_game_is_new: "false"
+
+# Game 3: Idiom Hero
+idiom_hero_title: "관용어 히어로"
+idiom_hero_description: "관용어 클리어 게임, 관용어 실력을 향상시키세요!"
+idiom_hero_emoji: "📚"
+idiom_hero_url: "https://idiomheros.oneone.games/"
+idiom_hero_is_hot: "false"
+idiom_hero_is_new: "true"
+
+# Game 4: Sudoku Puzzle
+sudoku_puzzle_title: "스도쿠 퍼즐"
+sudoku_puzzle_description: "스도쿠 게임, 논리적 사고를 단련하세요!"
+sudoku_puzzle_emoji: "🧩"
+sudoku_puzzle_url: "https://sudokupuzzle.oneone.games"
+sudoku_puzzle_is_hot: "false"
+sudoku_puzzle_is_new: "true"
+
+# Game 5: More Games Coming
+more_games_coming_title: "더 많은 게임이 곧 등장"
+more_games_coming_description: "더욱 흥미진진한 게임들이 개발 중입니다, 기대해 주세요!"
+more_games_coming_emoji: "🎮"
+more_games_coming_url: "#"
+more_games_coming_is_hot: "false"
+more_games_coming_is_new: "false"
+more_games_coming_is_coming: "true" 

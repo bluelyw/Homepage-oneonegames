@@ -1,0 +1,58 @@
+welcome_title: "Witamy w Grach Oneone"
+welcome_subtitle: "Cześć! Jestem Oneone 👧 Mam prawie 6 lat i uwielbiam grać w gry!<br>Stworzyłam te gry z tatą używając magii AI.<br>Każda gra to mój pomysł, przetestowałam ją i zdecydowałam się ją wydać!<br>Witamy w moim magicznym placu zabaw AI! ✨<br>Wszystkie gry są darmowe dla dzieci!"
+games_kingdom: "Moje Królestwo Gier"
+footer_gift: "Prezent Oneone dla dzieci z całego świata"
+footer_message: "Magiczny plac zabaw AI, który pozwala każdemu dziecku szczęśliwie dorastać!"
+
+# Header Navigation
+nav_home: "Strona główna"
+nav_games: "Gry"
+nav_about: "O nas"
+
+# Footer Content
+footer_title: "🎮 Gry OneOne"
+footer_description: "Projekt kodowania w stylu indie hackera przez małą dziewczynkę, napędzany magią AI ✨"
+footer_built_with: "Zbudowane z ❤️ & AI"
+footer_copyright: "© 2025 OneOne.Games"
+footer_note: "Gratis do gry, mile widziane darowizny na wsparcie naszej podróży 🚀"
+
+# Game 1: Strawberry Game
+strawberry_game_title: "Gra Truskawkowa"
+strawberry_game_description: "Ukończ poziomy zbierając truskawki, rzuć wyzwanie swojej szybkości reakcji!"
+strawberry_game_emoji: "🍓"
+strawberry_game_url: "https://strawberrygame.oneone.games"
+strawberry_game_is_hot: "true"
+strawberry_game_is_new: "false"
+
+# Game 2: Running Game
+running_game_title: "Gra Biegowa"
+running_game_description: "Biegaj przez poziomy, ćwicz swoje ciało i szybkość reakcji!"
+running_game_emoji: "🏃‍♂️"
+running_game_url: "https://runninggame.oneone.games"
+running_game_is_hot: "false"
+running_game_is_new: "false"
+
+# Game 3: Idiom Hero
+idiom_hero_title: "Bohater Wyrażeń"
+idiom_hero_description: "Gra poziomów wyrażeń, popraw swoje umiejętności wyrażeń!"
+idiom_hero_emoji: "📚"
+idiom_hero_url: "https://idiomheros.oneone.games/"
+idiom_hero_is_hot: "false"
+idiom_hero_is_new: "true"
+
+# Game 4: Sudoku Puzzle
+sudoku_puzzle_title: "Puzzle Sudoku"
+sudoku_puzzle_description: "Gra sudoku, ćwicz logiczne myślenie!"
+sudoku_puzzle_emoji: "🧩"
+sudoku_puzzle_url: "https://sudokupuzzle.oneone.games"
+sudoku_puzzle_is_hot: "false"
+sudoku_puzzle_is_new: "true"
+
+# Game 5: More Games Coming
+more_games_coming_title: "Więcej Gier Wkrótce"
+more_games_coming_description: "Więcej ekscytujących gier jest w rozwoju, bądź na bieżąco!"
+more_games_coming_emoji: "🎮"
+more_games_coming_url: "#"
+more_games_coming_is_hot: "false"
+more_games_coming_is_new: "false"
+more_games_coming_is_coming: "true" 
