@@ -2,220 +2,220 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://oneone.games/pt-pt/categories/</loc>
+    <loc>http://localhost:1313/pt-pt/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://oneone.games/categories/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hans"
-                href="https://oneone.games/zh-hans/categories/"
+                href="http://localhost:1313/zh-hans/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hant"
-                href="https://oneone.games/zh-hant/categories/"
+                href="http://localhost:1313/zh-hant/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://oneone.games/ja/categories/"
+                href="http://localhost:1313/ja/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://oneone.games/ko/categories/"
+                href="http://localhost:1313/ko/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://oneone.games/fr/categories/"
+                href="http://localhost:1313/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://oneone.games/de/categories/"
+                href="http://localhost:1313/de/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://oneone.games/es/categories/"
+                href="http://localhost:1313/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://oneone.games/pt-br/categories/"
+                href="http://localhost:1313/pt-br/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://oneone.games/it/categories/"
+                href="http://localhost:1313/it/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://oneone.games/nl/categories/"
+                href="http://localhost:1313/nl/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://oneone.games/pl/categories/"
+                href="http://localhost:1313/pl/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv"
-                href="https://oneone.games/sv/categories/"
+                href="http://localhost:1313/sv/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-pt"
-                href="https://oneone.games/pt-pt/categories/"
+                href="http://localhost:1313/pt-pt/categories/"
                 />
   </url><url>
-    <loc>https://oneone.games/pt-pt/</loc>
+    <loc>http://localhost:1313/pt-pt/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://oneone.games/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hans"
-                href="https://oneone.games/zh-hans/"
+                href="http://localhost:1313/zh-hans/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hant"
-                href="https://oneone.games/zh-hant/"
+                href="http://localhost:1313/zh-hant/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://oneone.games/ja/"
+                href="http://localhost:1313/ja/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://oneone.games/ko/"
+                href="http://localhost:1313/ko/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://oneone.games/fr/"
+                href="http://localhost:1313/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://oneone.games/de/"
+                href="http://localhost:1313/de/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://oneone.games/es/"
+                href="http://localhost:1313/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://oneone.games/pt-br/"
+                href="http://localhost:1313/pt-br/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://oneone.games/it/"
+                href="http://localhost:1313/it/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://oneone.games/nl/"
+                href="http://localhost:1313/nl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://oneone.games/pl/"
+                href="http://localhost:1313/pl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv"
-                href="https://oneone.games/sv/"
+                href="http://localhost:1313/sv/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-pt"
-                href="https://oneone.games/pt-pt/"
+                href="http://localhost:1313/pt-pt/"
                 />
   </url><url>
-    <loc>https://oneone.games/pt-pt/tags/</loc>
+    <loc>http://localhost:1313/pt-pt/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://oneone.games/tags/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hans"
-                href="https://oneone.games/zh-hans/tags/"
+                href="http://localhost:1313/zh-hans/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-hant"
-                href="https://oneone.games/zh-hant/tags/"
+                href="http://localhost:1313/zh-hant/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://oneone.games/ja/tags/"
+                href="http://localhost:1313/ja/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://oneone.games/ko/tags/"
+                href="http://localhost:1313/ko/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://oneone.games/fr/tags/"
+                href="http://localhost:1313/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://oneone.games/de/tags/"
+                href="http://localhost:1313/de/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://oneone.games/es/tags/"
+                href="http://localhost:1313/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://oneone.games/pt-br/tags/"
+                href="http://localhost:1313/pt-br/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://oneone.games/it/tags/"
+                href="http://localhost:1313/it/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://oneone.games/nl/tags/"
+                href="http://localhost:1313/nl/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://oneone.games/pl/tags/"
+                href="http://localhost:1313/pl/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv"
-                href="https://oneone.games/sv/tags/"
+                href="http://localhost:1313/sv/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-pt"
-                href="https://oneone.games/pt-pt/tags/"
+                href="http://localhost:1313/pt-pt/tags/"
                 />
   </url>
 </urlset>

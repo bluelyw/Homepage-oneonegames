@@ -11,7 +11,66 @@
     <div class="container">
         <h2 class="section-title">🎪 {{ i18n "games_kingdom" }}</h2>
         <div class="games-grid">
-            {{ range .Site.Data.games }}
+            {{ $games := .Site.Data.games }}
+            {{ if eq .Site.Language.Lang "zh-Hans" }}
+                {{ if .Site.Data.games_zh_Hans }}
+                    {{ $games = .Site.Data.games_zh_Hans }}
+                {{ end }}
+            {{ else if eq .Site.Language.Lang "zh-Hant" }}
+                {{ if .Site.Data.games_zh_Hant }}
+                    {{ $games = .Site.Data.games_zh_Hant }}
+                {{ end }}
+            {{ else if eq .Site.Language.Lang "ja" }}
+                {{ if .Site.Data.games_ja }}
+                    {{ $games = .Site.Data.games_ja }}
+                {{ end }}
+            {{ else if eq .Site.Language.Lang "ko" }}
+                {{ if .Site.Data.games_ko }}
+                    {{ $games = .Site.Data.games_ko }}
+                {{ end }}
+            {{ else if eq .Site.Language.Lang "fr" }}
+                {{ if .Site.Data.games_fr }}
+                    {{ $games = .Site.Data.games_fr }}
+                {{ end }}
+            {{ else if eq .Site.Language.Lang "de" }}
+                {{ if .Site.Data.games_de }}
+                    {{ $games = .Site.Data.games_de }}
+                {{ end }}
+            {{ else if eq .Site.Language.Lang "es" }}
+                {{ if .Site.Data.games_es }}
+                    {{ $games = .Site.Data.games_es }}
+                {{ end }}
+            {{ else if eq .Site.Language.Lang "pt-BR" }}
+                {{ if .Site.Data.games_pt_BR }}
+                    {{ $games = .Site.Data.games_pt_BR }}
+                {{ end }}
+            {{ else if eq .Site.Language.Lang "pt-PT" }}
+                {{ if .Site.Data.games_pt_PT }}
+                    {{ $games = .Site.Data.games_pt_PT }}
+                {{ end }}
+            {{ else if eq .Site.Language.Lang "it" }}
+                {{ if .Site.Data.games_it }}
+                    {{ $games = .Site.Data.games_it }}
+                {{ end }}
+            {{ else if eq .Site.Language.Lang "nl" }}
+                {{ if .Site.Data.games_nl }}
+                    {{ $games = .Site.Data.games_nl }}
+                {{ end }}
+            {{ else if eq .Site.Language.Lang "pl" }}
+                {{ if .Site.Data.games_pl }}
+                    {{ $games = .Site.Data.games_pl }}
+                {{ end }}
+            {{ else if eq .Site.Language.Lang "sv" }}
+                {{ if .Site.Data.games_sv }}
+                    {{ $games = .Site.Data.games_sv }}
+                {{ end }}
+            {{ else if eq .Site.Language.Lang "en" }}
+                {{ if .Site.Data.games_en }}
+                    {{ $games = .Site.Data.games_en }}
+                {{ end }}
+            {{ end }}
+            
+            {{ range $games }}
             {{ if .is_coming }}
             <div class="game-card coming-soon-card">
                 <span class="game-emoji">{{ .emoji }}</span>
