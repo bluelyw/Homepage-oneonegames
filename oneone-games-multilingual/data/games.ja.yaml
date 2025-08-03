@@ -1,0 +1,35 @@
+- title: "Strawberry Game"
+  description: "イチゴを摘んでレベルをクリア、反応速度に挑戦！"
+  emoji: "🍓"
+  url: "https://strawberrygame.oneone.games"
+  is_hot: true
+  is_new: false
+
+- title: "Running Game"
+  description: "レベルを走り抜けて、体と反応速度を鍛えよう！"
+  emoji: "🏃‍♂️"
+  url: "https://runninggame.oneone.games"
+  is_hot: false
+  is_new: false
+
+- title: "Idiom Hero"
+  description: "熟語レベル攻略ゲーム、熟語力を向上させよう！"
+  emoji: "📚"
+  url: "https://idiomheros.oneone.games/"
+  is_hot: false
+  is_new: true
+
+- title: "Sudoku Puzzle"
+  description: "数独ゲーム、論理的思考を鍛えよう！"
+  emoji: "🧩"
+  url: "https://sudokupuzzle.oneone.games"
+  is_hot: false
+  is_new: true
+
+- title: "More Games Coming"
+  description: "さらにエキサイティングなゲームを開発中、お楽しみに！"
+  emoji: "🎮"
+  url: "#"
+  is_hot: false
+  is_new: false
+  is_coming: true 

@@ -1,0 +1,35 @@
+- title: "Strawberry Game"
+  description: "Przejdź poziomy zbierając truskawki, rzuć wyzwanie swojej prędkości reakcji!"
+  emoji: "🍓"
+  url: "https://strawberrygame.oneone.games"
+  is_hot: true
+  is_new: false
+
+- title: "Running Game"
+  description: "Biegnij przez poziomy, ćwicz swoje ciało i prędkość reakcji!"
+  emoji: "🏃‍♂️"
+  url: "https://runninggame.oneone.games"
+  is_hot: false
+  is_new: false
+
+- title: "Idiom Hero"
+  description: "Gra poziomów idiomów, popraw swoje umiejętności językowe!"
+  emoji: "📚"
+  url: "https://idiomheros.oneone.games/"
+  is_hot: false
+  is_new: true
+
+- title: "Sudoku Puzzle"
+  description: "Gra sudoku, ćwicz logiczne myślenie!"
+  emoji: "🧩"
+  url: "https://sudokupuzzle.oneone.games"
+  is_hot: false
+  is_new: true
+
+- title: "More Games Coming"
+  description: "Więcej ekscytujących gier w rozwoju, bądź na bieżąco!"
+  emoji: "🎮"
+  url: "#"
+  is_hot: false
+  is_new: false
+  is_coming: true 

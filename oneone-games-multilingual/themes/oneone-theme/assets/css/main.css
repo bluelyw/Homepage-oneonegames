@@ -242,11 +242,12 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #666;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
+    text-align: center;
 }
 
 /* Games section */

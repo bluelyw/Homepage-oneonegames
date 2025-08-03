@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OneOne Spel - AI Magisk Lekplats</title>
-    <link>https://oneone.games/sv/</link>
+    <link>http://localhost:1313/sv/</link>
     <description>Recent content on OneOne Spel - AI Magisk Lekplats</description>
     <generator>Hugo</generator>
     <language>sv</language>
-    <atom:link href="https://oneone.games/sv/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/sv/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
