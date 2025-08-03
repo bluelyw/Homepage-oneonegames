@@ -6,28 +6,52 @@
             </div>
             
             <nav class="main-nav">
-                <a href="/" class="nav-link">Home</a>
+                <a href="/" class="nav-link">{{ i18n "nav_home" }}</a>
                 
                 <div class="nav-dropdown">
                     <button class="nav-toggle" onclick="toggleGamesMenu()">
-                        Games <span class="dropdown-arrow">▼</span>
+                        {{ i18n "nav_games" }} <span class="dropdown-arrow">▼</span>
                     </button>
                     <div class="nav-menu" id="gamesMenu">
-                        {{ range .Site.Data.games }}
-                        {{ if not .is_coming }}
-                        <a href="{{ .url }}" class="nav-option" target="_blank">
-                            <span class="game-icon">{{ .emoji }}</span>
+                        <!-- Game 1: Strawberry Game -->
+                        <a href="{{ i18n "strawberry_game_url" }}" class="nav-option" target="_blank">
+                            <span class="game-icon">{{ i18n "strawberry_game_emoji" }}</span>
                             <div class="game-info">
-                                <div class="game-name">{{ .title }}</div>
-                                <div class="game-desc">{{ .description }}</div>
+                                <div class="game-name">{{ i18n "strawberry_game_title" }}</div>
+                                <div class="game-desc">{{ i18n "strawberry_game_description" }}</div>
                             </div>
                         </a>
-                        {{ end }}
-                        {{ end }}
+                        
+                        <!-- Game 2: Running Game -->
+                        <a href="{{ i18n "running_game_url" }}" class="nav-option" target="_blank">
+                            <span class="game-icon">{{ i18n "running_game_emoji" }}</span>
+                            <div class="game-info">
+                                <div class="game-name">{{ i18n "running_game_title" }}</div>
+                                <div class="game-desc">{{ i18n "running_game_description" }}</div>
+                            </div>
+                        </a>
+                        
+                        <!-- Game 3: Idiom Hero -->
+                        <a href="{{ i18n "idiom_hero_url" }}" class="nav-option" target="_blank">
+                            <span class="game-icon">{{ i18n "idiom_hero_emoji" }}</span>
+                            <div class="game-info">
+                                <div class="game-name">{{ i18n "idiom_hero_title" }}</div>
+                                <div class="game-desc">{{ i18n "idiom_hero_description" }}</div>
+                            </div>
+                        </a>
+                        
+                        <!-- Game 4: Sudoku Puzzle -->
+                        <a href="{{ i18n "sudoku_puzzle_url" }}" class="nav-option" target="_blank">
+                            <span class="game-icon">{{ i18n "sudoku_puzzle_emoji" }}</span>
+                            <div class="game-info">
+                                <div class="game-name">{{ i18n "sudoku_puzzle_title" }}</div>
+                                <div class="game-desc">{{ i18n "sudoku_puzzle_description" }}</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 
-                <a href="#about" class="nav-link" onclick="scrollToAbout()">About</a>
+                <a href="#about" class="nav-link" onclick="scrollToAbout()">{{ i18n "nav_about" }}</a>
             </nav>
             
             <div class="language-dropdown">

@@ -4,6 +4,18 @@ games_kingdom: "我的游戏王国"
 footer_gift: "Oneone送给全世界小朋友的礼物"
 footer_message: "用AI魔法打造的游乐园，让每个孩子都能快乐成长！"
 
+# Header Navigation
+nav_home: "首页"
+nav_games: "游戏"
+nav_about: "关于"
+
+# Footer Content
+footer_title: "🎮 OneOne游戏"
+footer_description: "独立黑客风格编程项目，由小女孩创作，AI魔法赋能 ✨"
+footer_built_with: "用 ❤️ 和 AI 构建"
+footer_copyright: "© 2025 OneOne.Games"
+footer_note: "免费游戏，欢迎捐赠支持我们的旅程 🚀"
+
 # Game 1: Strawberry Game
 strawberry_game_title: "草莓游戏"
 strawberry_game_description: "闯关摘草莓，挑战你的反应力！"

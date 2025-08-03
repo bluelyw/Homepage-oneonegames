@@ -4,6 +4,18 @@ games_kingdom: "My Game Kingdom"
 footer_gift: "Oneone's gift to children around the world"
 footer_message: "An AI magic playground that lets every child grow up happily!"
 
+# Header Navigation
+nav_home: "Home"
+nav_games: "Games"
+nav_about: "About"
+
+# Footer Content
+footer_title: "🎮 OneOne Games"
+footer_description: "Indie Hacker vibe coding project by kid girl, empowered by AI magic ✨"
+footer_built_with: "Built with ❤️ & AI"
+footer_copyright: "© 2025 OneOne.Games"
+footer_note: "Free to play, welcome to donate to support the journey 🚀"
+
 # Game 1: Strawberry Game
 strawberry_game_title: "Strawberry Game"
 strawberry_game_description: "Clear levels by picking strawberries, challenge your reaction speed!"
