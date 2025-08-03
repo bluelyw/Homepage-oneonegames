@@ -1,0 +1,77 @@
+{{ define "main" }}
+<div class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">🎮 {{ i18n "welcome_title" }}</h1>
+            <p class="hero-subtitle">{{ i18n "welcome_subtitle" | safeHTML }}</p>
+        </div>
+    </div>
+</div>
+
+<div class="games-section">
+    <div class="container">
+        <h2 class="section-title">🎪 {{ i18n "games_kingdom" }}</h2>
+        <div class="games-grid">
+            {{ $games := .Site.Data.games }}
+            {{ if eq .Site.Language.Lang "zh-Hans" }}
+                {{ $games = .Site.Data.games_zh_Hans }}
+            {{ end }}
+            {{ range $games }}
+            {{ if .is_coming }}
+            <div class="game-card coming-soon-card">
+                <span class="game-emoji">{{ .emoji }}</span>
+                <div class="game-title">{{ .title }}</div>
+                <div class="game-description">{{ .description }}</div>
+                <div class="coming-badge">COMING SOON</div>
+            </div>
+            {{ else }}
+            <a href="{{ .url }}" class="game-card" target="_blank">
+                <span class="game-emoji">{{ .emoji }}</span>
+                <div class="game-title">{{ .title }}</div>
+                <div class="game-description">{{ .description }}</div>
+                {{ if .is_new }}
+                <div class="new-badge">NEW</div>
+                {{ end }}
+                {{ if .is_hot }}
+                <div class="hot-badge">HOT</div>
+                {{ end }}
+            </a>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+<div class="gift-message-section">
+    <div class="container">
+        <div class="gift-content">
+            <p class="gift-title">💝 {{ i18n "footer_gift" }} 💝</p>
+            <p class="gift-message">{{ i18n "footer_message" }}</p>
+        </div>
+    </div>
+</div>
+
+<div class="donation-section">
+    <div class="container">
+        <a href="https://buy.stripe.com/6oU14g8Hy3e183U7lW3Nm01" class="donation-card" target="_blank">
+            <div class="donation-content">
+                <h3 class="donation-title">{{ .Site.Params.donation_title }}</h3>
+                <p class="donation-text">
+                    {{ .Site.Params.donation_text }}
+                    <br><span class="donation-note">{{ .Site.Params.donation_note }}</span>
+                </p>
+                <div class="donate-button">
+                    {{ .Site.Params.donate_button }}
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- Floating donation button for mobile -->
+<div class="floating-donate">
+    <a href="https://buy.stripe.com/6oU14g8Hy3e183U7lW3Nm01" class="donate-button" target="_blank">
+        💝 {{ .Site.Params.donate_button }}
+    </a>
+</div>
+{{ end }} 

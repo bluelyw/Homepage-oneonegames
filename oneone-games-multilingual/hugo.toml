@@ -1,0 +1,186 @@
+baseURL = 'https://oneone.games/'
+languageCode = 'en-us'
+title = 'OneOne Games - AI Magic Playground'
+theme = 'oneone-theme'
+
+[params]
+  description = "A dad-daughter duo building creative games with AI for children aged 4-10"
+  author = "一一 & Dad"
+  github = "https://github.com/bluelyw/Homepage-oneonegames"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "games"
+    name = "Games"
+    url = "/games/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    title = "OneOne Games - AI Magic Playground"
+    [languages.en.params]
+      description = "A dad-daughter duo building creative games with AI for children aged 4-10"
+      donation_title = "Help us build magical games with AI & imagination 🎮✨"
+      donation_text = "We're a dad-daughter duo building creative games with AI. If you like what we're doing, consider donating $11 to support the journey!"
+      donation_note = "(Your donation helps us buy strawberry snacks and keep coding 🍓💻)"
+      donate_button = "Donate $11 →"
+
+  [languages.zh-Hans]
+    languageName = "简体中文"
+    weight = 2
+    title = "一一游戏 - AI魔法游乐园"
+    [languages.zh-Hans.params]
+      description = "父女搭档用AI为4-10岁儿童打造创意游戏"
+      donation_title = "帮助我们用AI和想象力打造魔法游戏 🎮✨"
+      donation_text = "我们是一对父女搭档，用AI制作创意游戏。如果你喜欢我们的作品，请考虑捐赠11美元支持我们的旅程！"
+      donation_note = "（你的捐赠帮助我们买草莓零食和继续编程 🍓💻）"
+      donate_button = "捐赠 $11 →"
+
+  [languages.zh-Hant]
+    languageName = "繁體中文"
+    weight = 3
+    title = "一一遊戲 - AI魔法遊樂園"
+    [languages.zh-Hant.params]
+      description = "父女搭檔用AI為4-10歲兒童打造創意遊戲"
+      donation_title = "幫助我們用AI和想像力打造魔法遊戲 🎮✨"
+      donation_text = "我們是一對父女搭檔，用AI製作創意遊戲。如果你喜歡我們的作品，請考慮捐贈11美元支持我們的旅程！"
+      donation_note = "（你的捐贈幫助我們買草莓零食和繼續編程 🍓💻）"
+      donate_button = "捐贈 $11 →"
+
+  [languages.ja]
+    languageName = "日本語"
+    weight = 4
+    title = "一一ゲーム - AI魔法遊園地"
+    [languages.ja.params]
+      description = "父娘デュオがAIで4-10歳の子供向けクリエイティブゲームを作成"
+      donation_title = "AIと想像力で魔法のゲームを作るのを手伝ってください 🎮✨"
+      donation_text = "私たちは父娘デュオで、AIを使ってクリエイティブなゲームを作っています。私たちの作品が気に入ったら、11ドルの寄付を検討してください！"
+      donation_note = "（あなたの寄付は私たちがイチゴのおやつを買い、コーディングを続けるのを助けます 🍓💻）"
+      donate_button = "11ドル寄付 →"
+
+  [languages.ko]
+    languageName = "한국어"
+    weight = 5
+    title = "일일게임 - AI 마법 놀이터"
+    [languages.ko.params]
+      description = "부녀 듀오가 AI로 4-10세 어린이를 위한 창의적 게임 제작"
+      donation_title = "AI와 상상력으로 마법 같은 게임을 만드는 것을 도와주세요 🎮✨"
+      donation_text = "우리는 부녀 듀오로 AI를 사용해 창의적인 게임을 만들고 있습니다. 우리의 작품이 마음에 드시면 11달러 기부를 고려해 주세요!"
+      donation_note = "（당신의 기부는 우리가 딸기 간식을 사고 코딩을 계속하는 데 도움이 됩니다 🍓💻）"
+      donate_button = "11달러 기부 →"
+
+  [languages.fr]
+    languageName = "Français"
+    weight = 6
+    title = "Jeux OneOne - Terrain de jeu magique IA"
+    [languages.fr.params]
+      description = "Un duo père-fille créant des jeux créatifs avec l'IA pour les enfants de 4 à 10 ans"
+      donation_title = "Aidez-nous à construire des jeux magiques avec l'IA et l'imagination 🎮✨"
+      donation_text = "Nous sommes un duo père-fille qui construit des jeux créatifs avec l'IA. Si vous aimez ce que nous faisons, envisagez de faire un don de 11$ pour soutenir notre voyage !"
+      donation_note = "（Votre don nous aide à acheter des collations aux fraises et à continuer à coder 🍓💻）"
+      donate_button = "Faire un don de 11$ →"
+
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 7
+    title = "OneOne Spiele - KI-Zauber-Spielplatz"
+    [languages.de.params]
+      description = "Ein Vater-Tochter-Duo, das kreative Spiele mit KI für Kinder im Alter von 4-10 Jahren entwickelt"
+      donation_title = "Helfen Sie uns, magische Spiele mit KI und Fantasie zu entwickeln 🎮✨"
+      donation_text = "Wir sind ein Vater-Tochter-Duo, das kreative Spiele mit KI entwickelt. Wenn Ihnen gefällt, was wir tun, erwägen Sie eine Spende von 11$ zur Unterstützung unserer Reise!"
+      donation_note = "（Ihre Spende hilft uns, Erdbeer-Snacks zu kaufen und weiter zu programmieren 🍓💻）"
+      donate_button = "11$ spenden →"
+
+  [languages.es]
+    languageName = "Español"
+    weight = 8
+    title = "Juegos OneOne - Parque mágico de IA"
+    [languages.es.params]
+      description = "Un dúo padre-hija creando juegos creativos con IA para niños de 4 a 10 años"
+      donation_title = "Ayúdanos a construir juegos mágicos con IA e imaginación 🎮✨"
+      donation_text = "Somos un dúo padre-hija construyendo juegos creativos con IA. Si te gusta lo que hacemos, considera donar $11 para apoyar nuestro viaje!"
+      donation_note = "（Tu donación nos ayuda a comprar snacks de fresa y seguir programando 🍓💻）"
+      donate_button = "Donar $11 →"
+
+  [languages.pt-BR]
+    languageName = "Português (Brasil)"
+    weight = 9
+    title = "Jogos OneOne - Parque mágico de IA"
+    [languages.pt-BR.params]
+      description = "Um duo pai-filha criando jogos criativos com IA para crianças de 4 a 10 anos"
+      donation_title = "Ajude-nos a construir jogos mágicos com IA e imaginação 🎮✨"
+      donation_text = "Somos um duo pai-filha construindo jogos criativos com IA. Se você gosta do que fazemos, considere doar R$11 para apoiar nossa jornada!"
+      donation_note = "（Sua doação nos ajuda a comprar lanches de morango e continuar programando 🍓💻）"
+      donate_button = "Doar R$11 →"
+
+  [languages.pt-PT]
+    languageName = "Português (Portugal)"
+    weight = 10
+    title = "Jogos OneOne - Parque mágico de IA"
+    [languages.pt-PT.params]
+      description = "Um duo pai-filha a criar jogos criativos com IA para crianças dos 4 aos 10 anos"
+      donation_title = "Ajude-nos a construir jogos mágicos com IA e imaginação 🎮✨"
+      donation_text = "Somos um duo pai-filha a construir jogos criativos com IA. Se gosta do que fazemos, considere doar 11€ para apoiar a nossa jornada!"
+      donation_note = "（A sua doação ajuda-nos a comprar snacks de morango e continuar a programar 🍓💻）"
+      donate_button = "Doar 11€ →"
+
+  [languages.it]
+    languageName = "Italiano"
+    weight = 11
+    title = "Giochi OneOne - Parco giochi magico IA"
+    [languages.it.params]
+      description = "Un duo padre-figlia che crea giochi creativi con l'IA per bambini dai 4 ai 10 anni"
+      donation_title = "Aiutaci a costruire giochi magici con IA e immaginazione 🎮✨"
+      donation_text = "Siamo un duo padre-figlia che costruisce giochi creativi con l'IA. Se ti piace quello che facciamo, considera di donare 11€ per sostenere il nostro viaggio!"
+      donation_note = "（La tua donazione ci aiuta ad acquistare snack alle fragole e continuare a programmare 🍓💻）"
+      donate_button = "Dona 11€ →"
+
+  [languages.nl]
+    languageName = "Nederlands"
+    weight = 12
+    title = "OneOne Spellen - AI Magische Speeltuin"
+    [languages.nl.params]
+      description = "Een vader-dochter duo dat creatieve spellen maakt met AI voor kinderen van 4-10 jaar"
+      donation_title = "Help ons magische spellen te bouwen met AI en verbeelding 🎮✨"
+      donation_text = "Wij zijn een vader-dochter duo dat creatieve spellen bouwt met AI. Als je leuk vindt wat we doen, overweeg dan om €11 te doneren om onze reis te ondersteunen!"
+      donation_note = "（Je donatie helpt ons aardbeien-snacks te kopen en door te gaan met programmeren 🍓💻）"
+      donate_button = "Doneer €11 →"
+
+  [languages.pl]
+    languageName = "Polski"
+    weight = 13
+    title = "Gry OneOne - Magiczny plac zabaw AI"
+    [languages.pl.params]
+      description = "Duet ojciec-córka tworzący kreatywne gry z AI dla dzieci w wieku 4-10 lat"
+      donation_title = "Pomóż nam budować magiczne gry z AI i wyobraźnią 🎮✨"
+      donation_text = "Jesteśmy duetem ojciec-córka budującym kreatywne gry z AI. Jeśli podoba Ci się to, co robimy, rozważ wpłacenie 11 zł na wsparcie naszej podróży!"
+      donation_note = "（Twoja darowizna pomaga nam kupować przekąski truskawkowe i kontynuować programowanie 🍓💻）"
+      donate_button = "Wpłać 11 zł →"
+
+  [languages.sv]
+    languageName = "Svenska"
+    weight = 14
+    title = "OneOne Spel - AI Magisk Lekplats"
+    [languages.sv.params]
+      description = "Ett far-dotter duo som skapar kreativa spel med AI för barn 4-10 år"
+      donation_title = "Hjälp oss bygga magiska spel med AI och fantasi 🎮✨"
+      donation_text = "Vi är ett far-dotter duo som bygger kreativa spel med AI. Om du gillar vad vi gör, överväg att donera 11 kr för att stödja vår resa!"
+      donation_note = "（Din donation hjälper oss att köpa jordgubbs-snacks och fortsätta programmera 🍓💻）"
+      donate_button = "Donera 11 kr →"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

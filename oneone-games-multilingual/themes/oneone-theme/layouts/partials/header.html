@@ -1,0 +1,81 @@
+<header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <h1>🎮 {{ .Site.Title }}</h1>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="/" class="nav-link">Home</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-toggle" onclick="toggleGamesMenu()">
+                        Games <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="nav-menu" id="gamesMenu">
+                        {{ range .Site.Data.games }}
+                        {{ if not .is_coming }}
+                        <a href="{{ .url }}" class="nav-option" target="_blank">
+                            <span class="game-icon">{{ .emoji }}</span>
+                            <div class="game-info">
+                                <div class="game-name">{{ .title }}</div>
+                                <div class="game-desc">{{ .description }}</div>
+                            </div>
+                        </a>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+                
+                <a href="#about" class="nav-link" onclick="scrollToAbout()">About</a>
+            </nav>
+            
+            <div class="language-dropdown">
+                <button class="language-toggle" onclick="toggleLanguageMenu()">
+                    🌐 {{ .Site.Language.LanguageName }}
+                    <span class="dropdown-arrow">▼</span>
+                </button>
+                <div class="language-menu" id="languageMenu">
+                    {{ range .Site.Languages }}
+                    {{ if ne . $.Site.Language }}
+                    <a href="{{ . | absURL }}" class="language-option">{{ .LanguageName }}</a>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+function toggleLanguageMenu() {
+    const menu = document.getElementById('languageMenu');
+    menu.classList.toggle('show');
+}
+
+function toggleGamesMenu() {
+    const menu = document.getElementById('gamesMenu');
+    menu.classList.toggle('show');
+}
+
+function scrollToAbout() {
+    const footer = document.querySelector('.site-footer');
+    if (footer) {
+        footer.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// Close menus when clicking outside
+document.addEventListener('click', function(event) {
+    const languageDropdown = document.querySelector('.language-dropdown');
+    const gamesDropdown = document.querySelector('.nav-dropdown');
+    
+    if (!languageDropdown.contains(event.target)) {
+        document.getElementById('languageMenu').classList.remove('show');
+    }
+    
+    if (!gamesDropdown.contains(event.target)) {
+        document.getElementById('gamesMenu').classList.remove('show');
+    }
+});
+</script> 
