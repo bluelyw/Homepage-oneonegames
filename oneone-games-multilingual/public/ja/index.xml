@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>一一ゲーム - AI魔法遊園地</title>
-    <link>http://localhost:1313/ja/</link>
+    <link>https://oneone.games/ja/</link>
     <description>Recent content on 一一ゲーム - AI魔法遊園地</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <atom:link href="http://localhost:1313/ja/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://oneone.games/ja/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
