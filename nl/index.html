@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-	<meta name="generator" content="Hugo 0.148.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.148.2">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OneOne Spellen - AI Magische Speeltuin</title>
@@ -28,13 +28,60 @@
             </div>
             
             <nav class="main-nav">
-                
                 <a href="/" class="nav-link">Home</a>
                 
-                <a href="/games/" class="nav-link">Games</a>
+                <div class="nav-dropdown">
+                    <button class="nav-toggle" onclick="toggleGamesMenu()">
+                        Games <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="nav-menu" id="gamesMenu">
+                        
+                        
+                        <a href="https://strawberrygame.oneone.games" class="nav-option" target="_blank">
+                            <span class="game-icon">🍓</span>
+                            <div class="game-info">
+                                <div class="game-name">Strawberry Game</div>
+                                <div class="game-desc">Clear levels by picking strawberries, challenge your reaction speed!</div>
+                            </div>
+                        </a>
+                        
+                        
+                        
+                        <a href="https://runninggame.oneone.games" class="nav-option" target="_blank">
+                            <span class="game-icon">🏃‍♂️</span>
+                            <div class="game-info">
+                                <div class="game-name">Running Game</div>
+                                <div class="game-desc">Run through levels, exercise your body and reaction speed!</div>
+                            </div>
+                        </a>
+                        
+                        
+                        
+                        <a href="https://idiomheros.oneone.games/" class="nav-option" target="_blank">
+                            <span class="game-icon">📚</span>
+                            <div class="game-info">
+                                <div class="game-name">Idiom Hero</div>
+                                <div class="game-desc">Idiom level-breaking game, improve your idiom skills!</div>
+                            </div>
+                        </a>
+                        
+                        
+                        
+                        <a href="https://sudokupuzzle.oneone.games" class="nav-option" target="_blank">
+                            <span class="game-icon">🧩</span>
+                            <div class="game-info">
+                                <div class="game-name">Sudoku Puzzle</div>
+                                <div class="game-desc">Sudoku game, exercise logical thinking!</div>
+                            </div>
+                        </a>
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
                 
-                <a href="/about/" class="nav-link">About</a>
-                
+                <a href="#about" class="nav-link" onclick="scrollToAbout()">About</a>
             </nav>
             
             <div class="language-dropdown">
@@ -45,57 +92,57 @@
                 <div class="language-menu" id="languageMenu">
                     
                     
-                    <a href="http://localhost:1313/en" class="language-option">English</a>
+                    <a href="https://oneone.games/en" class="language-option">English</a>
                     
                     
                     
-                    <a href="http://localhost:1313/zh-hans" class="language-option">简体中文</a>
+                    <a href="https://oneone.games/zh-hans" class="language-option">简体中文</a>
                     
                     
                     
-                    <a href="http://localhost:1313/zh-hant" class="language-option">繁體中文</a>
+                    <a href="https://oneone.games/zh-hant" class="language-option">繁體中文</a>
                     
                     
                     
-                    <a href="http://localhost:1313/ja" class="language-option">日本語</a>
+                    <a href="https://oneone.games/ja" class="language-option">日本語</a>
                     
                     
                     
-                    <a href="http://localhost:1313/ko" class="language-option">한국어</a>
+                    <a href="https://oneone.games/ko" class="language-option">한국어</a>
                     
                     
                     
-                    <a href="http://localhost:1313/fr" class="language-option">Français</a>
+                    <a href="https://oneone.games/fr" class="language-option">Français</a>
                     
                     
                     
-                    <a href="http://localhost:1313/de" class="language-option">Deutsch</a>
+                    <a href="https://oneone.games/de" class="language-option">Deutsch</a>
                     
                     
                     
-                    <a href="http://localhost:1313/es" class="language-option">Español</a>
+                    <a href="https://oneone.games/es" class="language-option">Español</a>
                     
                     
                     
-                    <a href="http://localhost:1313/pt-br" class="language-option">Português (Brasil)</a>
+                    <a href="https://oneone.games/pt-br" class="language-option">Português (Brasil)</a>
                     
                     
                     
-                    <a href="http://localhost:1313/pt-pt" class="language-option">Português (Portugal)</a>
+                    <a href="https://oneone.games/pt-pt" class="language-option">Português (Portugal)</a>
                     
                     
                     
-                    <a href="http://localhost:1313/it" class="language-option">Italiano</a>
+                    <a href="https://oneone.games/it" class="language-option">Italiano</a>
                     
                     
                     
                     
                     
-                    <a href="http://localhost:1313/pl" class="language-option">Polski</a>
+                    <a href="https://oneone.games/pl" class="language-option">Polski</a>
                     
                     
                     
-                    <a href="http://localhost:1313/sv" class="language-option">Svenska</a>
+                    <a href="https://oneone.games/sv" class="language-option">Svenska</a>
                     
                     
                 </div>
@@ -110,13 +157,29 @@ function toggleLanguageMenu() {
     menu.classList.toggle('show');
 }
 
+function toggleGamesMenu() {
+    const menu = document.getElementById('gamesMenu');
+    menu.classList.toggle('show');
+}
+
+function scrollToAbout() {
+    const footer = document.querySelector('.site-footer');
+    if (footer) {
+        footer.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
 
 document.addEventListener('click', function(event) {
-    const dropdown = document.querySelector('.language-dropdown');
-    const toggle = document.querySelector('.language-toggle');
+    const languageDropdown = document.querySelector('.language-dropdown');
+    const gamesDropdown = document.querySelector('.nav-dropdown');
     
-    if (!dropdown.contains(event.target)) {
+    if (!languageDropdown.contains(event.target)) {
         document.getElementById('languageMenu').classList.remove('show');
+    }
+    
+    if (!gamesDropdown.contains(event.target)) {
+        document.getElementById('gamesMenu').classList.remove('show');
     }
 });
 </script> 
@@ -126,8 +189,8 @@ document.addEventListener('click', function(event) {
 <div class="hero-section">
     <div class="container">
         <div class="hero-content">
-            <h1 class="hero-title">🎮 Welcome to OneOne Games</h1>
-            <p class="hero-subtitle">Hello! I&#39;m 一一 👧 I&#39;m almost 6 years old and I love playing games! I made these games with my dad using AI magic. Each game is my idea, I tested it, and I decided to launch it! Welcome to my AI Magic Playground! ✨</p>
+            <h1 class="hero-title">🎮 Welcome to Oneone Games</h1>
+            <p class="hero-subtitle">Hello! I'm Oneone 👧 I'm almost 6 years old and I love playing games!<br>I made these games with my dad using AI magic.<br>Each game is my idea, I tested it, and I decided to launch it!<br>Welcome to my AI Magic Playground! ✨<br>All games are free for kids to play!</p>
         </div>
     </div>
 </div>
@@ -137,44 +200,72 @@ document.addEventListener('click', function(event) {
         <h2 class="section-title">🎪 My Game Kingdom</h2>
         <div class="games-grid">
             
+            
+            
+            
             <a href="https://strawberrygame.oneone.games" class="game-card" target="_blank">
                 <span class="game-emoji">🍓</span>
                 <div class="game-title">Strawberry Game</div>
-                <div class="game-description">闯关摘草莓，挑战你的反应力！</div>
+                <div class="game-description">Clear levels by picking strawberries, challenge your reaction speed!</div>
                 
                 
                 <div class="hot-badge">HOT</div>
                 
             </a>
             
+            
+            
             <a href="https://runninggame.oneone.games" class="game-card" target="_blank">
                 <span class="game-emoji">🏃‍♂️</span>
                 <div class="game-title">Running Game</div>
-                <div class="game-description">跑步闯关，锻炼身体和反应力！</div>
+                <div class="game-description">Run through levels, exercise your body and reaction speed!</div>
                 
                 
             </a>
+            
+            
             
             <a href="https://idiomheros.oneone.games/" class="game-card" target="_blank">
                 <span class="game-emoji">📚</span>
                 <div class="game-title">Idiom Hero</div>
-                <div class="game-description">成语闯关游戏，提升成语水平！</div>
+                <div class="game-description">Idiom level-breaking game, improve your idiom skills!</div>
                 
                 <div class="new-badge">NEW</div>
                 
                 
             </a>
             
-            <a href="https://sudokupuzzle.oneone.games.oneone.games" class="game-card" target="_blank">
+            
+            
+            <a href="https://sudokupuzzle.oneone.games" class="game-card" target="_blank">
                 <span class="game-emoji">🧩</span>
                 <div class="game-title">Sudoku Puzzle</div>
-                <div class="game-description">数独游戏，锻炼逻辑思维！</div>
+                <div class="game-description">Sudoku game, exercise logical thinking!</div>
                 
                 <div class="new-badge">NEW</div>
                 
                 
             </a>
             
+            
+            
+            <div class="game-card coming-soon-card">
+                <span class="game-emoji">🎮</span>
+                <div class="game-title">More Games Coming</div>
+                <div class="game-description">More exciting games are under development, please look forward to them!</div>
+                <div class="coming-badge">COMING SOON</div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+<div class="gift-message-section">
+    <div class="container">
+        <div class="gift-content">
+            <p class="gift-title">💝 Oneone&#39;s gift to children around the world 💝</p>
+            <p class="gift-message">An AI magic playground that lets every child grow up happily!</p>
         </div>
     </div>
 </div>
@@ -208,8 +299,23 @@ document.addEventListener('click', function(event) {
     <footer class="site-footer">
     <div class="container">
         <div class="footer-content">
-            <p>💝 一一&#39;s gift to children around the world 💝</p>
-            <p>An AI magic playground that lets every child grow up happily!</p>
+            <div class="footer-section">
+                <h3 class="footer-title">🎮 OneOne Games</h3>
+                <p class="footer-description">Indie Hacker vibe coding project by kid girl, empowered by AI magic ✨</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Built with ❤️ & AI</h4>
+                <div class="tech-stack">
+                    <span class="tech-item">Cursor</span>
+                    <span class="tech-item">GPT-4</span>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <p class="copyright">© 2025 OneOne.Games</p>
+                <p class="footer-note">Free to play, welcome to donate to support the journey 🚀</p>
+            </div>
         </div>
     </div>
 </footer> 
