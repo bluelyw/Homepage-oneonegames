@@ -11,87 +11,44 @@
     <div class="container">
         <h2 class="section-title">🎪 {{ i18n "games_kingdom" }}</h2>
         <div class="games-grid">
-            {{ $games := .Site.Data.games }}
-            {{ if eq .Site.Language.Lang "zh-Hans" }}
-                {{ if .Site.Data.games_zh_Hans }}
-                    {{ $games = .Site.Data.games_zh_Hans }}
-                {{ end }}
-            {{ else if eq .Site.Language.Lang "zh-Hant" }}
-                {{ if .Site.Data.games_zh_Hant }}
-                    {{ $games = .Site.Data.games_zh_Hant }}
-                {{ end }}
-            {{ else if eq .Site.Language.Lang "ja" }}
-                {{ if .Site.Data.games_ja }}
-                    {{ $games = .Site.Data.games_ja }}
-                {{ end }}
-            {{ else if eq .Site.Language.Lang "ko" }}
-                {{ if .Site.Data.games_ko }}
-                    {{ $games = .Site.Data.games_ko }}
-                {{ end }}
-            {{ else if eq .Site.Language.Lang "fr" }}
-                {{ if .Site.Data.games_fr }}
-                    {{ $games = .Site.Data.games_fr }}
-                {{ end }}
-            {{ else if eq .Site.Language.Lang "de" }}
-                {{ if .Site.Data.games_de }}
-                    {{ $games = .Site.Data.games_de }}
-                {{ end }}
-            {{ else if eq .Site.Language.Lang "es" }}
-                {{ if .Site.Data.games_es }}
-                    {{ $games = .Site.Data.games_es }}
-                {{ end }}
-            {{ else if eq .Site.Language.Lang "pt-BR" }}
-                {{ if .Site.Data.games_pt_BR }}
-                    {{ $games = .Site.Data.games_pt_BR }}
-                {{ end }}
-            {{ else if eq .Site.Language.Lang "pt-PT" }}
-                {{ if .Site.Data.games_pt_PT }}
-                    {{ $games = .Site.Data.games_pt_PT }}
-                {{ end }}
-            {{ else if eq .Site.Language.Lang "it" }}
-                {{ if .Site.Data.games_it }}
-                    {{ $games = .Site.Data.games_it }}
-                {{ end }}
-            {{ else if eq .Site.Language.Lang "nl" }}
-                {{ if .Site.Data.games_nl }}
-                    {{ $games = .Site.Data.games_nl }}
-                {{ end }}
-            {{ else if eq .Site.Language.Lang "pl" }}
-                {{ if .Site.Data.games_pl }}
-                    {{ $games = .Site.Data.games_pl }}
-                {{ end }}
-            {{ else if eq .Site.Language.Lang "sv" }}
-                {{ if .Site.Data.games_sv }}
-                    {{ $games = .Site.Data.games_sv }}
-                {{ end }}
-            {{ else if eq .Site.Language.Lang "en" }}
-                {{ if .Site.Data.games_en }}
-                    {{ $games = .Site.Data.games_en }}
-                {{ end }}
-            {{ end }}
-            
-            {{ range $games }}
-            {{ if .is_coming }}
+            <!-- Game 1: Strawberry Game -->
+            <a href="{{ i18n "strawberry_game_url" }}" class="game-card" target="_blank">
+                <span class="game-emoji">{{ i18n "strawberry_game_emoji" }}</span>
+                <div class="game-title">{{ i18n "strawberry_game_title" }}</div>
+                <div class="game-description">{{ i18n "strawberry_game_description" }}</div>
+                <div class="hot-badge">HOT</div>
+            </a>
+
+            <!-- Game 2: Running Game -->
+            <a href="{{ i18n "running_game_url" }}" class="game-card" target="_blank">
+                <span class="game-emoji">{{ i18n "running_game_emoji" }}</span>
+                <div class="game-title">{{ i18n "running_game_title" }}</div>
+                <div class="game-description">{{ i18n "running_game_description" }}</div>
+            </a>
+
+            <!-- Game 3: Idiom Hero -->
+            <a href="{{ i18n "idiom_hero_url" }}" class="game-card" target="_blank">
+                <span class="game-emoji">{{ i18n "idiom_hero_emoji" }}</span>
+                <div class="game-title">{{ i18n "idiom_hero_title" }}</div>
+                <div class="game-description">{{ i18n "idiom_hero_description" }}</div>
+                <div class="new-badge">NEW</div>
+            </a>
+
+            <!-- Game 4: Sudoku Puzzle -->
+            <a href="{{ i18n "sudoku_puzzle_url" }}" class="game-card" target="_blank">
+                <span class="game-emoji">{{ i18n "sudoku_puzzle_emoji" }}</span>
+                <div class="game-title">{{ i18n "sudoku_puzzle_title" }}</div>
+                <div class="game-description">{{ i18n "sudoku_puzzle_description" }}</div>
+                <div class="new-badge">NEW</div>
+            </a>
+
+            <!-- Game 5: More Games Coming -->
             <div class="game-card coming-soon-card">
-                <span class="game-emoji">{{ .emoji }}</span>
-                <div class="game-title">{{ .title }}</div>
-                <div class="game-description">{{ .description }}</div>
+                <span class="game-emoji">{{ i18n "more_games_coming_emoji" }}</span>
+                <div class="game-title">{{ i18n "more_games_coming_title" }}</div>
+                <div class="game-description">{{ i18n "more_games_coming_description" }}</div>
                 <div class="coming-badge">COMING SOON</div>
             </div>
-            {{ else }}
-            <a href="{{ .url }}" class="game-card" target="_blank">
-                <span class="game-emoji">{{ .emoji }}</span>
-                <div class="game-title">{{ .title }}</div>
-                <div class="game-description">{{ .description }}</div>
-                {{ if .is_new }}
-                <div class="new-badge">NEW</div>
-                {{ end }}
-                {{ if .is_hot }}
-                <div class="hot-badge">HOT</div>
-                {{ end }}
-            </a>
-            {{ end }}
-            {{ end }}
         </div>
     </div>
 </div>

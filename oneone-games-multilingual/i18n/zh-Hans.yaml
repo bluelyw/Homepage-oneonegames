@@ -2,4 +2,45 @@ welcome_title: "欢迎来到Oneone游戏"
 welcome_subtitle: "你好！我是「Oneone」👧 我今年不到6岁，最喜欢玩游戏啦！<br>我和爸爸一起用AI魔法制作了这些游戏，<br>每个游戏都是我想出来的，我测试过的，我决定上线的！<br>欢迎来到我的AI魔法游乐园！✨<br>所有游戏都是免费为小朋友们准备的！"
 games_kingdom: "我的游戏王国"
 footer_gift: "Oneone送给全世界小朋友的礼物"
-footer_message: "用AI魔法打造的游乐园，让每个孩子都能快乐成长！" 
+footer_message: "用AI魔法打造的游乐园，让每个孩子都能快乐成长！"
+
+# Game 1: Strawberry Game
+strawberry_game_title: "草莓游戏"
+strawberry_game_description: "闯关摘草莓，挑战你的反应力！"
+strawberry_game_emoji: "🍓"
+strawberry_game_url: "https://strawberrygame.oneone.games"
+strawberry_game_is_hot: "true"
+strawberry_game_is_new: "false"
+
+# Game 2: Running Game
+running_game_title: "跑步游戏"
+running_game_description: "跑步闯关，锻炼身体和反应力！"
+running_game_emoji: "🏃‍♂️"
+running_game_url: "https://runninggame.oneone.games"
+running_game_is_hot: "false"
+running_game_is_new: "false"
+
+# Game 3: Idiom Hero
+idiom_hero_title: "成语英雄"
+idiom_hero_description: "成语闯关游戏，提升成语水平！"
+idiom_hero_emoji: "📚"
+idiom_hero_url: "https://idiomheros.oneone.games/"
+idiom_hero_is_hot: "false"
+idiom_hero_is_new: "true"
+
+# Game 4: Sudoku Puzzle
+sudoku_puzzle_title: "数独游戏"
+sudoku_puzzle_description: "数独游戏，锻炼逻辑思维！"
+sudoku_puzzle_emoji: "🧩"
+sudoku_puzzle_url: "https://sudokupuzzle.oneone.games"
+sudoku_puzzle_is_hot: "false"
+sudoku_puzzle_is_new: "true"
+
+# Game 5: More Games Coming
+more_games_coming_title: "更多游戏即将到来"
+more_games_coming_description: "更多精彩游戏正在开发中，敬请期待！"
+more_games_coming_emoji: "🎮"
+more_games_coming_url: "#"
+more_games_coming_is_hot: "false"
+more_games_coming_is_new: "false"
+more_games_coming_is_coming: "true" 
