@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 일일게임 - AI 마법 놀이터</title>
-    <link>https://oneone.games/ko/tags/</link>
+    <link>http://localhost:1313/ko/tags/</link>
     <description>Recent content in Tags on 일일게임 - AI 마법 놀이터</description>
     <generator>Hugo</generator>
     <language>ko</language>
-    <atom:link href="https://oneone.games/ko/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ko/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

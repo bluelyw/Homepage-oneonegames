@@ -55,9 +55,9 @@ theme = 'oneone-theme'
     [languages.zh-Hant.params]
       description = "父女搭檔用AI為4-10歲兒童打造創意遊戲"
       donation_title = "幫助我們用AI和想像力打造魔法遊戲 🎮✨"
-      donation_text = "我們是一對父女搭檔，用AI製作創意遊戲。如果你喜歡我們的作品，請考慮捐贈11美元支持我們的旅程！"
-      donation_note = "（你的捐贈幫助我們買草莓零食和繼續編程 🍓💻）"
-      donate_button = "捐贈 $11 →"
+      donation_text = "我們是一對父女搭檔，用AI製作創意遊戲。如果你喜歡我們的作品，請考慮為oneone買一個虛擬🎂來支持我們的旅程 — 只需$9.90！"
+      donation_note = "（這是一個象徵性的蛋糕！你不會收到真實的蛋糕，但它幫助我們繼續編程 🧁💻）"
+      donate_button = "買一個🎂 $9.90 →"
 
   [languages.ja]
     languageName = "日本語"
@@ -66,9 +66,9 @@ theme = 'oneone-theme'
     [languages.ja.params]
       description = "父娘デュオがAIで4-10歳の子供向けクリエイティブゲームを作成"
       donation_title = "AIと想像力で魔法のゲームを作るのを手伝ってください 🎮✨"
-      donation_text = "私たちは父娘デュオで、AIを使ってクリエイティブなゲームを作っています。私たちの作品が気に入ったら、11ドルの寄付を検討してください！"
-      donation_note = "（あなたの寄付は私たちがイチゴのおやつを買い、コーディングを続けるのを助けます 🍓💻）"
-      donate_button = "11ドル寄付 →"
+      donation_text = "私たちは父娘デュオで、AIを使ってクリエイティブなゲームを作っています。私たちの作品が気に入ったら、oneoneのために仮想🎂を買って私たちの旅をサポートすることを検討してください — たった$9.90！"
+      donation_note = "（これは象徴的なケーキです！実際のケーキは届きませんが、私たちがコーディングを続けるのに役立ちます 🧁💻）"
+      donate_button = "🎂を買う $9.90 →"
 
   [languages.ko]
     languageName = "한국어"
@@ -77,9 +77,9 @@ theme = 'oneone-theme'
     [languages.ko.params]
       description = "부녀 듀오가 AI로 4-10세 어린이를 위한 창의적 게임 제작"
       donation_title = "AI와 상상력으로 마법 같은 게임을 만드는 것을 도와주세요 🎮✨"
-      donation_text = "우리는 부녀 듀오로 AI를 사용해 창의적인 게임을 만들고 있습니다. 우리의 작품이 마음에 드시면 11달러 기부를 고려해 주세요!"
-      donation_note = "（당신의 기부는 우리가 딸기 간식을 사고 코딩을 계속하는 데 도움이 됩니다 🍓💻）"
-      donate_button = "11달러 기부 →"
+      donation_text = "우리는 부녀 듀오로 AI를 사용해 창의적인 게임을 만들고 있습니다. 우리의 작품이 마음에 드시면 oneone을 위한 가상🎂을 사서 우리의 여정을 지원하는 것을 고려해 주세요 — 단 $9.90!"
+      donation_note = "（이것은 상징적인 케이크입니다! 실제 케이크는 받지 못하지만 우리가 코딩을 계속하는 데 도움이 됩니다 🧁💻）"
+      donate_button = "🎂 사기 $9.90 →"
 
   [languages.fr]
     languageName = "Français"
@@ -88,9 +88,9 @@ theme = 'oneone-theme'
     [languages.fr.params]
       description = "Un duo père-fille créant des jeux créatifs avec l'IA pour les enfants de 4 à 10 ans"
       donation_title = "Aidez-nous à construire des jeux magiques avec l'IA et l'imagination 🎮✨"
-      donation_text = "Nous sommes un duo père-fille qui construit des jeux créatifs avec l'IA. Si vous aimez ce que nous faisons, envisagez de faire un don de 11$ pour soutenir notre voyage !"
-      donation_note = "（Votre don nous aide à acheter des collations aux fraises et à continuer à coder 🍓💻）"
-      donate_button = "Faire un don de 11$ →"
+      donation_text = "Nous sommes un duo père-fille qui construit des jeux créatifs avec l'IA. Si vous aimez ce que nous faisons, envisagez d'acheter un 🎂 virtuel pour oneone pour soutenir notre voyage — seulement 9,90$ !"
+      donation_note = "（C'est un gâteau symbolique ! Vous ne recevrez pas un vrai gâteau, mais cela nous aide à continuer à coder 🧁💻）"
+      donate_button = "Acheter un 🎂 9,90$ →"
 
   [languages.de]
     languageName = "Deutsch"
@@ -99,9 +99,9 @@ theme = 'oneone-theme'
     [languages.de.params]
       description = "Ein Vater-Tochter-Duo, das kreative Spiele mit KI für Kinder im Alter von 4-10 Jahren entwickelt"
       donation_title = "Helfen Sie uns, magische Spiele mit KI und Fantasie zu entwickeln 🎮✨"
-      donation_text = "Wir sind ein Vater-Tochter-Duo, das kreative Spiele mit KI entwickelt. Wenn Ihnen gefällt, was wir tun, erwägen Sie eine Spende von 11$ zur Unterstützung unserer Reise!"
-      donation_note = "（Ihre Spende hilft uns, Erdbeer-Snacks zu kaufen und weiter zu programmieren 🍓💻）"
-      donate_button = "11$ spenden →"
+      donation_text = "Wir sind ein Vater-Tochter-Duo, das kreative Spiele mit KI entwickelt. Wenn Ihnen gefällt, was wir tun, erwägen Sie den Kauf eines virtuellen 🎂 für oneone zur Unterstützung unserer Reise — nur 9,90$!"
+      donation_note = "（Es ist ein symbolischer Kuchen! Sie bekommen keinen echten Kuchen, aber es hilft uns beim Weitermachen mit dem Programmieren 🧁💻）"
+      donate_button = "🎂 kaufen 9,90$ →"
 
   [languages.es]
     languageName = "Español"
@@ -110,9 +110,9 @@ theme = 'oneone-theme'
     [languages.es.params]
       description = "Un dúo padre-hija creando juegos creativos con IA para niños de 4 a 10 años"
       donation_title = "Ayúdanos a construir juegos mágicos con IA e imaginación 🎮✨"
-      donation_text = "Somos un dúo padre-hija construyendo juegos creativos con IA. Si te gusta lo que hacemos, considera donar $11 para apoyar nuestro viaje!"
-      donation_note = "（Tu donación nos ayuda a comprar snacks de fresa y seguir programando 🍓💻）"
-      donate_button = "Donar $11 →"
+      donation_text = "Somos un dúo padre-hija construyendo juegos creativos con IA. Si te gusta lo que hacemos, considera comprar un 🎂 virtual para oneone para apoyar nuestro viaje — ¡solo $9.90!"
+      donation_note = "（¡Es un pastel simbólico! No recibirás un pastel real, pero nos ayuda a seguir programando 🧁💻）"
+      donate_button = "Comprar un 🎂 $9.90 →"
 
   [languages.pt-BR]
     languageName = "Português (Brasil)"
@@ -121,9 +121,9 @@ theme = 'oneone-theme'
     [languages.pt-BR.params]
       description = "Um duo pai-filha criando jogos criativos com IA para crianças de 4 a 10 anos"
       donation_title = "Ajude-nos a construir jogos mágicos com IA e imaginação 🎮✨"
-      donation_text = "Somos um duo pai-filha construindo jogos criativos com IA. Se você gosta do que fazemos, considere doar R$11 para apoiar nossa jornada!"
-      donation_note = "（Sua doação nos ajuda a comprar lanches de morango e continuar programando 🍓💻）"
-      donate_button = "Doar R$11 →"
+      donation_text = "Somos um duo pai-filha construindo jogos criativos com IA. Se você gosta do que fazemos, considere comprar um 🎂 virtual para oneone para apoiar nossa jornada — apenas R$9,90!"
+      donation_note = "（É um bolo simbólico! Você não receberá um bolo real, mas nos ajuda a continuar programando 🧁💻）"
+      donate_button = "Comprar um 🎂 R$9,90 →"
 
   [languages.pt-PT]
     languageName = "Português (Portugal)"
@@ -132,9 +132,9 @@ theme = 'oneone-theme'
     [languages.pt-PT.params]
       description = "Um duo pai-filha a criar jogos criativos com IA para crianças dos 4 aos 10 anos"
       donation_title = "Ajude-nos a construir jogos mágicos com IA e imaginação 🎮✨"
-      donation_text = "Somos um duo pai-filha a construir jogos criativos com IA. Se gosta do que fazemos, considere doar 11€ para apoiar a nossa jornada!"
-      donation_note = "（A sua doação ajuda-nos a comprar snacks de morango e continuar a programar 🍓💻）"
-      donate_button = "Doar 11€ →"
+      donation_text = "Somos um duo pai-filha a construir jogos criativos com IA. Se gosta do que fazemos, considere comprar um 🎂 virtual para oneone para apoiar a nossa jornada — apenas 9,90€!"
+      donation_note = "（É um bolo simbólico! Não receberá um bolo real, mas ajuda-nos a continuar a programar 🧁💻）"
+      donate_button = "Comprar um 🎂 9,90€ →"
 
   [languages.it]
     languageName = "Italiano"
@@ -143,9 +143,9 @@ theme = 'oneone-theme'
     [languages.it.params]
       description = "Un duo padre-figlia che crea giochi creativi con l'IA per bambini dai 4 ai 10 anni"
       donation_title = "Aiutaci a costruire giochi magici con IA e immaginazione 🎮✨"
-      donation_text = "Siamo un duo padre-figlia che costruisce giochi creativi con l'IA. Se ti piace quello che facciamo, considera di donare 11€ per sostenere il nostro viaggio!"
-      donation_note = "（La tua donazione ci aiuta ad acquistare snack alle fragole e continuare a programmare 🍓💻）"
-      donate_button = "Dona 11€ →"
+      donation_text = "Siamo un duo padre-figlia che costruisce giochi creativi con l'IA. Se ti piace quello che facciamo, considera di comprare una 🎂 virtuale per oneone per sostenere il nostro viaggio — solo 9,90€!"
+      donation_note = "（È una torta simbolica! Non riceverai una torta reale, ma ci aiuta a continuare a programmare 🧁💻）"
+      donate_button = "Compra una 🎂 9,90€ →"
 
   [languages.nl]
     languageName = "Nederlands"
@@ -154,9 +154,9 @@ theme = 'oneone-theme'
     [languages.nl.params]
       description = "Een vader-dochter duo dat creatieve spellen maakt met AI voor kinderen van 4-10 jaar"
       donation_title = "Help ons magische spellen te bouwen met AI en verbeelding 🎮✨"
-      donation_text = "Wij zijn een vader-dochter duo dat creatieve spellen bouwt met AI. Als je leuk vindt wat we doen, overweeg dan om €11 te doneren om onze reis te ondersteunen!"
-      donation_note = "（Je donatie helpt ons aardbeien-snacks te kopen en door te gaan met programmeren 🍓💻）"
-      donate_button = "Doneer €11 →"
+      donation_text = "Wij zijn een vader-dochter duo dat creatieve spellen bouwt met AI. Als je leuk vindt wat we doen, overweeg dan om een virtuele 🎂 voor oneone te kopen om onze reis te ondersteunen — slechts €9,90!"
+      donation_note = "（Het is een symbolische taart! Je krijgt geen echte taart, maar het helpt ons om door te gaan met programmeren 🧁💻）"
+      donate_button = "Koop een 🎂 €9,90 →"
 
   [languages.pl]
     languageName = "Polski"
@@ -165,9 +165,9 @@ theme = 'oneone-theme'
     [languages.pl.params]
       description = "Duet ojciec-córka tworzący kreatywne gry z AI dla dzieci w wieku 4-10 lat"
       donation_title = "Pomóż nam budować magiczne gry z AI i wyobraźnią 🎮✨"
-      donation_text = "Jesteśmy duetem ojciec-córka budującym kreatywne gry z AI. Jeśli podoba Ci się to, co robimy, rozważ wpłacenie 11 zł na wsparcie naszej podróży!"
-      donation_note = "（Twoja darowizna pomaga nam kupować przekąski truskawkowe i kontynuować programowanie 🍓💻）"
-      donate_button = "Wpłać 11 zł →"
+      donation_text = "Jesteśmy duetem ojciec-córka budującym kreatywne gry z AI. Jeśli podoba Ci się to, co robimy, rozważ kupienie wirtualnego 🎂 dla oneone, aby wesprzeć naszą podróż — tylko 9,90 zł!"
+      donation_note = "（To symboliczne ciasto! Nie otrzymasz prawdziwego ciasta, ale pomaga nam kontynuować programowanie 🧁💻）"
+      donate_button = "Kup 🎂 9,90 zł →"
 
   [languages.sv]
     languageName = "Svenska"
@@ -176,9 +176,9 @@ theme = 'oneone-theme'
     [languages.sv.params]
       description = "Ett far-dotter duo som skapar kreativa spel med AI för barn 4-10 år"
       donation_title = "Hjälp oss bygga magiska spel med AI och fantasi 🎮✨"
-      donation_text = "Vi är ett far-dotter duo som bygger kreativa spel med AI. Om du gillar vad vi gör, överväg att donera 11 kr för att stödja vår resa!"
-      donation_note = "（Din donation hjälper oss att köpa jordgubbs-snacks och fortsätta programmera 🍓💻）"
-      donate_button = "Donera 11 kr →"
+      donation_text = "Vi är ett far-dotter duo som bygger kreativa spel med AI. Om du gillar vad vi gör, överväg att köpa en virtuell 🎂 för oneone för att stödja vår resa — bara 9,90 kr!"
+      donation_note = "（Det är en symbolisk tårta! Du får ingen riktig tårta, men det hjälper oss att fortsätta programmera 🧁💻）"
+      donate_button = "Köp en 🎂 9,90 kr →"
 
 [markup]
   [markup.goldmark]
