@@ -33,9 +33,9 @@ theme = 'oneone-theme'
     [languages.en.params]
       description = "A dad-daughter duo building creative games with AI for children aged 4-10"
       donation_title = "Help us build magical games with AI & imagination 🎮✨"
-      donation_text = "We're a dad-daughter duo building creative games with AI. If you like what we're doing, consider donating $11 to support the journey!"
-      donation_note = "(Your donation helps us buy strawberry snacks and keep coding 🍓💻)"
-      donate_button = "Donate $11 →"
+      donation_text = "We're a dad-daughter duo building creative games with AI. If you like what we're doing, consider buying a virtual 🎂 for oneone to support the journey — just $9.90!"
+      donation_note = "(It's a symbolic cake! You won't get a real one, but it helps us keep coding 🧁💻)"
+      donate_button = "Buy a 🎂 $9.90 →"
 
   [languages.zh-Hans]
     languageName = "简体中文"
@@ -44,9 +44,9 @@ theme = 'oneone-theme'
     [languages.zh-Hans.params]
       description = "父女搭档用AI为4-10岁儿童打造创意游戏"
       donation_title = "帮助我们用AI和想象力打造魔法游戏 🎮✨"
-      donation_text = "我们是一对父女搭档，用AI制作创意游戏。如果你喜欢我们的作品，请考虑捐赠11美元支持我们的旅程！"
-      donation_note = "（你的捐赠帮助我们买草莓零食和继续编程 🍓💻）"
-      donate_button = "捐赠 $11 →"
+      donation_text = "我们是一对父女搭档，用AI制作创意游戏。如果你喜欢我们的作品，请考虑为oneone买一个虚拟🎂来支持我们的旅程 — 只需$9.90！"
+      donation_note = "（这是一个象征性的蛋糕！你不会收到真实的蛋糕，但它帮助我们继续编程 🧁💻）"
+      donate_button = "买一个🎂 $9.90 →"
 
   [languages.zh-Hant]
     languageName = "繁體中文"
