@@ -1,7 +1,7 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
+
   <!-- 主页 -->
   <url>
     <loc>{{ .Site.BaseURL }}</loc>
@@ -51,21 +51,6 @@
     <priority>0.8</priority>
   </url>
   {{ end }}
-
-  <!-- 分类和标签页面 -->
-  <url>
-    <loc>{{ .Site.BaseURL }}categories/</loc>
-    <lastmod>{{ now.Format "2006-01-02" }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>{{ .Site.BaseURL }}tags/</loc>
-    <lastmod>{{ now.Format "2006-01-02" }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
 
   <!-- 感谢页面 -->
   <url>
