@@ -1,221 +1,195 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  
   <url>
-    <loc>https://oneone.games/es/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://oneone.games/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://oneone.games/zh-hans/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://oneone.games/zh-hant/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://oneone.games/ja/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://oneone.games/ko/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://oneone.games/fr/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://oneone.games/de/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://oneone.games/pt-br/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-pt"
-                href="https://oneone.games/pt-pt/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://oneone.games/it/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://oneone.games/nl/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://oneone.games/pl/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="sv"
-                href="https://oneone.games/sv/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://oneone.games/es/categories/"
-                />
-  </url><url>
-    <loc>https://oneone.games/es/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://oneone.games/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://oneone.games/zh-hans/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://oneone.games/zh-hant/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://oneone.games/ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://oneone.games/ko/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://oneone.games/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://oneone.games/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://oneone.games/pt-br/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-pt"
-                href="https://oneone.games/pt-pt/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://oneone.games/it/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://oneone.games/nl/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://oneone.games/pl/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="sv"
-                href="https://oneone.games/sv/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://oneone.games/es/"
-                />
-  </url><url>
-    <loc>https://oneone.games/es/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://oneone.games/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hans"
-                href="https://oneone.games/zh-hans/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://oneone.games/zh-hant/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://oneone.games/ja/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://oneone.games/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://oneone.games/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://oneone.games/de/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://oneone.games/pt-br/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-pt"
-                href="https://oneone.games/pt-pt/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://oneone.games/it/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://oneone.games/nl/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://oneone.games/pl/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="sv"
-                href="https://oneone.games/sv/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://oneone.games/es/tags/"
-                />
+    <loc>https://oneone.games/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/en/"/>
+    
+    <xhtml:link rel="alternate" hreflang="zh-hans" href="https://oneone.games/zh-hans/"/>
+    
+    <xhtml:link rel="alternate" hreflang="zh-hant" href="https://oneone.games/zh-hant/"/>
+    
+    <xhtml:link rel="alternate" hreflang="ja" href="https://oneone.games/ja/"/>
+    
+    <xhtml:link rel="alternate" hreflang="ko" href="https://oneone.games/ko/"/>
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://oneone.games/fr/"/>
+    
+    <xhtml:link rel="alternate" hreflang="de" href="https://oneone.games/de/"/>
+    
+    <xhtml:link rel="alternate" hreflang="es" href="https://oneone.games/es/"/>
+    
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://oneone.games/pt-br/"/>
+    
+    <xhtml:link rel="alternate" hreflang="pt-pt" href="https://oneone.games/pt-pt/"/>
+    
+    <xhtml:link rel="alternate" hreflang="it" href="https://oneone.games/it/"/>
+    
+    <xhtml:link rel="alternate" hreflang="nl" href="https://oneone.games/nl/"/>
+    
+    <xhtml:link rel="alternate" hreflang="pl" href="https://oneone.games/pl/"/>
+    
+    <xhtml:link rel="alternate" hreflang="sv" href="https://oneone.games/sv/"/>
+    
   </url>
+
+  
+  <url>
+    <loc>https://strawberrygame.oneone.games/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://runninggame.oneone.games/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://idiomheros.oneone.games/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://sudokupuzzle.oneone.games/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  
+  
+  <url>
+    <loc>https://oneone.games/en/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://oneone.games/zh-hans/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://oneone.games/zh-hant/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://oneone.games/ja/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://oneone.games/ko/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://oneone.games/fr/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://oneone.games/de/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://oneone.games/es/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://oneone.games/pt-br/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://oneone.games/pt-pt/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://oneone.games/it/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://oneone.games/nl/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://oneone.games/pl/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://oneone.games/sv/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>https://oneone.games/categories/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://oneone.games/tags/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://oneone.games/thankyou.html</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
