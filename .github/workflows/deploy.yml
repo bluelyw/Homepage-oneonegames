@@ -43,10 +43,14 @@ jobs:
           cd oneone-games-multilingual
           hugo --minify
       
+      - name: Copy files to root
+        run: |
+          cp -r oneone-games-multilingual/public/* .
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./oneone-games-multilingual/public
+          path: .
 
   deploy:
     environment:
