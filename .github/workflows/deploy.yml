@@ -41,7 +41,7 @@ jobs:
       - name: Build with Hugo
         run: |
           cd oneone-games-multilingual
-          hugo --minify
+          hugo --minify=false
       
       - name: Copy files to root
         run: |
