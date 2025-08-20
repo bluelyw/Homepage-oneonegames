@@ -43,9 +43,16 @@ jobs:
           cd oneone-games-multilingual
           hugo --minify=false
       
-      - name: Copy files to root
+      - name: Copy Hugo build files
         run: |
           cp -r oneone-games-multilingual/public/* .
+      
+      - name: Restore manual sitemap files
+        run: |
+          # 确保手动创建的sitemap文件不被覆盖
+          git checkout HEAD -- sitemap.xml
+          git checkout HEAD -- */sitemap.xml
+          git checkout HEAD -- *-sitemap.xml
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

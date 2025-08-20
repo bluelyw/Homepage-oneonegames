@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'OneOne Games - AI Magic Playground'
 theme = 'oneone-theme'
 
+# 禁用Hugo自动生成sitemap
+disableKinds = ["sitemap", "sitemapindex"]
+
 [params]
   description = "A dad-daughter duo building creative games with AI for children aged 4-10"
   author = "一一 & Dad"
