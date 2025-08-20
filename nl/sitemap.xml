@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://oneone.games/'$lang'/</loc>
+    <loc>https://oneone.games/nl/</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>https://oneone.games/'$lang'/thankyou.html</loc>
+    <loc>https://oneone.games/nl/thankyou.html</loc>
     <lastmod>2025-01-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
