@@ -60,6 +60,12 @@ jobs:
         run: |
           cp -r oneone-games-multilingual/public/* .
       
+      - name: Verify main sitemap
+        run: |
+          echo "Checking main sitemap content:"
+          head -5 sitemap.xml
+          echo "Main sitemap should contain <sitemapindex>"
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
