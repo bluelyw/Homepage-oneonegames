@@ -43,33 +43,31 @@ jobs:
           cd oneone-games-multilingual
           hugo --minify=false
       
-      - name: Copy Hugo build files (excluding sitemaps)
+      - name: Prepare deployment directory
         run: |
+          # 创建部署目录
+          mkdir -p deploy
           # 复制Hugo构建的文件，但排除sitemap文件
           cd oneone-games-multilingual/public
-          find . -type f ! -name "sitemap.xml" -exec cp --parents {} ../.. \;
+          find . -type f ! -name "sitemap.xml" -exec cp --parents {} ../../deploy \;
       
       - name: Copy manual sitemap files
         run: |
-          # 确保手动创建的sitemap文件被正确复制
-          cp sitemap.xml oneone-games-multilingual/public/ || true
-          cp */sitemap.xml oneone-games-multilingual/public/ || true
-          cp *-sitemap.xml oneone-games-multilingual/public/ || true
-      
-      - name: Copy final files to root
-        run: |
-          cp -r oneone-games-multilingual/public/* .
+          # 复制手动创建的sitemap文件到部署目录
+          cp sitemap.xml deploy/ || true
+          cp */sitemap.xml deploy/ || true
+          cp *-sitemap.xml deploy/ || true
       
       - name: Verify main sitemap
         run: |
           echo "Checking main sitemap content:"
-          head -5 sitemap.xml
+          head -5 deploy/sitemap.xml
           echo "Main sitemap should contain <sitemapindex>"
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: deploy
 
   deploy:
     environment:
