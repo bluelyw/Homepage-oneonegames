@@ -13,9 +13,11 @@
 
 ## 技术栈
 
-- 纯HTML + CSS + JavaScript
-- 响应式设计，支持手机和平板
-- 无框架依赖，轻量级
+- **静态网站生成器**：Hugo
+- **主题**：自定义oneone-theme
+- **多语言支持**：14种语言
+- **部署平台**：GitHub Pages
+- **响应式设计**：支持手机和平板
 
 ## 游戏列表
 
@@ -37,6 +39,88 @@
 ## 关于作者
 
 一一是一位不到6岁的小女孩，她喜欢玩游戏，用AI工具打造了自己的游戏平台。每个游戏都是她亲自测试和决定上线的，这是她送给全世界小朋友的礼物！
+
+---
+
+## 🚀 发布部署指南
+
+### 重要说明
+⚠️ **本项目使用Hugo静态网站生成器，不要直接修改根目录的文件！**
+
+### 正确的修改流程
+
+#### 1. 修改网站内容
+- **HTML模板**：修改 `oneone-games-multilingual/themes/oneone-theme/layouts/` 下的模板文件
+- **CSS样式**：修改 `oneone-games-multilingual/themes/oneone-theme/assets/css/main.css`
+- **JavaScript**：修改 `oneone-games-multilingual/themes/oneone-theme/assets/js/main.js`
+- **多语言文本**：修改 `oneone-games-multilingual/i18n/` 下的语言文件
+- **静态资源**：将图片等文件放在 `oneone-games-multilingual/static/` 目录
+
+#### 2. 重新构建网站
+```bash
+cd oneone-games-multilingual
+hugo
+```
+
+#### 3. 复制构建结果到根目录
+```bash
+cp -r public/* ../
+```
+
+#### 4. 提交并推送更改
+```bash
+cd ..
+git add .
+git commit -m "你的提交信息"
+git push origin main
+```
+
+### 常见修改场景
+
+#### 修改Logo
+1. 将logo图片放入 `oneone-games-multilingual/static/images/`
+2. 修改 `oneone-games-multilingual/themes/oneone-theme/layouts/partials/header.html`
+3. 修改 `oneone-games-multilingual/themes/oneone-theme/layouts/partials/footer.html`
+4. 更新 `oneone-games-multilingual/themes/oneone-theme/assets/css/main.css` 中的样式
+5. 执行构建和部署流程
+
+#### 修改样式
+1. 编辑 `oneone-games-multilingual/themes/oneone-theme/assets/css/main.css`
+2. 执行构建和部署流程
+
+#### 修改多语言文本
+1. 编辑 `oneone-games-multilingual/i18n/` 下的语言文件
+2. 执行构建和部署流程
+
+### 本地测试
+```bash
+cd oneone-games-multilingual
+hugo server
+```
+然后访问 `http://localhost:1313`
+
+### 部署验证
+- 推送代码后，GitHub Actions会自动构建和部署
+- 等待几分钟后访问 https://oneone.games 查看效果
+- 如果缓存问题，可以强制刷新浏览器（Ctrl+F5）
+
+### 故障排除
+
+#### 问题：修改后线上没有更新
+- 检查是否修改了正确的Hugo主题文件
+- 确认执行了 `hugo` 构建命令
+- 确认复制了 `public/*` 到根目录
+- 检查GitHub Actions是否成功运行
+
+#### 问题：样式没有生效
+- 检查CSS文件是否正确更新
+- 清除浏览器缓存
+- 确认Hugo构建的CSS文件包含最新样式
+
+#### 问题：图片无法显示
+- 确认图片文件在 `oneone-games-multilingual/static/` 目录中
+- 检查图片路径是否正确
+- 确认图片文件已复制到根目录
 
 ---
 
