@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.2] - 2025-01-XX
+
+### Added
+- 新增Premium Game Kingdom区域，包含大鱼吃小鱼游戏
+- 实现游戏卡片尺寸统一（280px高度）
+- 添加游戏链接新页面打开功能（target="_blank"）
+- 优化Header下拉菜单交互体验
+
+### Changed
+- 调整Header菜单结构，将Games拆分为Free Games和Premium Games两个下拉菜单
+- 移除Header中的Home链接
+- 游戏跳转逻辑改为新页面打开
+- Footer联系信息更新为邮箱地址（oneone.games111@gmail.com）
+
+### Fixed
+- 修复Header下拉菜单交互问题，防止鼠标移动时菜单消失
+- 修复游戏卡片宽度不一致问题
+- 优化下拉菜单悬停区域，提升用户体验
+
+### Technical
+- 添加下拉菜单悬停区域CSS伪元素
+- 实现双重悬停触发机制
+- 优化下拉菜单内边距和交互逻辑
+
 ## [3.0.1] - 2025-08-26
 
 ### Added

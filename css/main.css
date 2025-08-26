@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+/* 平滑滚动 */
+html {
+    scroll-behavior: smooth;
+}
+
 /* 字体加载优化 - 使用更好的后备字体策略 */
 
 /* 基础样式 */
@@ -92,6 +97,9 @@ body {
     transform: translateX(-50%);
     margin-top: 0.5rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    /* 添加悬停区域，防止菜单消失 */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .dropdown-content::before {
@@ -108,6 +116,22 @@ body {
 }
 
 .nav-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 添加悬停区域，防止下拉菜单消失 */
+.dropdown-content::after {
+    content: '';
+    position: absolute;
+    top: -0.5rem;
+    left: 0;
+    right: 0;
+    height: 0.5rem;
+    background: transparent;
+}
+
+.nav-dropdown:hover .dropdown-content,
+.dropdown-content:hover {
     display: block;
 }
 
@@ -206,6 +230,12 @@ body {
     transition: all 0.3s ease;
     position: relative;
     border: 2px solid transparent;
+    /* 确保所有卡片高度一致 */
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .game-card:hover {
@@ -224,6 +254,30 @@ body {
     transform: none;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-color: #dee2e6;
+}
+
+/* Premium Game Kingdom 样式 */
+.premium-section {
+    margin-top: 4rem;
+}
+
+.premium-section .section-title {
+    color: #ff6b9d;
+}
+
+.premium-card {
+    border-color: #ff6b9d;
+    background: linear-gradient(135deg, #fff, #fff5f8);
+}
+
+.premium-card:hover {
+    border-color: #ff6b9d;
+    box-shadow: 0 12px 40px rgba(255, 107, 157, 0.2);
+}
+
+.premium-coming-soon {
+    border-color: #ff6b9d;
+    background: linear-gradient(135deg, #fff5f8, #ffe6f2);
 }
 
 .game-badge {

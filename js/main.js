@@ -8,7 +8,34 @@ document.addEventListener('DOMContentLoaded', function() {
     initDonationTracking();
     initScrollTracking();
     initLanguageSelector();
+    initSmoothScroll();
 });
+
+// 平滑滚动功能
+function initSmoothScroll() {
+    const aboutLink = document.querySelector('a[href="#footer"]');
+    
+    if (aboutLink) {
+        aboutLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            const footer = document.getElementById('footer');
+            
+            if (footer) {
+                footer.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                
+                // 跟踪点击事件
+                gtag('event', 'about_click', {
+                    'event_category': 'navigation',
+                    'event_label': 'About Footer',
+                    'value': 1
+                });
+            }
+        });
+    }
+}
 
 // Google Analytics 事件跟踪
 function initAnalytics() {
