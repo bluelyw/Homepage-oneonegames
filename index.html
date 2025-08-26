@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OneOne Games - AI Magic Playground</title>
     
+    <!-- 字体预加载 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERJQSXTBGE"></script>
     <script>
@@ -19,7 +23,7 @@
         });
     </script>
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts - 使用display=swap快速显示 -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Bubblegum+Sans&family=Chewy&family=Kalam:wght@300;400&family=Indie+Flower&display=swap" rel="stylesheet">
     
     <!-- 引入外部CSS文件 -->
@@ -34,8 +38,22 @@
                 <span class="logo-text">OneOne Games - AI Magic Playground</span>
             </div>
             <div class="nav-menu">
-                <a href="#" class="nav-link">Home</a>
-                <a href="#" class="nav-link">Games ▼</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link">Free Games ▼</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-link">Strawberry Game</a>
+                        <a href="#" class="dropdown-link">Running Game</a>
+                        <a href="#" class="dropdown-link">Idiom Hero</a>
+                        <a href="#" class="dropdown-link">Sudoku Puzzle</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link">Premium Games ▼</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-link">Coming Soon</a>
+                        <a href="#" class="dropdown-link">More Games</a>
+                    </div>
+                </div>
                 <a href="#" class="nav-link">About</a>
                 <button class="language-btn">
                     <span class="globe-icon">🌐</span>

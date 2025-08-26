@@ -1,3 +1,5 @@
+// 字体加载优化 - 使用更简单的方法
+
 // 页面加载完成后执行
 document.addEventListener('DOMContentLoaded', function() {
     // 初始化所有功能

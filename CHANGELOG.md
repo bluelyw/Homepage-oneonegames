@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.1] - 2025-08-26
+
+### Added
+- 导航栏菜单优化，将Games拆分为Free Games和Premium Games两个下拉菜单
+- 字体加载优化，解决字体闪烁和加载延迟问题
+- 改进的字体栈策略，优先使用系统可爱字体
+
+### Changed
+- 增大了Logo标题字体大小至1.8rem，提升品牌识别度
+- 移除了导航栏中的Home链接，简化菜单结构
+- 优化了Google Fonts加载策略，使用display=swap确保快速显示
+- 调整了字体栈顺序，将系统字体（Comic Sans MS, Chalkboard SE）放在前面作为后备
+
+### Fixed
+- 解决了字体加载时的闪烁问题
+- 优化了字体加载性能，减少文本显示延迟
+- 确保在任何网络条件下都有良好的字体显示效果
+
 ## [3.0.0] - 2025-08-26
 
 ### Added
