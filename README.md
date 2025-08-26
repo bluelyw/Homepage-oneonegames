@@ -17,6 +17,34 @@
 - 响应式设计，支持手机和平板
 - 无框架依赖，轻量级
 
+## 字体要求
+
+### Google Fonts (推荐)
+网站使用了以下Google Fonts来营造可爱的儿童友好风格：
+
+- **Kalam** - 手写风格的基础文本字体
+- **Fredoka One** - 圆润可爱的Logo和标题字体
+- **Bubblegum Sans** - 泡泡糖风格的游戏王国标题
+- **Chewy** - 手写风格的游戏标题
+- **Indie Flower** - 手绘风格的捐赠标题
+
+### 系统字体 (后备)
+如果Google Fonts无法加载，将使用以下系统字体：
+
+- Comic Sans MS
+- Chalkboard SE (Mac)
+- Arial Rounded MT Bold
+- Segoe UI
+- 系统默认字体
+
+### 字体应用位置
+- **基础文本**：Kalam (手写风格)
+- **Logo文字**：Fredoka One (圆润可爱)
+- **游戏王国标题**：Bubblegum Sans (泡泡糖风格)
+- **游戏标题**：Chewy (手写风格)
+- **捐赠标题**：Indie Flower (手绘风格)
+- **Footer**：系统默认字体 (保持专业整洁)
+
 ## 游戏列表
 
 - 🍓 **Strawberry Game** - 闯关摘草莓游戏
@@ -33,6 +61,32 @@
 1. 直接在浏览器中打开 `index.html`
 2. 点击游戏卡片进入对应游戏
 3. 建议在家长陪同下使用
+
+## 版本控制
+
+### 当前版本
+**V3.0.0** - 现代化重构版本
+
+### 版本号规范
+本项目使用语义化版本控制 (Semantic Versioning):
+
+- **主版本号 (Major)**: 不兼容的API修改
+- **次版本号 (Minor)**: 向下兼容的功能性新增  
+- **修订号 (Patch)**: 向下兼容的问题修正
+
+### 提交规范
+每次提交到GitHub时，版本号按以下规则递增：
+
+- `feat:` - 新功能，次版本号+1
+- `fix:` - 修复bug，修订号+1  
+- `docs:` - 文档更新，修订号+1
+- `style:` - 代码格式调整，修订号+1
+- `refactor:` - 代码重构，次版本号+1
+- `perf:` - 性能优化，修订号+1
+- `test:` - 测试相关，修订号+1
+- `chore:` - 构建过程或辅助工具的变动，修订号+1
+
+详细变更历史请查看 [CHANGELOG.md](./CHANGELOG.md)
 
 ## 关于作者
 

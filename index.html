@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎮 OneOne Games - 一一的AI魔法游乐园</title>
+    <title>OneOne Games - AI Magic Playground</title>
     
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERJQSXTBGE"></script>
@@ -18,617 +18,129 @@
             }
         });
     </script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', sans-serif;
-            background: linear-gradient(135deg, #ffe6f2 0%, #e6f3ff 50%, #e6ffe6 100%);
-            min-height: 100vh;
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 25px;
-            padding: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            border: 3px solid #ffb3d9;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .title {
-            font-size: 3rem;
-            color: #ff6b9d;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
-        }
-
-        .intro {
-            background: linear-gradient(45deg, #fff5f8, #f0f8ff);
-            padding: 25px;
-            border-radius: 20px;
-            margin-bottom: 30px;
-            border: 2px dashed #ffb3d9;
-            font-size: 1.2rem;
-            color: #4a4a4a;
-            text-align: center;
-        }
-
-        .intro strong {
-            color: #ff6b9d;
-            font-size: 1.3rem;
-        }
-
-        .games-section {
-            margin-bottom: 30px;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            color: #4ecdc4;
-            text-align: center;
-            margin-bottom: 25px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        .games-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-
-        .game-card {
-            background: linear-gradient(135deg, #fff, #f8f9ff);
-            border-radius: 20px;
-            padding: 25px;
-            text-align: center;
-            text-decoration: none;
-            color: inherit;
-            border: 3px solid #4ecdc4;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-
-        .game-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-            border-color: #ff6b9d;
-        }
-
-        .game-emoji {
-            font-size: 3rem;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .game-title {
-            font-size: 1.4rem;
-            color: #4ecdc4;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        .game-description {
-            color: #666;
-            font-size: 1rem;
-        }
-
-        .new-badge {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            background: linear-gradient(45deg, #ff6b9d, #ff8fab);
-            color: white;
-            font-size: 0.8rem;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 15px;
-            box-shadow: 0 2px 8px rgba(255, 107, 157, 0.3);
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-        }
-
-        .hot-badge {
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            background: linear-gradient(45deg, #ff6b35, #ff8c42);
-            color: white;
-            font-size: 0.8rem;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 15px;
-            box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
-            animation: hot-pulse 1.5s infinite;
-        }
-
-        @keyframes hot-pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-
-        .tech-section {
-            background: linear-gradient(45deg, #f0f8ff, #fff5f8);
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            border: 2px solid #4ecdc4;
-            font-size: 1rem;
-            color: #666;
-        }
-
-        .tech-section strong {
-            color: #4ecdc4;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 2px dashed #ffb3d9;
-            color: #999;
-            font-size: 0.9rem;
-        }
-
-        /* Donation Section Styles */
-        .donation-section {
-            margin-top: 40px;
-            padding: 30px;
-            background: linear-gradient(135deg, #fff5f8 0%, #f0f8ff 100%);
-            border-radius: 25px;
-            border: 2px dashed #ffb3d9;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .donation-section:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(255, 107, 157, 0.2);
-            border-color: #ff6b9d;
-        }
-
-        .donation-section::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255, 107, 157, 0.1) 0%, transparent 70%);
-            animation: float 6s ease-in-out infinite;
-            pointer-events: none;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-10px) rotate(180deg); }
-        }
-
-        .donation-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .donation-title {
-            font-size: 1.4rem;
-            color: #ff6b9d;
-            margin-bottom: 15px;
-            font-weight: bold;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        .donation-text {
-            font-size: 1rem;
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 25px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .donation-note {
-            font-size: 0.9rem;
-            color: #999;
-            font-style: italic;
-        }
-
-        .donate-button {
-            display: inline-block;
-            background: linear-gradient(45deg, #ff6b9d, #ff8fab);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            box-shadow: 0 5px 15px rgba(255, 107, 157, 0.3);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .donate-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            transition: left 0.5s;
-        }
-
-        .donate-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
-        }
-
-        .donate-button:hover::before {
-            left: 100%;
-        }
-
-        .donate-button:active {
-            transform: translateY(-1px);
-        }
-
-        /* Floating donation button for mobile */
-        .floating-donate {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            display: none;
-        }
-
-        .floating-donate .donate-button {
-            padding: 12px 20px;
-            font-size: 0.9rem;
-            border-radius: 25px;
-            box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
-        }
-
-        /* Mobile responsive */
-        @media (max-width: 768px) {
-            .donation-section {
-                margin: 20px 10px;
-                padding: 20px;
-            }
-            
-            .donation-title {
-                font-size: 1.2rem;
-            }
-            
-            .donation-text {
-                font-size: 0.9rem;
-            }
-            
-            .donate-button {
-                padding: 12px 25px;
-                font-size: 1rem;
-            }
-            
-            .floating-donate {
-                display: block;
-            }
-            
-            .donation-section {
-                display: none;
-            }
-        }
-
-        .sparkle {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: #ff6b9d;
-            border-radius: 50%;
-            animation: sparkle 2s infinite;
-        }
-
-        @keyframes sparkle {
-            0%, 100% { opacity: 0; transform: scale(0); }
-            50% { opacity: 1; transform: scale(1); }
-        }
-
-        /* 响应式设计 */
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-                margin: 10px;
-            }
-            
-            .title {
-                font-size: 2rem;
-            }
-            
-            .games-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* 可爱的手绘风格边框 */
-        .hand-drawn-border {
-            position: relative;
-        }
-
-        .hand-drawn-border::before {
-            content: '';
-            position: absolute;
-            top: -5px;
-            left: -5px;
-            right: -5px;
-            bottom: -5px;
-            border: 2px solid #ffb3d9;
-            border-radius: 30px;
-            opacity: 0.3;
-            z-index: -1;
-        }
-    </style>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Bubblegum+Sans&family=Chewy&family=Kalam:wght@300;400&family=Indie+Flower&display=swap" rel="stylesheet">
+    
+    <!-- 引入外部CSS文件 -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container hand-drawn-border">
-        <div class="header">
-            <h1 class="title">🎮 Welcome to OneOne Games</h1>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/oneonelogo1.png" alt="OneOne Games Logo" class="logo-image">
+                <span class="logo-text">OneOne Games - AI Magic Playground</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Games ▼</a>
+                <a href="#" class="nav-link">About</a>
+                <button class="language-btn">
+                    <span class="globe-icon">🌐</span>
+                    English ▼
+                </button>
+            </div>
         </div>
+    </nav>
 
-        <div class="intro">
-            <p>
-                <strong>你好！我是「一一」</strong> 👧<br>
-                我今年不到6岁，最喜欢玩游戏啦！<br>
-                我和爸爸一起用AI魔法制作了这些游戏，<br>
-                每个游戏都是我想出来的，我测试过的，我决定上线的！<br>
-                <strong>欢迎来到我的AI魔法游乐园！</strong> ✨
-            </p>
-        </div>
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- 欢迎信息区域 -->
+        <section class="welcome-section">
+            <div class="welcome-content">
+                <p class="welcome-text">
+                    Hello! I'm Oneone 👧 I'm almost 6 years old and I love playing games!<br>
+                    I made these games with my dad using AI magic.<br>
+                    Each game is my idea, I tested it, and I decided to launch it!<br>
+                    Welcome to my AI Magic Playground! ✨<br>
+                    All games are free for kids to play!
+                </p>
+            </div>
+        </section>
 
-        <div class="games-section">
-            <h2 class="section-title">🎪 我的游戏王国</h2>
+        <!-- 游戏王国区域 -->
+        <section class="games-section">
+            <h2 class="section-title">🎪 My Game Kingdom</h2>
             <div class="games-grid">
                 <a href="https://strawberrygame.oneone.games" class="game-card">
-                    <span class="game-emoji">🍓</span>
-                    <div class="game-title">Strawberry Game</div>
-                    <div class="game-description">闯关摘草莓，挑战你的反应力！</div>
-                    <div class="hot-badge">HOT</div>
+                    <div class="game-badge hot-badge">HOT</div>
+                    <div class="game-icon">🍓</div>
+                    <h3 class="game-title">Strawberry Game</h3>
+                    <p class="game-description">Clear levels by picking strawberries, challenge your reaction speed!</p>
                 </a>
                 
                 <a href="https://runninggame.oneone.games" class="game-card">
-                    <span class="game-emoji">🏃‍♂️</span>
-                    <div class="game-title">Running Game</div>
-                    <div class="game-description">跑步闯关，锻炼身体和反应力！</div>
+                    <div class="game-icon">🏃‍♂️</div>
+                    <h3 class="game-title">Running Game</h3>
+                    <p class="game-description">Run through levels, exercise your body and reaction speed!</p>
                 </a>
                 
                 <a href="https://idiomheros.oneone.games/" class="game-card">
-                    <span class="game-emoji">📚</span>
-                    <div class="game-title">Idiom Hero</div>
-                    <div class="game-description">成语闯关游戏，提升成语水平！</div>
-                    <div class="new-badge">NEW</div>
+                    <div class="game-badge new-badge">NEW</div>
+                    <div class="game-icon">📚</div>
+                    <h3 class="game-title">Idiom Hero</h3>
+                    <p class="game-description">Idiom level-breaking game, improve your idiom skills!</p>
                 </a>
                 
                 <a href="https://sudokupuzzle.oneone.games" class="game-card">
-                    <span class="game-emoji">🧩</span>
-                    <div class="game-title">Sudoku Puzzle</div>
-                    <div class="game-description">数独游戏，锻炼逻辑思维！</div>
-                    <div class="new-badge">NEW</div>
+                    <div class="game-badge new-badge">NEW</div>
+                    <div class="game-icon">🧩</div>
+                    <h3 class="game-title">Sudoku Puzzle</h3>
+                    <p class="game-description">Sudoku game, exercise logical thinking!</p>
                 </a>
-            </div>
-        </div>
-
-        <div class="tech-section">
-            <p>
-                <strong>🤖 AI魔法技术说明：</strong><br>
-                Powered by GPT, Claude, and Cursor<br>
-                所有游戏都由AI协助生成，并由一一亲自测试上线<br>
-                <strong>每个游戏都适合4-10岁的小朋友，欢迎家长们一起参与！</strong>
-            </p>
-        </div>
-
-        <div class="footer">
-            <p>💝 一一送给全世界小朋友的礼物 💝</p>
-            <p>用AI魔法打造的游乐园，让每个孩子都能快乐成长！</p>
-        </div>
-
-        <!-- Donation Section -->
-        <a href="https://buy.stripe.com/6oU14g8Hy3e183U7lW3Nm01" class="donation-section" target="_blank">
-            <div class="donation-content">
-                <h3 class="donation-title">Help us build magical games with AI & imagination 🎮✨</h3>
-                <p class="donation-text">
-                    We're a dad-daughter duo building creative games with AI. If you like what we're doing, consider donating $11 to support the journey! 
-                    <br><span class="donation-note">(Your donation helps us buy strawberry snacks and keep coding 🍓💻)</span>
-                </p>
-                <div class="donate-button">
-                    Donate $11 →
+                
+                <div class="game-card coming-soon">
+                    <div class="game-badge coming-badge">COMING SOON</div>
+                    <div class="game-icon">🎮</div>
+                    <h3 class="game-title">More Games Coming</h3>
+                    <p class="game-description">More exciting games are under development, please look forward to them!</p>
                 </div>
             </div>
-        </a>
-    </div>
+        </section>
 
-    <!-- Floating Donation Button for Mobile -->
-    <div class="floating-donate">
-        <a href="https://buy.stripe.com/6oU14g8Hy3e183U7lW3Nm01" class="donate-button" target="_blank">
-            💝 Donate $11
-        </a>
-    </div>
+        <!-- 捐赠区域 -->
+        <section class="donation-section">
+            <div class="donation-container">
+                <h3 class="donation-title">Help us build magical games with AI & imagination ✨</h3>
+                <p class="donation-text">
+                    We're a dad-daughter duo building creative games with AI. If you like what we're doing, consider buying a virtual 🎂 for oneone to support the journey — just $9.90!
+                </p>
+                <p class="donation-note">
+                    (It's a symbolic cake! You won't get a real one, but it helps us keep coding 🧁💻)
+                </p>
+                <a href="https://buy.stripe.com/6oU14g8Hy3e183U7lW3Nm01" class="donate-button" target="_blank">
+                    Buy a 🎂 $9.90 →
+                </a>
+            </div>
+        </section>
+    </main>
 
-    <script>
-        // 添加一些可爱的交互效果
-        document.addEventListener('DOMContentLoaded', function() {
-            // 为游戏卡片添加点击音效（模拟）
-            const gameCards = document.querySelectorAll('.game-card');
-            gameCards.forEach(card => {
-                card.addEventListener('click', function(e) {
-                    // 如果链接是#，阻止跳转并显示提示
-                    if (this.getAttribute('href') === '#') {
-                        e.preventDefault();
-                        alert('🎮 这个游戏还在制作中，敬请期待！');
-                    }
-                });
-            });
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="images/oneonelogo1.png" alt="OneOne Games Logo" class="footer-logo-image">
+                    <h4>OneOne Games</h4>
+                </div>
+                <p>Indie Hacker vibe coding project by kid girl, empowered by AI magic ✨</p>
+            </div>
+            <div class="footer-section">
+                <h4>Built with <span style="color: #ff6b9d;">❤️</span> & AI</h4>
+                <div class="tech-tags">
+                    <span class="tech-tag">Cursor</span>
+                    <span class="tech-tag">GPT-5</span>
+                </div>
+            </div>
+            <div class="footer-section">
+                <p class="copyright">© 2025 OneOne.Games</p>
+                <p>Free to play, welcome to donate to support the journey 🚀</p>
+            </div>
+        </div>
+    </footer>
 
-            // 添加一些闪烁效果
-            const container = document.querySelector('.container');
-            for (let i = 0; i < 10; i++) {
-                const sparkle = document.createElement('div');
-                sparkle.className = 'sparkle';
-                sparkle.style.left = Math.random() * 100 + '%';
-                sparkle.style.top = Math.random() * 100 + '%';
-                sparkle.style.animationDelay = Math.random() * 2 + 's';
-                container.appendChild(sparkle);
-            }
-
-            // GA4 事件跟踪
-            // 1. 页面浏览跟踪
-            gtag('event', 'page_view', {
-                'page_title': 'OneOne Games Homepage',
-                'page_location': window.location.href,
-                'user_type': 'child_4_10'
-            });
-
-            // 2. 点击事件跟踪
-            const clickableElements = document.querySelectorAll('a, button, .game-card');
-            clickableElements.forEach(element => {
-                element.addEventListener('click', function(e) {
-                    const elementType = this.tagName.toLowerCase();
-                    const elementText = this.textContent.trim().substring(0, 50);
-                    const href = this.getAttribute('href') || '';
-                    
-                    // 游戏卡片特殊处理
-                    let gameCategory = '';
-                    if (this.classList.contains('game-card')) {
-                        const gameTitle = this.querySelector('.game-title');
-                        if (gameTitle) {
-                            gameCategory = gameTitle.textContent.trim();
-                        }
-                    }
-
-                    gtag('event', 'click', {
-                        'event_category': 'engagement',
-                        'event_label': elementText,
-                        'value': 1,
-                        'game_category': gameCategory,
-                        'link_url': href,
-                        'element_type': elementType
-                    });
-                });
-            });
-
-            // 3. 滚动事件跟踪
-            let scrollDepth = 0;
-            const scrollThresholds = [25, 50, 75, 100];
-            const trackedScrolls = new Set();
-
-            window.addEventListener('scroll', function() {
-                const scrollTop = window.pageYOffset;
-                const docHeight = document.body.scrollHeight - window.innerHeight;
-                const scrollPercent = Math.round((scrollTop / docHeight) * 100);
-
-                // 跟踪滚动深度
-                scrollThresholds.forEach(threshold => {
-                    if (scrollPercent >= threshold && !trackedScrolls.has(threshold)) {
-                        trackedScrolls.add(threshold);
-                        gtag('event', 'scroll', {
-                            'event_category': 'engagement',
-                            'event_label': `scroll_depth_${threshold}%`,
-                            'value': threshold,
-                            'scroll_percentage': scrollPercent
-                        });
-                    }
-                });
-
-                // 跟踪滚动到底部
-                if (scrollPercent >= 95 && !trackedScrolls.has('bottom')) {
-                    trackedScrolls.add('bottom');
-                    gtag('event', 'scroll', {
-                        'event_category': 'engagement',
-                        'event_label': 'scroll_to_bottom',
-                        'value': 100,
-                        'scroll_percentage': scrollPercent
-                    });
-                }
-            });
-
-            // 4. 页面停留时间跟踪
-            let startTime = Date.now();
-            window.addEventListener('beforeunload', function() {
-                const timeSpent = Math.round((Date.now() - startTime) / 1000);
-                gtag('event', 'timing_complete', {
-                    'name': 'page_load',
-                    'value': timeSpent,
-                    'event_category': 'engagement'
-                });
-            });
-
-            // 5. 特殊游戏事件跟踪
-            const gameLinks = document.querySelectorAll('.game-card[href]');
-            gameLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    const gameTitle = this.querySelector('.game-title').textContent.trim();
-                    const gameEmoji = this.querySelector('.game-emoji').textContent;
-                    const hasNewBadge = this.querySelector('.new-badge') !== null;
-                    const hasHotBadge = this.querySelector('.hot-badge') !== null;
-                    
-                    gtag('event', 'game_click', {
-                        'event_category': 'game_engagement',
-                        'event_label': gameTitle,
-                        'game_name': gameTitle,
-                        'game_emoji': gameEmoji,
-                        'has_new_badge': hasNewBadge,
-                        'has_hot_badge': hasHotBadge,
-                        'game_url': this.getAttribute('href'),
-                        'value': 1
-                    });
-                });
-            });
-
-            // 6. 捐赠事件跟踪
-            const donationSections = document.querySelectorAll('.donation-section, .floating-donate .donate-button');
-            donationSections.forEach(element => {
-                element.addEventListener('click', function(e) {
-                    const isFloating = this.classList.contains('donate-button') && this.closest('.floating-donate');
-                    const location = isFloating ? 'floating' : 'section';
-                    
-                    gtag('event', 'donate_click', {
-                        'event_category': 'donation',
-                        'event_label': 'Donate $11',
-                        'value': 11,
-                        'currency': 'USD',
-                        'donation_amount': 11,
-                        'button_location': location,
-                        'click_area': this.classList.contains('donation-section') ? 'full_section' : 'button_only'
-                    });
-                });
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html> 
