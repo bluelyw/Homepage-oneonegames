@@ -6,21 +6,13 @@
     <title>OneOne Games - AI Magic Playground</title>
     <meta name="description" content="A children's gaming website created by a 6-year-old girl named Yiyi using AI tools. Each game is conceived by Yiyi, developed with her father, tested by herself, and launched by her own decision.">
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://oneone.games/">
-    
-    <!-- Hreflang tags for multilingual SEO -->
-    <link rel="alternate" hreflang="en" href="https://oneone.games/">
-    <link rel="alternate" hreflang="zh-Hans" href="https://oneone.games/zh-hans/">
-    <link rel="alternate" hreflang="x-default" href="https://oneone.games/">
-    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Fredoka+One&family=Bubblegum+Sans&family=Chewy&family=Indie+Flower&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -36,7 +28,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="images/oneonelogo1.png" alt="OneOne Games Logo" class="logo-image">
+                <img src="../images/oneonelogo1.png" alt="OneOne Games Logo" class="logo-image">
                 <span class="logo-text">OneOne Games - AI Magic Playground</span>
             </div>
             <div class="nav-menu">
@@ -59,8 +51,8 @@
                 <div class="language-btn">
                     <span>English ▼</span>
                     <div class="language-dropdown">
-                        <a href="/" class="language-option">English</a>
-                        <a href="/zh-hans/" class="language-option">简体中文</a>
+                        <a href="../zh-hans/" class="language-option">简体中文</a>
+                        <a href="../en/" class="language-option">English</a>
                     </div>
                 </div>
             </div>
@@ -127,7 +119,17 @@
             </div>
         </section>
 
-
+        <!-- Donation Section -->
+        <section class="donation-section">
+            <div class="donation-container">
+                <h2 class="donation-title">💝 Yiyi's Gift to Children Worldwide 💝</h2>
+                <p class="donation-text">An AI magic playground that lets every child grow up happily!</p>
+                <p class="donation-note">Help us create magical games with AI and imagination 🎮✨</p>
+                <p class="donation-note">We are a father-daughter team creating creative games with AI. If you like our work, please consider buying Yiyi a virtual 🎂 to support our journey — only $9.90!</p>
+                <p class="donation-note">(This is a symbolic cake! You won't receive a real cake, but it helps us continue programming 🧁💻)</p>
+                <button class="donate-button" onclick="trackDonationClick()">💝 Buy a 🎂 $9.90 →</button>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -141,18 +143,19 @@
                 <h3>Built with ❤️ and AI</h3>
                 <div class="tech-tags">
                     <span class="tech-tag">Cursor</span>
-                    <span class="tech-tag">GPT-5</span>
+                    <span class="tech-tag">GPT-4</span>
                 </div>
             </div>
             <div class="footer-section">
                 <h3>Contact Us</h3>
-                <p>oneone.games111@gmail.com</p>
+                <p>Contact Us: oneone.games111@gmail.com</p>
                 <p>© 2025 OneOne.Games</p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
 </body>
-</html> 
+</html>

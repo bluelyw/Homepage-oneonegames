@@ -170,6 +170,58 @@ body {
     border-color: #3db8b0;
 }
 
+.language-btn {
+    position: relative;
+    display: inline-block;
+}
+
+.language-dropdown {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    min-width: 120px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1001;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    /* 添加悬停区域，防止菜单消失 */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.language-dropdown::after {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background: transparent;
+}
+
+.language-btn:hover .language-dropdown,
+.language-dropdown:hover {
+    display: block;
+}
+
+.language-option {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.language-option:hover {
+    background: rgba(78, 205, 196, 0.1);
+    color: #4ecdc4;
+}
+
 .globe-icon {
     font-size: 1rem;
 }

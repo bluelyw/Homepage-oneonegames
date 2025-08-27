@@ -5,6 +5,42 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.4] - 2025-01-XX
+
+### Added
+- 新增多语言支持，符合i18n国际化规范
+- 创建英文版本（根路径/）和简体中文版本（/zh-hans/）
+- 实现语言切换器，支持不同语言版本间切换
+- 创建i18n国际化配置文件（js/i18n.js）
+- 添加SEO友好的sitemap.xml和robots.txt
+
+### Changed
+- 重构网站结构，英文作为默认语言放在根路径
+- 更新根目录index.html为英文版本，避免重复内容
+- 优化导航栏语言切换器样式和交互
+- 调整URL结构，符合SEO最佳实践
+- 删除捐赠区域，简化网站内容
+- 修复中文版本导航菜单下拉箭头显示问题
+- 更新技术标签从GPT-4到GPT-5
+- 简化联系信息显示格式
+
+### Removed
+- 删除翻译辅助脚本（js/translation-helper.js）
+- 删除翻译工作流程指南（TRANSLATION_GUIDE.md）
+- 删除捐赠区域相关内容和翻译
+
+### Fixed
+- 修复中文版本导航菜单缺少下拉箭头的问题
+- 确保中英文版本样式完全一致
+- 优化多语言同步工作流程
+
+### Technical
+- 实现纯HTML/CSS/JS多语言架构，无构建工具依赖
+- 添加hreflang标签支持搜索引擎优化
+- 创建模块化的i18n翻译管理系统
+- 优化URL结构，避免Google重复内容问题
+- 简化翻译管理，直接同步更新多语言版本
+
 ## [3.0.2] - 2025-01-XX
 
 ### Added

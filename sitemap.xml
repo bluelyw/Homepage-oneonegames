@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- 根目录 - 英文版本（默认） -->
+    <url>
+        <loc>https://oneone.games/</loc>
+        <lastmod>2025-01-XX</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oneone.games/zh-hans/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://oneone.games/"/>
+    </url>
+    
+    <!-- 简体中文版本 -->
+    <url>
+        <loc>https://oneone.games/zh-hans/</loc>
+        <lastmod>2025-01-XX</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://oneone.games/zh-hans/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://oneone.games/"/>
+    </url>
+    
+</urlset>
