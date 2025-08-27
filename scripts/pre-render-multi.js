@@ -243,6 +243,11 @@ function replaceContent(html, translations) {
         if (translations.modal.gotItButton) result = result.replace(/Got it!/g, translations.modal.gotItButton);
     }
     
+    // 替换付费游戏说明
+    if (translations.premiumNote) {
+        result = result.replace(/Premium Games require a membership\. Click any premium game to subscribe\./g, translations.premiumNote);
+    }
+    
     return result;
 }
 

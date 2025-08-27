@@ -19,6 +19,7 @@
     "freeGameKingdom": "🎪 Koninkrijk van Gratis Spellen",
     "premiumGameKingdom": "🎪 Koninkrijk van Premium Spellen"
   },
+  "premiumNote": "Premium spellen vereisen een lidmaatschap. Klik op een premium spel om je te abonneren.",
   "games": {
     "strawberryGame": {
       "title": "Aardbeien Spel",

@@ -19,6 +19,7 @@
     "freeGameKingdom": "🎪 Reino de Juegos Gratis",
     "premiumGameKingdom": "🎪 Reino de Juegos Premium"
   },
+  "premiumNote": "Los juegos premium requieren una membresía. Haz clic en cualquier juego premium para suscribirte.",
   "games": {
     "strawberryGame": {
       "title": "Juego de Fresas",

@@ -336,7 +336,7 @@ npm run build
 ## 版本控制
 
 ### 当前版本
-**V3.0.13** - 完善发版流程文档，优化版本控制管理
+**V3.0.14** - 更新付费游戏链接，添加会员说明
 
 ### 版本号规范
 本项目使用语义化版本控制 (Semantic Versioning):
@@ -380,7 +380,7 @@ npm run build
 
 # 3. 提交并推送
 git add .
-git commit -m "feat: V3.0.13 - 描述"
+git commit -m "feat: V3.0.14 - 描述"
 git push origin main
 ```
 

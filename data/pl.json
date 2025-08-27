@@ -19,6 +19,7 @@
     "freeGameKingdom": "🎪 Królestwo Darmowych Gier",
     "premiumGameKingdom": "🎪 Królestwo Gier Premium"
   },
+  "premiumNote": "Gry premium wymagają członkostwa. Kliknij dowolną grę premium, aby się zapisać.",
   "games": {
     "strawberryGame": {
       "title": "Gra Truskawkowa",

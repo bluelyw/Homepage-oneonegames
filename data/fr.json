@@ -19,6 +19,7 @@
     "freeGameKingdom": "🎪 Royaume des Jeux Gratuits",
     "premiumGameKingdom": "🎪 Royaume des Jeux Premium"
   },
+  "premiumNote": "Les jeux premium nécessitent un abonnement. Cliquez sur n'importe quel jeu premium pour vous abonner.",
   "games": {
     "strawberryGame": {
       "title": "Jeu de Fraises",

@@ -384,6 +384,18 @@ body {
     background: linear-gradient(135deg, #fff5f8, #ffe6f2);
 }
 
+.premium-note {
+    text-align: center;
+    color: #ff6b9d;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: rgba(255, 107, 157, 0.1);
+    border-radius: 10px;
+    border: 1px dashed #ff6b9d;
+}
+
 .game-badge {
     position: absolute;
     top: -10px;

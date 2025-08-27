@@ -19,6 +19,7 @@
     "freeGameKingdom": "🎪 Reino dos Jogos Gratuitos",
     "premiumGameKingdom": "🎪 Reino dos Jogos Premium"
   },
+  "premiumNote": "Jogos premium requerem uma assinatura. Clique em qualquer jogo premium para se inscrever.",
   "games": {
     "strawberryGame": {
       "title": "Jogo de Morango",

@@ -1,5 +1,44 @@
 # Changelog
 
+## [V3.0.14] - 2025-08-27
+
+### 🎯 主要更新
+- **付费游戏链接更新**: 将大鱼吃小鱼游戏链接从 `https://fishygame.oneone.games` 更新为 `https://app.oneone.games/games/premium/fishygame`
+- **会员说明添加**: 在Premium Game Kingdom区域底部添加会员说明文字
+
+### 📝 详细变更
+- **导航栏**: 更新付费游戏下拉菜单中的链接
+- **游戏卡片**: 更新大鱼吃小鱼游戏卡片的链接
+- **会员说明**: 添加 "Premium Games require a membership. Click any premium game to subscribe." 说明
+- **样式优化**: 为会员说明添加专门的CSS样式，包括粉色背景和虚线边框
+- **多语言支持**: 为所有14种语言添加会员说明的翻译
+
+### 🌐 多语言更新
+- **简体中文**: "付费游戏需要会员资格。点击任意付费游戏即可订阅。"
+- **繁体中文**: "付費遊戲需要會員資格。點擊任意付費遊戲即可訂閱。"
+- **日语**: "プレミアムゲームにはメンバーシップが必要です。任意のプレミアムゲームをクリックしてサブスクライブしてください。"
+- **韩语**: "프리미엄 게임은 멤버십이 필요합니다. 프리미엄 게임을 클릭하여 구독하세요."
+- **法语**: "Les jeux premium nécessitent un abonnement. Cliquez sur n'importe quel jeu premium pour vous abonner."
+- **德语**: "Premium-Spiele erfordern eine Mitgliedschaft. Klicken Sie auf ein Premium-Spiel, um sich zu abonnieren."
+- **西班牙语**: "Los juegos premium requieren una membresía. Haz clic en cualquier juego premium para suscribirte."
+- **葡萄牙语(巴西)**: "Jogos premium requerem uma assinatura. Clique em qualquer jogo premium para se inscrever."
+- **葡萄牙语(葡萄牙)**: "Jogos premium requerem uma assinatura. Clique em qualquer jogo premium para se inscrever."
+- **意大利语**: "I giochi premium richiedono un abbonamento. Clicca su qualsiasi gioco premium per abbonarti."
+- **荷兰语**: "Premium spellen vereisen een lidmaatschap. Klik op een premium spel om je te abonneren."
+- **波兰语**: "Gry premium wymagają członkostwa. Kliknij dowolną grę premium, aby się zapisać."
+- **瑞典语**: "Premium-spel kräver medlemskap. Klicka på valfritt premium-spel för att prenumerera."
+
+### 🔧 技术更新
+- **预渲染脚本**: 更新 `scripts/pre-render-multi.js` 以支持新的 `premiumNote` 翻译键
+- **CSS样式**: 添加 `.premium-note` 样式类，包含粉色主题和虚线边框设计
+
+### 📋 文件变更
+- `index.html` - 更新付费游戏链接，添加会员说明
+- `css/main.css` - 添加 `.premium-note` 样式
+- `data/*.json` - 为所有语言添加 `premiumNote` 翻译
+- `scripts/pre-render-multi.js` - 添加会员说明的翻译支持
+- `zh-hans/index.html` 等所有语言版本 - 通过预渲染脚本自动更新
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),

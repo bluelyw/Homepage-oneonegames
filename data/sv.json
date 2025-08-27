@@ -16,9 +16,10 @@
     "intro4": "Välkommen till min AI Magiska Lekplats! ✨"
   },
   "sections": {
-    "freeGameKingdom": "🎪 Gratis Spel Rike",
-    "premiumGameKingdom": "🎪 Premium Spel Rike"
+    "freeGameKingdom": "🎪 Gratis Spelens Kungarike",
+    "premiumGameKingdom": "🎪 Premium Spelens Kungarike"
   },
+  "premiumNote": "Premium-spel kräver medlemskap. Klicka på valfritt premium-spel för att prenumerera.",
   "games": {
     "strawberryGame": {
       "title": "Jordgubbs Spel",

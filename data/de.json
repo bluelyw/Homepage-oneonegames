@@ -17,8 +17,9 @@
   },
   "sections": {
     "freeGameKingdom": "🎪 Königreich der Kostenlosen Spiele",
-    "premiumGameKingdom": "🎪 Königreich der Premium Spiele"
+    "premiumGameKingdom": "🎪 Königreich der Premium-Spiele"
   },
+  "premiumNote": "Premium-Spiele erfordern eine Mitgliedschaft. Klicken Sie auf ein Premium-Spiel, um sich zu abonnieren.",
   "games": {
     "strawberryGame": {
       "title": "Erdbeer-Spiel",
