@@ -192,10 +192,43 @@ function initScrollTracking() {
 // 语言选择器
 function initLanguageSelector() {
     const languageBtn = document.querySelector('.language-btn');
+    const languageDropdown = document.querySelector('.language-dropdown');
+    let isDropdownVisible = false;
+    let hideTimeout;
     
-    if (languageBtn) {
+    if (languageBtn && languageDropdown) {
+        // 鼠标进入按钮
+        languageBtn.addEventListener('mouseenter', function() {
+            clearTimeout(hideTimeout);
+            languageDropdown.style.display = 'block';
+            isDropdownVisible = true;
+        });
+        
+        // 鼠标离开按钮
+        languageBtn.addEventListener('mouseleave', function() {
+            hideTimeout = setTimeout(() => {
+                if (!isDropdownVisible) {
+                    languageDropdown.style.display = 'none';
+                }
+            }, 100);
+        });
+        
+        // 鼠标进入下拉菜单
+        languageDropdown.addEventListener('mouseenter', function() {
+            clearTimeout(hideTimeout);
+            isDropdownVisible = true;
+        });
+        
+        // 鼠标离开下拉菜单
+        languageDropdown.addEventListener('mouseleave', function() {
+            isDropdownVisible = false;
+            hideTimeout = setTimeout(() => {
+                languageDropdown.style.display = 'none';
+            }, 150);
+        });
+        
+        // 点击按钮
         languageBtn.addEventListener('click', function() {
-            // 这里可以添加语言切换逻辑
             console.log('Language selector clicked');
             
             gtag('event', 'language_selector_click', {
@@ -203,6 +236,14 @@ function initLanguageSelector() {
                 'event_label': 'Language Selector',
                 'value': 1
             });
+        });
+        
+        // 点击外部关闭下拉菜单
+        document.addEventListener('click', function(e) {
+            if (!languageBtn.contains(e.target) && !languageDropdown.contains(e.target)) {
+                languageDropdown.style.display = 'none';
+                isDropdownVisible = false;
+            }
         });
     }
 }

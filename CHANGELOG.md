@@ -5,6 +5,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.11] - 2025-01-XX
+
+### Added
+- 新增语言下拉框样式优化，提升用户体验
+- 新增自定义滚动条样式，美化下拉框外观
+- 新增JavaScript增强下拉菜单稳定性功能
+
+### Changed
+- 优化语言下拉框尺寸，从120px增加到200-250px
+- 增加下拉框高度至560px，一次性显示所有14种语言
+- 减少顶部空白区域，从1.5rem优化至0.8rem
+- 优化语言选项间距和内边距，提升视觉效果
+- 增强悬停区域设计，防止下拉菜单意外消失
+
+### Fixed
+- 修复下拉菜单在鼠标移动时意外消失的问题
+- 解决语言选项需要换行显示的问题
+- 优化小屏幕设备上的下拉框显示效果
+
+### Technical
+- 实现延迟隐藏机制，提升下拉菜单稳定性
+- 添加多重悬停检测和状态跟踪
+- 优化响应式设计，支持桌面端和移动端
+- 使用backdrop-filter和transform提升渲染性能
+
 ## [3.0.10] - 2025-01-XX
 
 ### Fixed
