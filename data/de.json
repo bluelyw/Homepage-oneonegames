@@ -1,0 +1,82 @@
+{
+  "header": {
+    "logoText": "OneOne Games - KI-Magischer Spielplatz"
+  },
+  "nav": {
+    "freeGames": "Kostenlose Spiele ▼",
+    "premiumGames": "Premium Spiele ▼",
+    "about": "Über",
+    "language": "Deutsch ▼"
+  },
+  "welcome": {
+    "title": "Hallo! Ich bin Yiyi 👧",
+    "intro1": "Ich bin fast 6 Jahre alt und liebe es zu spielen!",
+    "intro2": "Mein Papa und ich haben diese Spiele mit KI-Magie erstellt,",
+    "intro3": "Jedes Spiel ist meine Idee, von mir getestet und nach meiner Entscheidung veröffentlicht!",
+    "intro4": "Willkommen auf meinem KI-Magischen Spielplatz! ✨"
+  },
+  "sections": {
+    "freeGameKingdom": "🎪 Königreich der Kostenlosen Spiele",
+    "premiumGameKingdom": "🎪 Königreich der Premium Spiele"
+  },
+  "games": {
+    "strawberryGame": {
+      "title": "Erdbeer-Spiel",
+      "description": "Pflücke Erdbeeren durch Level, fordere deine Reflexe heraus!"
+    },
+    "runningGame": {
+      "title": "Lauf-Spiel",
+      "description": "Laufe durch Level, trainiere deinen Körper und deine Reflexe!"
+    },
+    "idiomHero": {
+      "title": "Redewendungs-Held",
+      "description": "Redewendungs-Herausforderungsspiel, verbessere deine Redewendungs-Fähigkeiten!"
+    },
+    "sudokuPuzzle": {
+      "title": "Sudoku-Puzzle",
+      "description": "Sudoku-Spiel, trainiere dein logisches Denken!"
+    },
+    "bigFishEatSmallFish": {
+      "title": "Großer Fisch frisst Kleinen Fisch",
+      "description": "Klassisches Spiel vom großen Fisch, der den kleinen Fisch frisst, erlebe die Überlebensregeln der Ozeanwelt!"
+    },
+    "moreGamesComing": {
+      "title": "Weitere Spiele kommen",
+      "description": "Weitere aufregende Spiele sind in der Entwicklung, bleib dran!"
+    }
+  },
+  "badges": {
+    "hot": "HOT",
+    "new": "NEW",
+    "comingSoon": "COMING SOON"
+  },
+  "footer": {
+    "title": "OneOne Games",
+    "description": "Unabhängiges Hacker-Style-Programmierprojekt, erstellt von einem kleinen Mädchen, verstärkt durch KI-Magie ✨",
+    "builtWith": "Gebaut mit ❤️ und KI",
+    "contactTitle": "Kontakt",
+    "tech": "GPT-5",
+    "contact": "oneone.games111@gmail.com"
+  },
+  "modal": {
+    "comingSoonTitle": "🎮 Bald Verfügbar!",
+    "comingSoonMessage": "Weitere aufregende Spiele sind in der Entwicklung. Bleib dran!",
+    "gotItButton": "Verstanden!"
+  },
+  "languages": {
+    "en": "English",
+    "zhHans": "简体中文",
+    "zhHant": "繁體中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "ptBr": "Português (Brasil)",
+    "ptPt": "Português (Portugal)",
+    "it": "Italiano",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "sv": "Svenska"
+  }
+}

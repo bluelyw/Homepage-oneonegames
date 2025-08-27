@@ -1,0 +1,82 @@
+{
+  "header": {
+    "logoText": "OneOne Games - Playground Mágico IA"
+  },
+  "nav": {
+    "freeGames": "Jogos Gratuitos ▼",
+    "premiumGames": "Jogos Premium ▼",
+    "about": "Sobre",
+    "language": "Português (Brasil) ▼"
+  },
+  "welcome": {
+    "title": "Olá! Eu sou Yiyi 👧",
+    "intro1": "Tenho quase 6 anos e adoro jogar jogos!",
+    "intro2": "Meu pai e eu criamos esses jogos usando magia de IA,",
+    "intro3": "Cada jogo é minha ideia, testado por mim, e lançado segundo minha decisão!",
+    "intro4": "Bem-vindo ao meu Playground Mágico IA! ✨"
+  },
+  "sections": {
+    "freeGameKingdom": "🎪 Reino dos Jogos Gratuitos",
+    "premiumGameKingdom": "🎪 Reino dos Jogos Premium"
+  },
+  "games": {
+    "strawberryGame": {
+      "title": "Jogo de Morango",
+      "description": "Colete morangos através dos níveis, desafie seus reflexos!"
+    },
+    "runningGame": {
+      "title": "Jogo de Corrida",
+      "description": "Corra através dos níveis, exercite seu corpo e reflexos!"
+    },
+    "idiomHero": {
+      "title": "Herói dos Idiomas",
+      "description": "Jogo de desafio de idiomas, melhore suas habilidades de idiomas!"
+    },
+    "sudokuPuzzle": {
+      "title": "Puzzle Sudoku",
+      "description": "Jogo de sudoku, exercite seu pensamento lógico!"
+    },
+    "bigFishEatSmallFish": {
+      "title": "Peixe Grande Come Peixe Pequeno",
+      "description": "Jogo clássico do peixe grande que come o peixe pequeno, experimente as regras de sobrevivência do mundo oceânico!"
+    },
+    "moreGamesComing": {
+      "title": "Mais Jogos em Breve",
+      "description": "Mais jogos emocionantes estão em desenvolvimento, fique atento!"
+    }
+  },
+  "badges": {
+    "hot": "HOT",
+    "new": "NEW",
+    "comingSoon": "COMING SOON"
+  },
+  "footer": {
+    "title": "OneOne Games",
+    "description": "Projeto de programação independente estilo hacker, criado por uma menininha, potencializado pela magia da IA ✨",
+    "builtWith": "Construído com ❤️ e IA",
+    "contactTitle": "Entre em Contato",
+    "tech": "GPT-5",
+    "contact": "oneone.games111@gmail.com"
+  },
+  "modal": {
+    "comingSoonTitle": "🎮 Em Breve!",
+    "comingSoonMessage": "Mais jogos emocionantes estão em desenvolvimento. Fique atento!",
+    "gotItButton": "Entendi!"
+  },
+  "languages": {
+    "en": "English",
+    "zhHans": "简体中文",
+    "zhHant": "繁體中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "ptBr": "Português (Brasil)",
+    "ptPt": "Português (Portugal)",
+    "it": "Italiano",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "sv": "Svenska"
+  }
+}

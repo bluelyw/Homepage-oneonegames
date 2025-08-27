@@ -1,0 +1,82 @@
+{
+  "header": {
+    "logoText": "OneOne Games - AI 마법 놀이터"
+  },
+  "nav": {
+    "freeGames": "무료 게임 ▼",
+    "premiumGames": "프리미엄 게임 ▼",
+    "about": "소개",
+    "language": "한국어 ▼"
+  },
+  "welcome": {
+    "title": "안녕하세요! 저는 일일이입니다 👧",
+    "intro1": "저는 거의 6살이고 게임을 정말 좋아합니다!",
+    "intro2": "아빠와 함께 AI 마법을 사용해서 이 게임들을 만들었어요,",
+    "intro3": "각 게임은 제 아이디어이고, 제가 테스트하고, 제가 출시할지 결정합니다!",
+    "intro4": "제 AI 마법 놀이터에 오신 것을 환영합니다! ✨"
+  },
+  "sections": {
+    "freeGameKingdom": "🎪 무료 게임 왕국",
+    "premiumGameKingdom": "🎪 프리미엄 게임 왕국"
+  },
+  "games": {
+    "strawberryGame": {
+      "title": "딸기 게임",
+      "description": "레벨을 통해 딸기를 따고, 반사 신경에 도전하세요!"
+    },
+    "runningGame": {
+      "title": "달리기 게임",
+      "description": "레벨을 통해 달리고, 몸과 반사 신경을 단련하세요!"
+    },
+    "idiomHero": {
+      "title": "관용구 히어로",
+      "description": "관용구 도전 게임, 관용구 실력을 향상시키세요!"
+    },
+    "sudokuPuzzle": {
+      "title": "스도쿠 퍼즐",
+      "description": "스도쿠 게임, 논리적 사고를 단련하세요!"
+    },
+    "bigFishEatSmallFish": {
+      "title": "큰 물고기가 작은 물고기를 먹는다",
+      "description": "클래식한 큰 물고기가 작은 물고기를 먹는 게임, 바다 세계의 생존 법칙을 경험하세요!"
+    },
+    "moreGamesComing": {
+      "title": "더 많은 게임이 곧 출시됩니다",
+      "description": "더 많은 흥미진진한 게임이 개발 중입니다, 기대해 주세요!"
+    }
+  },
+  "badges": {
+    "hot": "HOT",
+    "new": "NEW",
+    "comingSoon": "COMING SOON"
+  },
+  "footer": {
+    "title": "OneOne Games",
+    "description": "독립적인 해커 스타일 프로그래밍 프로젝트, 어린 소녀가 만들고 AI 마법으로 강화되었습니다 ✨",
+    "builtWith": "❤️와 AI로 구축",
+    "contactTitle": "연락처",
+    "tech": "GPT-5",
+    "contact": "oneone.games111@gmail.com"
+  },
+  "modal": {
+    "comingSoonTitle": "🎮 곧 출시됩니다!",
+    "comingSoonMessage": "더 많은 흥미진진한 게임이 개발 중입니다. 기대해 주세요!",
+    "gotItButton": "알겠습니다!"
+  },
+  "languages": {
+    "en": "English",
+    "zhHans": "简体中文",
+    "zhHant": "繁體中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "ptBr": "Português (Brasil)",
+    "ptPt": "Português (Portugal)",
+    "it": "Italiano",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "sv": "Svenska"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "header": {
+    "logoText": "OneOne Games - AI Magische Speeltuin"
+  },
+  "nav": {
+    "freeGames": "Gratis Spellen ▼",
+    "premiumGames": "Premium Spellen ▼",
+    "about": "Over",
+    "language": "Nederlands ▼"
+  },
+  "welcome": {
+    "title": "Hallo! Ik ben Yiyi 👧",
+    "intro1": "Ik ben bijna 6 jaar oud en ik hou van spellen spelen!",
+    "intro2": "Mijn vader en ik hebben deze spellen gemaakt met AI-magie,",
+    "intro3": "Elk spel is mijn idee, door mij getest, en gelanceerd volgens mijn beslissing!",
+    "intro4": "Welkom in mijn AI Magische Speeltuin! ✨"
+  },
+  "sections": {
+    "freeGameKingdom": "🎪 Koninkrijk van Gratis Spellen",
+    "premiumGameKingdom": "🎪 Koninkrijk van Premium Spellen"
+  },
+  "games": {
+    "strawberryGame": {
+      "title": "Aardbeien Spel",
+      "description": "Pluk aardbeien door levels, daag je reflexen uit!"
+    },
+    "runningGame": {
+      "title": "Ren Spel",
+      "description": "Ren door levels, train je lichaam en reflexen!"
+    },
+    "idiomHero": {
+      "title": "Uitdrukkingen Held",
+      "description": "Uitdrukkingen uitdagingsspel, verbeter je uitdrukkingen vaardigheden!"
+    },
+    "sudokuPuzzle": {
+      "title": "Sudoku Puzzel",
+      "description": "Sudoku spel, train je logisch denken!"
+    },
+    "bigFishEatSmallFish": {
+      "title": "Grote Vis Eet Kleine Vis",
+      "description": "Klassiek spel van grote vis die kleine vis eet, ervaar de overlevingsregels van de oceaanwereld!"
+    },
+    "moreGamesComing": {
+      "title": "Meer Spellen Komt Er",
+      "description": "Meer spannende spellen zijn in ontwikkeling, blijf op de hoogte!"
+    }
+  },
+  "badges": {
+    "hot": "HOT",
+    "new": "NEW",
+    "comingSoon": "COMING SOON"
+  },
+  "footer": {
+    "title": "OneOne Games",
+    "description": "Onafhankelijk hacker-stijl programmeerproject, gemaakt door een klein meisje, versterkt door AI-magie ✨",
+    "builtWith": "Gebouwd met ❤️ en AI",
+    "contactTitle": "Neem Contact Op",
+    "tech": "GPT-5",
+    "contact": "oneone.games111@gmail.com"
+  },
+  "modal": {
+    "comingSoonTitle": "🎮 Binnenkort Beschikbaar!",
+    "comingSoonMessage": "Meer spannende spellen zijn in ontwikkeling. Blijf op de hoogte!",
+    "gotItButton": "Begrepen!"
+  },
+  "languages": {
+    "en": "English",
+    "zhHans": "简体中文",
+    "zhHant": "繁體中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "ptBr": "Português (Brasil)",
+    "ptPt": "Português (Portugal)",
+    "it": "Italiano",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "sv": "Svenska"
+  }
+}

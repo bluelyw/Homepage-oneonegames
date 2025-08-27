@@ -15,41 +15,48 @@
     "intro3": "每個遊戲都是我想出來的，我測試過的，我決定上線的！",
     "intro4": "歡迎來到我的AI魔法遊樂園！✨"
   },
-  "games": {
-    "freeKingdom": "🎪 免費遊戲王國",
-    "premiumKingdom": "🎪 付費遊戲王國",
-    "comingSoon": "更多遊戲即將到來",
-    "comingSoonDesc": "更多精彩遊戲正在開發中，敬請期待！"
+  "sections": {
+    "freeGameKingdom": "🎪 免費遊戲王國",
+    "premiumGameKingdom": "🎪 付費遊戲王國"
   },
-  "gameList": {
-    "strawberry": {
-      "name": "草莓遊戲",
+  "games": {
+    "strawberryGame": {
+      "title": "草莓遊戲",
       "description": "闖關摘草莓，挑戰你的反應力！"
     },
-    "running": {
-      "name": "跑步遊戲",
+    "runningGame": {
+      "title": "跑步遊戲",
       "description": "跑步闖關，鍛煉身體和反應力！"
     },
-    "idiom": {
-      "name": "成語英雄",
+    "idiomHero": {
+      "title": "成語英雄",
       "description": "成語闖關遊戲，提升成語水平！"
     },
-    "sudoku": {
-      "name": "數獨遊戲",
+    "sudokuPuzzle": {
+      "title": "數獨遊戲",
       "description": "數獨遊戲，鍛煉邏輯思維！"
     },
-    "fishy": {
-      "name": "大魚吃小魚",
+    "bigFishEatSmallFish": {
+      "title": "大魚吃小魚",
       "description": "經典大魚吃小魚遊戲，體驗海洋世界的生存法則！"
+    },
+    "moreGamesComing": {
+      "title": "更多遊戲即將到來",
+      "description": "更多精彩遊戲正在開發中，敬請期待！"
     }
+  },
+  "badges": {
+    "hot": "HOT",
+    "new": "NEW",
+    "comingSoon": "COMING SOON"
   },
   "footer": {
     "title": "OneOne Games",
-    "subtitle": "獨立黑客風格編程項目，由小女孩創作，AI魔法賦能 ✨",
+    "description": "獨立黑客風格編程項目，由小女孩創作，AI魔法賦能 ✨",
     "builtWith": "用 ❤️ 和 AI 構建",
-    "contact": "聯繫我們",
-    "contactEmail": "oneone.games111@gmail.com",
-    "copyright": "© 2025 OneOne.Games"
+    "contactTitle": "聯繫我們",
+    "tech": "GPT-5",
+    "contact": "oneone.games111@gmail.com"
   },
   "modal": {
     "comingSoonTitle": "🎮 即將推出！",
@@ -57,8 +64,19 @@
     "gotItButton": "知道了！"
   },
   "languages": {
-    "zhHans": "簡體中文",
+    "en": "English",
+    "zhHans": "简体中文",
     "zhHant": "繁體中文",
-    "en": "English"
+    "ja": "日本語",
+    "ko": "한국어",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "ptBr": "Português (Brasil)",
+    "ptPt": "Português (Portugal)",
+    "it": "Italiano",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "sv": "Svenska"
   }
 }

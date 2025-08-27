@@ -1,0 +1,82 @@
+{
+  "header": {
+    "logoText": "OneOne Games - Parco Giochi Magico IA"
+  },
+  "nav": {
+    "freeGames": "Giochi Gratuiti ▼",
+    "premiumGames": "Giochi Premium ▼",
+    "about": "Chi Siamo",
+    "language": "Italiano ▼"
+  },
+  "welcome": {
+    "title": "Ciao! Sono Yiyi 👧",
+    "intro1": "Ho quasi 6 anni e adoro giocare ai giochi!",
+    "intro2": "Mio papà e io abbiamo creato questi giochi usando la magia dell'IA,",
+    "intro3": "Ogni gioco è la mia idea, testato da me, e lanciato secondo la mia decisione!",
+    "intro4": "Benvenuto nel mio Parco Giochi Magico IA! ✨"
+  },
+  "sections": {
+    "freeGameKingdom": "🎪 Regno dei Giochi Gratuiti",
+    "premiumGameKingdom": "🎪 Regno dei Giochi Premium"
+  },
+  "games": {
+    "strawberryGame": {
+      "title": "Gioco delle Fragole",
+      "description": "Raccogli fragole attraverso i livelli, sfida i tuoi riflessi!"
+    },
+    "runningGame": {
+      "title": "Gioco di Corsa",
+      "description": "Corri attraverso i livelli, esercita il tuo corpo e i tuoi riflessi!"
+    },
+    "idiomHero": {
+      "title": "Eroe dei Modi di Dire",
+      "description": "Gioco di sfida dei modi di dire, migliora le tue abilità nei modi di dire!"
+    },
+    "sudokuPuzzle": {
+      "title": "Puzzle Sudoku",
+      "description": "Gioco di sudoku, esercita il tuo pensiero logico!"
+    },
+    "bigFishEatSmallFish": {
+      "title": "Pesce Grande Mangia Pesce Piccolo",
+      "description": "Gioco classico del pesce grande che mangia il pesce piccolo, sperimenta le regole di sopravvivenza del mondo oceanico!"
+    },
+    "moreGamesComing": {
+      "title": "Altri Giochi in Arrivo",
+      "description": "Altri giochi emozionanti sono in fase di sviluppo, rimani sintonizzato!"
+    }
+  },
+  "badges": {
+    "hot": "HOT",
+    "new": "NEW",
+    "comingSoon": "COMING SOON"
+  },
+  "footer": {
+    "title": "OneOne Games",
+    "description": "Progetto di programmazione indipendente stile hacker, creato da una bambina, potenziato dalla magia dell'IA ✨",
+    "builtWith": "Costruito con ❤️ e IA",
+    "contactTitle": "Contattaci",
+    "tech": "GPT-5",
+    "contact": "oneone.games111@gmail.com"
+  },
+  "modal": {
+    "comingSoonTitle": "🎮 Prossimamente!",
+    "comingSoonMessage": "Altri giochi emozionanti sono in fase di sviluppo. Rimani sintonizzato!",
+    "gotItButton": "Capito!"
+  },
+  "languages": {
+    "en": "English",
+    "zhHans": "简体中文",
+    "zhHant": "繁體中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "ptBr": "Português (Brasil)",
+    "ptPt": "Português (Portugal)",
+    "it": "Italiano",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "sv": "Svenska"
+  }
+}

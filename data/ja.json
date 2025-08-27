@@ -1,0 +1,82 @@
+{
+  "header": {
+    "logoText": "OneOne Games - AI魔法遊園地"
+  },
+  "nav": {
+    "freeGames": "無料ゲーム ▼",
+    "premiumGames": "プレミアムゲーム ▼",
+    "about": "について",
+    "language": "日本語 ▼"
+  },
+  "welcome": {
+    "title": "こんにちは！私は一一です 👧",
+    "intro1": "私はもうすぐ6歳で、ゲームが大好きです！",
+    "intro2": "お父さんと一緒にAIマジックを使ってこれらのゲームを作りました、",
+    "intro3": "各ゲームは私のアイデアで、私がテストして、私がリリースするかどうかを決めています！",
+    "intro4": "私のAI魔法遊園地へようこそ！ ✨"
+  },
+  "sections": {
+    "freeGameKingdom": "🎪 無料ゲーム王国",
+    "premiumGameKingdom": "🎪 プレミアムゲーム王国"
+  },
+  "games": {
+    "strawberryGame": {
+      "title": "いちごゲーム",
+      "description": "レベルを通してイチゴを摘み、反射神経に挑戦しよう！"
+    },
+    "runningGame": {
+      "title": "ランニングゲーム",
+      "description": "レベルを通して走り、体と反射神経を鍛えよう！"
+    },
+    "idiomHero": {
+      "title": "熟語ヒーロー",
+      "description": "熟語チャレンジゲーム、熟語スキルを向上させよう！"
+    },
+    "sudokuPuzzle": {
+      "title": "数独パズル",
+      "description": "数独ゲーム、論理的思考を鍛えよう！"
+    },
+    "bigFishEatSmallFish": {
+      "title": "大きな魚が小さな魚を食べる",
+      "description": "クラシックな大きな魚が小さな魚を食べるゲーム、海の世界の生存ルールを体験しよう！"
+    },
+    "moreGamesComing": {
+      "title": "さらに多くのゲームが登場予定",
+      "description": "さらに多くのエキサイティングなゲームが開発中です、お楽しみに！"
+    }
+  },
+  "badges": {
+    "hot": "HOT",
+    "new": "NEW",
+    "comingSoon": "COMING SOON"
+  },
+  "footer": {
+    "title": "OneOne Games",
+    "description": "独立したハッカー風プログラミングプロジェクト、小さな女の子によって作成され、AIマジックによって強化されました ✨",
+    "builtWith": "❤️とAIで構築",
+    "contactTitle": "お問い合わせ",
+    "tech": "GPT-5",
+    "contact": "oneone.games111@gmail.com"
+  },
+  "modal": {
+    "comingSoonTitle": "🎮 近日登場！",
+    "comingSoonMessage": "さらに多くのエキサイティングなゲームが開発中です。お楽しみに！",
+    "gotItButton": "了解しました！"
+  },
+  "languages": {
+    "en": "English",
+    "zhHans": "简体中文",
+    "zhHant": "繁體中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "ptBr": "Português (Brasil)",
+    "ptPt": "Português (Portugal)",
+    "it": "Italiano",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "sv": "Svenska"
+  }
+}

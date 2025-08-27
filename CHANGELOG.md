@@ -5,6 +5,60 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.10] - 2025-01-XX
+
+### Fixed
+- 修复简体中文和繁体中文翻译文件结构不一致问题
+- 统一所有语言版本的翻译键名结构
+- 完善简体中文和繁体中文的页脚翻译
+- 确保所有14种语言的翻译完整性
+
+### Changed
+- 更新简体中文和繁体中文翻译文件，使用新的键名结构
+- 添加缺失的页脚翻译元素（builtWith、contactTitle等）
+- 完善语言选择器，支持所有14种语言切换
+
+### Technical
+- 统一翻译文件架构，确保所有语言版本使用相同的键名结构
+- 修复预渲染脚本中的翻译替换逻辑
+- 确保所有语言版本的翻译质量和一致性
+
+## [3.0.9] - 2025-01-XX
+
+### Added
+- 新增11种语言版本支持：
+  - 日本語 (/ja/)
+  - 한국어 (/ko/)
+  - Français (/fr/)
+  - Deutsch (/de/)
+  - Español (/es/)
+  - Português (Brasil) (/pt-br/)
+  - Português (Portugal) (/pt-pt/)
+  - Italiano (/it/)
+  - Nederlands (/nl/)
+  - Polski (/pl/)
+  - Svenska (/sv/)
+- 新增14种语言的完整翻译文件
+- 更新预渲染脚本支持所有新语言
+- 更新sitemap.xml包含所有语言版本URL
+
+### Changed
+- 扩展语言选择器支持14种语言切换
+- 更新英文版本hreflang标签包含所有新语言
+- 完善README.md多语言文档和文件结构说明
+- 优化预渲染脚本的语言切换器链接处理逻辑
+
+### Fixed
+- 确保所有新语言版本的hreflang标签配置正确
+- 统一所有语言版本的语言选择器链接逻辑
+- 完善SEO配置，支持多语言搜索引擎优化
+
+### Technical
+- 大规模多语言扩展，从3种语言扩展到14种语言
+- 完整的翻译文件管理和预渲染系统
+- 统一的SEO配置和hreflang标签管理
+- 配置驱动的多语言架构，支持轻松扩展
+
 ## [3.0.8] - 2025-01-XX
 
 ### Added

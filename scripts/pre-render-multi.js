@@ -20,16 +20,95 @@ const LANGUAGES = {
         title: 'OneOne Games - AI魔法遊樂園',
         description: '由不到6歲的小女孩一一用AI工具打造的兒童遊戲網站，每個遊戲都是一一自己提出想法，和爸爸一起完成，自己測試，自己決定是否上線。',
         canonical: 'https://oneone.games/zh-hant/'
+    },
+    'ja': {
+        name: '日本語',
+        code: 'ja',
+        dir: 'ja',
+        title: 'OneOne Games - AI魔法遊園地',
+        description: '6歳に満たない女の子一一がAIツールで作った子供向けゲームサイトです。各ゲームは一一が自分でアイデアを出し、お父さんと一緒に完成させ、自分でテストして、自分でリリースするかどうかを決めています。',
+        canonical: 'https://oneone.games/ja/'
+    },
+    'ko': {
+        name: '한국어',
+        code: 'ko',
+        dir: 'ko',
+        title: 'OneOne Games - AI 마법 놀이터',
+        description: '6살이 되지 않은 소녀 일일이가 AI 도구로 만든 어린이 게임 사이트입니다. 각 게임은 일일이가 직접 아이디어를 내고, 아빠와 함께 완성하고, 직접 테스트하고, 직접 출시할지 결정합니다.',
+        canonical: 'https://oneone.games/ko/'
+    },
+    'fr': {
+        name: 'Français',
+        code: 'fr',
+        dir: 'fr',
+        title: 'OneOne Games - Terrain de Jeu Magique IA',
+        description: 'Site de jeux pour enfants créé par Yiyi, une petite fille de moins de 6 ans, utilisant des outils d\'IA. Chaque jeu est une idée de Yiyi, réalisée avec son papa, testée par elle-même et lancée selon sa décision.',
+        canonical: 'https://oneone.games/fr/'
+    },
+    'de': {
+        name: 'Deutsch',
+        code: 'de',
+        dir: 'de',
+        title: 'OneOne Games - KI-Magischer Spielplatz',
+        description: 'Eine von der fast 6-jährigen Yiyi mit KI-Tools erstellte Kinderspiel-Website. Jedes Spiel ist Yiyis eigene Idee, mit Papa zusammen umgesetzt, von ihr selbst getestet und nach ihrer Entscheidung veröffentlicht.',
+        canonical: 'https://oneone.games/de/'
+    },
+    'es': {
+        name: 'Español',
+        code: 'es',
+        dir: 'es',
+        title: 'OneOne Games - Patio de Juegos Mágico IA',
+        description: 'Sitio web de juegos para niños creado por Yiyi, una niña de casi 6 años, usando herramientas de IA. Cada juego es una idea de Yiyi, completada con su papá, probada por ella misma y lanzada según su decisión.',
+        canonical: 'https://oneone.games/es/'
+    },
+    'pt-br': {
+        name: 'Português (Brasil)',
+        code: 'pt-BR',
+        dir: 'pt-br',
+        title: 'OneOne Games - Playground Mágico IA',
+        description: 'Site de jogos infantis criado por Yiyi, uma menina de quase 6 anos, usando ferramentas de IA. Cada jogo é uma ideia de Yiyi, completada com seu pai, testada por ela mesma e lançada segundo sua decisão.',
+        canonical: 'https://oneone.games/pt-br/'
+    },
+    'pt-pt': {
+        name: 'Português (Portugal)',
+        code: 'pt-PT',
+        dir: 'pt-pt',
+        title: 'OneOne Games - Parque Infantil Mágico IA',
+        description: 'Site de jogos infantis criado por Yiyi, uma menina de quase 6 anos, usando ferramentas de IA. Cada jogo é uma ideia de Yiyi, completada com o seu pai, testada por ela própria e lançada segundo a sua decisão.',
+        canonical: 'https://oneone.games/pt-pt/'
+    },
+    'it': {
+        name: 'Italiano',
+        code: 'it',
+        dir: 'it',
+        title: 'OneOne Games - Parco Giochi Magico IA',
+        description: 'Sito web di giochi per bambini creato da Yiyi, una bambina di quasi 6 anni, utilizzando strumenti di IA. Ogni gioco è un\'idea di Yiyi, completata con suo padre, testata da lei stessa e lanciata secondo la sua decisione.',
+        canonical: 'https://oneone.games/it/'
+    },
+    'nl': {
+        name: 'Nederlands',
+        code: 'nl',
+        dir: 'nl',
+        title: 'OneOne Games - AI Magische Speeltuin',
+        description: 'Een kinderspelwebsite gemaakt door Yiyi, een meisje van bijna 6 jaar, met behulp van AI-tools. Elk spel is Yiyi\'s eigen idee, voltooid met haar vader, door haarzelf getest en gelanceerd volgens haar beslissing.',
+        canonical: 'https://oneone.games/nl/'
+    },
+    'pl': {
+        name: 'Polski',
+        code: 'pl',
+        dir: 'pl',
+        title: 'OneOne Games - Magiczny Plac Zabaw AI',
+        description: 'Strona z grami dla dzieci stworzona przez Yiyi, prawie 6-letnią dziewczynkę, używając narzędzi AI. Każda gra to pomysł Yiyi, ukończony z tatą, przetestowany przez nią samą i wydany zgodnie z jej decyzją.',
+        canonical: 'https://oneone.games/pl/'
+    },
+    'sv': {
+        name: 'Svenska',
+        code: 'sv',
+        dir: 'sv',
+        title: 'OneOne Games - AI Magisk Lekplats',
+        description: 'En barnspelswebbplats skapad av Yiyi, en nästan 6-årig flicka, med hjälp av AI-verktyg. Varje spel är Yiyis egen idé, slutförd med hennes pappa, testad av henne själv och lanserad enligt hennes beslut.',
+        canonical: 'https://oneone.games/sv/'
     }
-    // 可以轻松添加更多语言
-    // 'ja': {
-    //     name: '日本語',
-    //     code: 'ja',
-    //     dir: 'ja',
-    //     title: 'OneOne Games - AI魔法遊園地',
-    //     description: '...',
-    //     canonical: 'https://oneone.games/ja/'
-    // }
 };
 
 // 读取英文HTML模板
@@ -88,6 +167,17 @@ function replaceContent(html, translations) {
     result = result.replace(/href="\.\/"/g, 'href="../"');
     result = result.replace(/href="\.\/zh-hans\/"/g, 'href="../zh-hans/"');
     result = result.replace(/href="\.\/zh-hant\/"/g, 'href="../zh-hant/"');
+    result = result.replace(/href="\.\/ja\/"/g, 'href="../ja/"');
+    result = result.replace(/href="\.\/ko\/"/g, 'href="../ko/"');
+    result = result.replace(/href="\.\/fr\/"/g, 'href="../fr/"');
+    result = result.replace(/href="\.\/de\/"/g, 'href="../de/"');
+    result = result.replace(/href="\.\/es\/"/g, 'href="../es/"');
+    result = result.replace(/href="\.\/pt-br\/"/g, 'href="../pt-br/"');
+    result = result.replace(/href="\.\/pt-pt\/"/g, 'href="../pt-pt/"');
+    result = result.replace(/href="\.\/it\/"/g, 'href="../it/"');
+    result = result.replace(/href="\.\/nl\/"/g, 'href="../nl/"');
+    result = result.replace(/href="\.\/pl\/"/g, 'href="../pl/"');
+    result = result.replace(/href="\.\/sv\/"/g, 'href="../sv/"');
     
     // 替换欢迎区域
     if (translations.welcome) {
@@ -99,53 +189,51 @@ function replaceContent(html, translations) {
     }
     
     // 替换游戏区域标题
-    if (translations.games) {
-        if (translations.games.freeKingdom) result = result.replace(/🎪 Free Game Kingdom/g, translations.games.freeKingdom);
-        if (translations.games.premiumKingdom) result = result.replace(/🎪 Premium Game Kingdom/g, translations.games.premiumKingdom);
-        if (translations.games.comingSoon) result = result.replace(/More Games Coming/g, translations.games.comingSoon);
-        if (translations.games.comingSoonDesc) result = result.replace(/More exciting games are under development, stay tuned!/g, translations.games.comingSoonDesc);
+    if (translations.sections) {
+        if (translations.sections.freeGameKingdom) result = result.replace(/🎪 Free Game Kingdom/g, translations.sections.freeGameKingdom);
+        if (translations.sections.premiumGameKingdom) result = result.replace(/🎪 Premium Game Kingdom/g, translations.sections.premiumGameKingdom);
     }
     
     // 替换游戏名称和描述
-    if (translations.gameList) {
-        Object.keys(translations.gameList).forEach(gameKey => {
-            const game = translations.gameList[gameKey];
-            if (game.name) {
-                const gameNameMap = {
-                    'strawberry': 'Strawberry Game',
-                    'running': 'Running Game',
-                    'idiom': 'Idiom Hero',
-                    'sudoku': 'Sudoku Puzzle',
-                    'fishy': 'Big Fish Eat Small Fish'
-                };
-                const englishName = gameNameMap[gameKey];
-                if (englishName) {
-                    result = result.replace(new RegExp(englishName, 'g'), game.name);
-                }
-            }
-            if (game.description) {
-                // 这里需要为每个游戏添加描述替换逻辑
-                const gameDescMap = {
-                    'strawberry': 'Pick strawberries through levels, challenge your reflexes!',
-                    'running': 'Run through levels, exercise your body and reflexes!',
-                    'idiom': 'Idiom challenge game, improve your idiom skills!',
-                    'sudoku': 'Sudoku game, exercise your logical thinking!',
-                    'fishy': 'Classic big fish eats small fish game, experience the survival rules of the ocean world!'
-                };
-                const englishDesc = gameDescMap[gameKey];
-                if (englishDesc) {
-                    result = result.replace(new RegExp(englishDesc.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), game.description);
-                }
-            }
-        });
+    if (translations.games) {
+        // 草莓游戏
+        if (translations.games.strawberryGame) {
+            if (translations.games.strawberryGame.title) result = result.replace(/Strawberry Game/g, translations.games.strawberryGame.title);
+            if (translations.games.strawberryGame.description) result = result.replace(/Pick strawberries through levels, challenge your reflexes!/g, translations.games.strawberryGame.description);
+        }
+        // 跑步游戏
+        if (translations.games.runningGame) {
+            if (translations.games.runningGame.title) result = result.replace(/Running Game/g, translations.games.runningGame.title);
+            if (translations.games.runningGame.description) result = result.replace(/Run through levels, exercise your body and reflexes!/g, translations.games.runningGame.description);
+        }
+        // 成语英雄
+        if (translations.games.idiomHero) {
+            if (translations.games.idiomHero.title) result = result.replace(/Idiom Hero/g, translations.games.idiomHero.title);
+            if (translations.games.idiomHero.description) result = result.replace(/Idiom challenge game, improve your idiom skills!/g, translations.games.idiomHero.description);
+        }
+        // 数独游戏
+        if (translations.games.sudokuPuzzle) {
+            if (translations.games.sudokuPuzzle.title) result = result.replace(/Sudoku Puzzle/g, translations.games.sudokuPuzzle.title);
+            if (translations.games.sudokuPuzzle.description) result = result.replace(/Sudoku game, exercise your logical thinking!/g, translations.games.sudokuPuzzle.description);
+        }
+        // 大鱼吃小鱼
+        if (translations.games.bigFishEatSmallFish) {
+            if (translations.games.bigFishEatSmallFish.title) result = result.replace(/Big Fish Eat Small Fish/g, translations.games.bigFishEatSmallFish.title);
+            if (translations.games.bigFishEatSmallFish.description) result = result.replace(/Classic big fish eats small fish game, experience the survival rules of the ocean world!/g, translations.games.bigFishEatSmallFish.description);
+        }
+        // 更多游戏即将推出
+        if (translations.games.moreGamesComing) {
+            if (translations.games.moreGamesComing.title) result = result.replace(/More Games Coming/g, translations.games.moreGamesComing.title);
+            if (translations.games.moreGamesComing.description) result = result.replace(/More exciting games are under development, stay tuned!/g, translations.games.moreGamesComing.description);
+        }
     }
     
     // 替换页脚
     if (translations.footer) {
-        if (translations.footer.subtitle) result = result.replace(/Independent hacker-style programming project, created by a little girl, empowered by AI magic ✨/g, translations.footer.subtitle);
+        if (translations.footer.description) result = result.replace(/Independent hacker-style programming project, created by a little girl, empowered by AI magic ✨/g, translations.footer.description);
+        if (translations.footer.contact) result = result.replace(/oneone\.games111@gmail\.com/g, translations.footer.contact);
         if (translations.footer.builtWith) result = result.replace(/Built with ❤️ and AI/g, translations.footer.builtWith);
-        if (translations.footer.contact) result = result.replace(/Contact Us/g, translations.footer.contact);
-        if (translations.footer.contactEmail) result = result.replace(/oneone\.games111@gmail\.com/g, translations.footer.contactEmail);
+        if (translations.footer.contactTitle) result = result.replace(/Contact Us/g, translations.footer.contactTitle);
     }
     
     // 替换弹窗内容

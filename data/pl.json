@@ -1,0 +1,82 @@
+{
+  "header": {
+    "logoText": "OneOne Games - Magiczny Plac Zabaw AI"
+  },
+  "nav": {
+    "freeGames": "Darmowe Gry ▼",
+    "premiumGames": "Gry Premium ▼",
+    "about": "O Nas",
+    "language": "Polski ▼"
+  },
+  "welcome": {
+    "title": "Cześć! Jestem Yiyi 👧",
+    "intro1": "Mam prawie 6 lat i uwielbiam grać w gry!",
+    "intro2": "Mój tata i ja stworzyliśmy te gry używając magii AI,",
+    "intro3": "Każda gra to mój pomysł, przetestowana przeze mnie i wydana zgodnie z moją decyzją!",
+    "intro4": "Witaj w moim Magicznych Placu Zabaw AI! ✨"
+  },
+  "sections": {
+    "freeGameKingdom": "🎪 Królestwo Darmowych Gier",
+    "premiumGameKingdom": "🎪 Królestwo Gier Premium"
+  },
+  "games": {
+    "strawberryGame": {
+      "title": "Gra Truskawkowa",
+      "description": "Zbieraj truskawki przez poziomy, rzuć wyzwanie swoim refleksom!"
+    },
+    "runningGame": {
+      "title": "Gra Biegowa",
+      "description": "Biegaj przez poziomy, ćwicz swoje ciało i refleksy!"
+    },
+    "idiomHero": {
+      "title": "Bohater Przysłów",
+      "description": "Gra wyzwanie przysłów, popraw swoje umiejętności przysłów!"
+    },
+    "sudokuPuzzle": {
+      "title": "Puzzle Sudoku",
+      "description": "Gra sudoku, ćwicz swoje logiczne myślenie!"
+    },
+    "bigFishEatSmallFish": {
+      "title": "Duża Ryba Je Małą Rybę",
+      "description": "Klasyczna gra dużej ryby jedzącej małą rybę, doświadcz reguł przetrwania świata oceanicznego!"
+    },
+    "moreGamesComing": {
+      "title": "Więcej Gier Nadchodzi",
+      "description": "Więcej ekscytujących gier jest w rozwoju, bądź na bieżąco!"
+    }
+  },
+  "badges": {
+    "hot": "HOT",
+    "new": "NEW",
+    "comingSoon": "COMING SOON"
+  },
+  "footer": {
+    "title": "OneOne Games",
+    "description": "Niezależny projekt programistyczny w stylu hakera, stworzony przez małą dziewczynkę, wzmocniony magią AI ✨",
+    "builtWith": "Zbudowane z ❤️ i AI",
+    "contactTitle": "Skontaktuj się",
+    "tech": "GPT-5",
+    "contact": "oneone.games111@gmail.com"
+  },
+  "modal": {
+    "comingSoonTitle": "🎮 Wkrótce Dostępne!",
+    "comingSoonMessage": "Więcej ekscytujących gier jest w rozwoju. Bądź na bieżąco!",
+    "gotItButton": "Rozumiem!"
+  },
+  "languages": {
+    "en": "English",
+    "zhHans": "简体中文",
+    "zhHant": "繁體中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "ptBr": "Português (Brasil)",
+    "ptPt": "Português (Portugal)",
+    "it": "Italiano",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "sv": "Svenska"
+  }
+}

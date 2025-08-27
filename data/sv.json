@@ -1,0 +1,82 @@
+{
+  "header": {
+    "logoText": "OneOne Games - AI Magisk Lekplats"
+  },
+  "nav": {
+    "freeGames": "Gratis Spel ▼",
+    "premiumGames": "Premium Spel ▼",
+    "about": "Om",
+    "language": "Svenska ▼"
+  },
+  "welcome": {
+    "title": "Hej! Jag är Yiyi 👧",
+    "intro1": "Jag är nästan 6 år gammal och jag älskar att spela spel!",
+    "intro2": "Min pappa och jag skapade dessa spel med hjälp av AI-magi,",
+    "intro3": "Varje spel är min idé, testat av mig, och lanserat enligt mitt beslut!",
+    "intro4": "Välkommen till min AI Magiska Lekplats! ✨"
+  },
+  "sections": {
+    "freeGameKingdom": "🎪 Gratis Spel Rike",
+    "premiumGameKingdom": "🎪 Premium Spel Rike"
+  },
+  "games": {
+    "strawberryGame": {
+      "title": "Jordgubbs Spel",
+      "description": "Plocka jordgubbar genom nivåer, utmana dina reflexer!"
+    },
+    "runningGame": {
+      "title": "Löp Spel",
+      "description": "Spring genom nivåer, träna din kropp och reflexer!"
+    },
+    "idiomHero": {
+      "title": "Idiom Hjälte",
+      "description": "Idiom utmaningsspel, förbättra dina idiom färdigheter!"
+    },
+    "sudokuPuzzle": {
+      "title": "Sudoku Pussel",
+      "description": "Sudoku spel, träna ditt logiska tänkande!"
+    },
+    "bigFishEatSmallFish": {
+      "title": "Stor Fisk Äter Liten Fisk",
+      "description": "Klassiskt spel av stor fisk som äter liten fisk, upplev överlevnadsreglerna för oceanvärlden!"
+    },
+    "moreGamesComing": {
+      "title": "Fler Spel Kommer",
+      "description": "Fler spännande spel är under utveckling, håll dig uppdaterad!"
+    }
+  },
+  "badges": {
+    "hot": "HOT",
+    "new": "NEW",
+    "comingSoon": "COMING SOON"
+  },
+  "footer": {
+    "title": "OneOne Games",
+    "description": "Oberoende hacker-stil programmeringsprojekt, skapat av en liten flicka, förstärkt av AI-magi ✨",
+    "builtWith": "Byggt med ❤️ och AI",
+    "contactTitle": "Kontakta oss",
+    "tech": "GPT-5",
+    "contact": "oneone.games111@gmail.com"
+  },
+  "modal": {
+    "comingSoonTitle": "🎮 Kommer Snart!",
+    "comingSoonMessage": "Fler spännande spel är under utveckling. Håll dig uppdaterad!",
+    "gotItButton": "Förstått!"
+  },
+  "languages": {
+    "en": "English",
+    "zhHans": "简体中文",
+    "zhHant": "繁體中文",
+    "ja": "日本語",
+    "ko": "한국어",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "ptBr": "Português (Brasil)",
+    "ptPt": "Português (Portugal)",
+    "it": "Italiano",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "sv": "Svenska"
+  }
+}
