@@ -5,6 +5,56 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.6] - 2025-01-XX
+
+### Added
+- 新增通用多语言预渲染脚本（scripts/pre-render-multi.js）
+- 创建配置驱动的多语言架构，易于添加新语言
+- 添加语言配置对象，支持多语言扩展
+
+### Changed
+- 优化预渲染脚本，使用更精确的正则表达式替换
+- 改进hreflang标签处理逻辑，避免SEO错误
+- 更新package.json，添加多语言预渲染命令
+
+### Fixed
+- 修复中文版本语言切换器链接错误问题
+- 修复hreflang标签配置错误，确保SEO正确性
+- 解决相对路径解析问题，确保本地开发正常
+
+### Technical
+- 配置驱动的多语言系统，避免硬编码错误
+- 精确的标签替换逻辑，防止正则表达式错误
+- 支持单语言和全语言预渲染模式
+
+## [3.0.5] - 2025-01-XX
+
+### Added
+- 新增极简预渲染系统，解决多语言闪现和SEO问题
+- 创建预渲染脚本（scripts/pre-render.js）
+- 创建中文翻译数据文件（data/zh-hans.json）
+- 实现静态中文HTML生成，用户和搜索引擎直接看到中文内容
+
+### Changed
+- 重构多语言架构，从i18n.js动态替换改为预渲染静态文件
+- 更新文件结构，分离翻译数据和渲染逻辑
+- 优化翻译管理流程，简化同步工作
+
+### Removed
+- 删除js/i18n.js文件，改用JSON格式翻译数据
+- 移除动态i18n替换逻辑
+
+### Fixed
+- 解决中文版本闪现英文的问题
+- 解决搜索引擎爬取英文内容的问题
+- 提升用户体验和SEO效果
+
+### Technical
+- 极简预渲染脚本，无复杂构建流程
+- 输入：index.html + zh-hans.json
+- 输出：静态中文HTML文件
+- 只在内容更新时运行，不影响开发效率
+
 ## [3.0.4] - 2025-01-XX
 
 ### Added

@@ -6,7 +6,6 @@ Sitemap: https://oneone.games/sitemap.xml
 
 # 允许爬取所有语言版本
 Allow: /zh-hans/
-Allow: /en/
 
 # 允许爬取静态资源
 Allow: /css/
