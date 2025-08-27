@@ -89,65 +89,22 @@ function initGameCards() {
 
 // 显示即将推出消息
 function showComingSoonMessage() {
-    // 创建模态框
-    const modal = document.createElement('div');
-    modal.className = 'coming-soon-modal';
-    modal.innerHTML = `
-        <div class="modal-content">
-            <h3>🎮 Coming Soon!</h3>
-            <p>More exciting games are under development. Stay tuned!</p>
-            <button class="modal-close">Got it!</button>
-        </div>
-    `;
-
-    // 添加样式
-    modal.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 10000;
-    `;
-
-    const modalContent = modal.querySelector('.modal-content');
-    modalContent.style.cssText = `
-        background: white;
-        padding: 2rem;
-        border-radius: 16px;
-        text-align: center;
-        max-width: 400px;
-        margin: 1rem;
-    `;
-
-    const closeBtn = modal.querySelector('.modal-close');
-    closeBtn.style.cssText = `
-        background: #667eea;
-        color: white;
-        border: none;
-        padding: 0.8rem 1.5rem;
-        border-radius: 8px;
-        cursor: pointer;
-        margin-top: 1rem;
-        font-weight: 600;
-    `;
-
+    const modal = document.getElementById('coming-soon-modal');
+    
+    // 显示模态框
+    modal.style.display = 'flex';
+    
     // 关闭模态框
+    const closeBtn = modal.querySelector('.modal-close');
     closeBtn.addEventListener('click', () => {
-        document.body.removeChild(modal);
+        modal.style.display = 'none';
     });
 
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
-            document.body.removeChild(modal);
+            modal.style.display = 'none';
         }
     });
-
-    document.body.appendChild(modal);
 
     // 跟踪事件
     gtag('event', 'coming_soon_click', {

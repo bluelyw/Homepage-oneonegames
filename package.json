@@ -1,11 +1,10 @@
 {
   "name": "oneone-games",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "OneOne Games - AI Magic Playground",
   "main": "index.html",
   "scripts": {
-    "pre-render": "node scripts/pre-render.js",
-    "pre-render-multi": "node scripts/pre-render-multi.js",
+    "pre-render": "node scripts/pre-render-multi.js",
     "pre-render-all": "node scripts/pre-render-multi.js",
     "serve": "python3 -m http.server 1313",
     "build": "npm run pre-render-all"

@@ -51,6 +51,11 @@
     "contactEmail": "oneone.games111@gmail.com",
     "copyright": "© 2025 OneOne.Games"
   },
+  "modal": {
+    "comingSoonTitle": "🎮 即将推出！",
+    "comingSoonMessage": "更多精彩游戏正在开发中，敬请期待！",
+    "gotItButton": "知道了！"
+  },
 
   "languages": {
     "zhHans": "简体中文",

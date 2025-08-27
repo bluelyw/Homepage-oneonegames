@@ -77,8 +77,8 @@ function replaceContent(html, translations) {
     }
     
     // 修复语言切换器链接（使用相对路径）
-    result = result.replace(/href="\/"/g, 'href="../"');
-    result = result.replace(/href="\/zh-hans\/"/g, 'href="../zh-hans/"');
+    result = result.replace(/href="\.\/"/g, 'href="../"');
+    result = result.replace(/href="\.\/zh-hans\/"/g, 'href="../zh-hans/"');
     
     // 替换欢迎区域
     if (translations.welcome) {
@@ -139,6 +139,13 @@ function replaceContent(html, translations) {
         if (translations.footer.contactEmail) result = result.replace(/oneone\.games111@gmail\.com/g, translations.footer.contactEmail);
     }
     
+    // 替换弹窗内容
+    if (translations.modal) {
+        if (translations.modal.comingSoonTitle) result = result.replace(/🎮 Coming Soon!/g, translations.modal.comingSoonTitle);
+        if (translations.modal.comingSoonMessage) result = result.replace(/More exciting games are under development\. Stay tuned!/g, translations.modal.comingSoonMessage);
+        if (translations.modal.gotItButton) result = result.replace(/Got it!/g, translations.modal.gotItButton);
+    }
+    
     return result;
 }
 
@@ -151,19 +158,9 @@ function updateMetaTags(html, langConfig) {
         .replace(/<link rel="canonical" href="([^"]+)"/, `<link rel="canonical" href="${langConfig.canonical}">`)
         // 修复canonical标签的多余字符
         .replace(/<link rel="canonical" href="([^"]+)">>/g, '<link rel="canonical" href="$1">')
-        // 使用更精确的方法修复hreflang标签
-        .replace(
-            /<link rel="alternate" hreflang="en" href="https:\/\/oneone\.games\/">/g,
-            '<link rel="alternate" hreflang="en" href="https://oneone.games/">'
-        )
-        .replace(
-            /<link rel="alternate" hreflang="zh-Hans" href="https:\/\/oneone\.games\/zh-hans\/">/g,
-            '<link rel="alternate" hreflang="zh-Hans" href="https://oneone.games/zh-hans/">'
-        )
-        .replace(
-            /<link rel="alternate" hreflang="x-default" href="https:\/\/oneone\.games\/">/g,
-            '<link rel="alternate" hreflang="x-default" href="https://oneone.games/">'
-        );
+        // 保持hreflang标签不变，所有语言版本都使用相同的配置
+        // 不进行任何hreflang替换，直接复制英文版本的hreflang配置
+        // 这样可以确保所有语言版本的hreflang标签完全一致
 }
 
 // 更新资源路径

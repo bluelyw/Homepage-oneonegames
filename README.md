@@ -75,7 +75,7 @@
 ├── data/
 │   └── zh-hans.json        # 中文翻译数据
 ├── scripts/
-│   └── pre-render.js       # 预渲染脚本
+│   └── pre-render-multi.js # 多语言预渲染脚本
 ├── js/
 │   └── main.js            # 主要功能
 └── css/
@@ -90,9 +90,10 @@
 #### 🔧 **技术实现**：
 - **纯 HTML/CSS/JS**：无构建工具依赖
 - **预渲染系统**：
-  - 极简预渲染脚本：`scripts/pre-render.js`
-  - 输入：`index.html` + `data/zh-hans.json`
-  - 输出：静态中文HTML文件
+  - 多语言预渲染脚本：`scripts/pre-render-multi.js`
+  - 配置驱动架构，支持多语言扩展
+  - 输入：`index.html` + `data/{语言代码}.json`
+  - 输出：静态多语言HTML文件
   - 解决闪现英文和SEO问题
 - **SEO 优化**：
   - 根路径 `/` 对应英文，不建立 `/en/` 目录
@@ -103,10 +104,10 @@
 
 #### 📝 **翻译管理**：
 - **英文更新**：直接修改根目录 `index.html`
-- **其他语言更新**：修改 `data/zh-hans.json` 对应翻译
+- **其他语言更新**：修改 `data/{语言代码}.json` 对应翻译
 - **同步原则**：英文页面是唯一 source of truth，翻译键必须与英文保持一致
 - **键值规范**：使用驼峰命名法，模块化组织
-- **预渲染**：运行 `node scripts/pre-render.js` 生成静态文件
+- **预渲染**：运行 `node scripts/pre-render-multi.js` 生成静态文件
 
 #### 🌐 **语言切换**：
 - 导航栏语言切换器
@@ -133,33 +134,62 @@
    - 简体中文：`/zh-hans/`
 
 ### 🔧 **预渲染多语言版本**
-当英文内容更新后，需要重新生成中文版本：
+当英文内容更新后，需要重新生成多语言版本：
 
 ```bash
-# 运行预渲染脚本
-node scripts/pre-render.js
+# 预渲染指定语言版本
+npm run pre-render zh-hans
 
-# 或者使用npm命令
-npm run pre-render
+# 预渲染所有语言版本
+npm run pre-render-all
+
+# 或者直接使用脚本
+node scripts/pre-render-multi.js zh-hans
+node scripts/pre-render-multi.js
 ```
 
 **预渲染流程**：
 1. 修改英文 `index.html`
-2. 更新 `data/zh-hans.json` 翻译文件
-3. 运行 `node scripts/pre-render.js`
-4. 自动生成 `zh-hans/index.html`
+2. 更新 `data/{语言代码}.json` 翻译文件
+3. 运行 `node scripts/pre-render-multi.js {语言代码}`
+4. 自动生成 `{语言代码}/index.html`
 
 **优势**：
-- ✅ 用户直接看到中文，无闪现
-- ✅ 搜索引擎爬取中文内容
-- ✅ 极简脚本，无复杂构建流程
+- ✅ 用户直接看到目标语言，无闪现
+- ✅ 搜索引擎爬取多语言内容
+- ✅ 配置驱动架构，易于扩展新语言
 - ✅ 只在内容更新时运行
 
+
+## 脚本管理
+
+### 预渲染脚本
+项目使用统一的预渲染脚本 `scripts/pre-render-multi.js`：
+
+- **配置驱动**：支持多语言扩展，通过 `LANGUAGES` 配置对象管理
+- **错误处理**：完善的错误处理和日志输出
+- **灵活使用**：支持单语言或全语言预渲染
+- **易于维护**：统一的代码结构，便于维护和扩展
+
+### 可用命令
+```bash
+# 预渲染指定语言
+npm run pre-render zh-hans
+
+# 预渲染所有语言
+npm run pre-render-all
+
+# 本地服务器
+npm run serve
+
+# 构建所有语言版本
+npm run build
+```
 
 ## 版本控制
 
 ### 当前版本
-**V3.0.6** - 多语言架构优化、修复链接和SEO问题
+**V3.0.7** - 弹窗多语言管理、修复语言选择器和hreflang问题
 
 ### 版本号规范
 本项目使用语义化版本控制 (Semantic Versioning):

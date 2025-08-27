@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.7] - 2025-01-XX
+
+### Added
+- 新增弹窗内容多语言管理，集成到预渲染系统
+- 将弹窗内容从JavaScript转移到HTML，支持多语言翻译
+- 添加弹窗样式，提升用户体验
+
+### Changed
+- 优化语言选择器链接处理逻辑，修复相对路径问题
+- 改进hreflang标签处理，确保所有语言版本配置一致
+- 更新预渲染脚本，支持弹窗内容翻译
+
+### Fixed
+- 修复中文版本语言选择器链接错误问题
+- 修复hreflang标签配置不一致问题
+- 解决弹窗内容无法多语言管理的问题
+
+### Technical
+- 弹窗内容完全集成到多语言预渲染系统
+- 统一的hreflang标签配置，避免SEO错误
+- 精确的语言选择器链接替换逻辑
+
 ## [3.0.6] - 2025-01-XX
 
 ### Added
