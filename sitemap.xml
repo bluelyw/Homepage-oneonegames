@@ -5,7 +5,7 @@
     <!-- 根目录 - 英文版本（默认） -->
     <url>
         <loc>https://oneone.games/</loc>
-        <lastmod>2025-01-XX</lastmod>
+        <lastmod>2025-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
@@ -28,7 +28,7 @@
     <!-- 简体中文版本 -->
     <url>
         <loc>https://oneone.games/zh-hans/</loc>
-        <lastmod>2025-01-XX</lastmod>
+        <lastmod>2025-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
@@ -51,7 +51,7 @@
     <!-- 繁體中文版本 -->
     <url>
         <loc>https://oneone.games/zh-hant/</loc>
-        <lastmod>2025-01-XX</lastmod>
+        <lastmod>2025-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
@@ -74,7 +74,7 @@
     <!-- 日本語版本 -->
     <url>
         <loc>https://oneone.games/ja/</loc>
-        <lastmod>2025-01-XX</lastmod>
+        <lastmod>2025-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
@@ -97,7 +97,7 @@
     <!-- 한국어版本 -->
     <url>
         <loc>https://oneone.games/ko/</loc>
-        <lastmod>2025-01-XX</lastmod>
+        <lastmod>2025-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
@@ -120,7 +120,7 @@
     <!-- Français版本 -->
     <url>
         <loc>https://oneone.games/fr/</loc>
-        <lastmod>2025-01-XX</lastmod>
+        <lastmod>2025-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
@@ -143,7 +143,7 @@
     <!-- Deutsch版本 -->
     <url>
         <loc>https://oneone.games/de/</loc>
-        <lastmod>2025-01-XX</lastmod>
+        <lastmod>2025-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
@@ -166,7 +166,7 @@
     <!-- Español版本 -->
     <url>
         <loc>https://oneone.games/es/</loc>
-        <lastmod>2025-01-XX</lastmod>
+        <lastmod>2025-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
@@ -189,7 +189,7 @@
     <!-- Português (Brasil)版本 -->
     <url>
         <loc>https://oneone.games/pt-br/</loc>
-        <lastmod>2025-01-XX</lastmod>
+        <lastmod>2025-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
@@ -212,7 +212,7 @@
     <!-- Português (Portugal)版本 -->
     <url>
         <loc>https://oneone.games/pt-pt/</loc>
-        <lastmod>2025-01-XX</lastmod>
+        <lastmod>2025-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
@@ -235,7 +235,7 @@
     <!-- Italiano版本 -->
     <url>
         <loc>https://oneone.games/it/</loc>
-        <lastmod>2025-01-XX</lastmod>
+        <lastmod>2025-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
@@ -258,7 +258,7 @@
     <!-- Nederlands版本 -->
     <url>
         <loc>https://oneone.games/nl/</loc>
-        <lastmod>2025-01-XX</lastmod>
+        <lastmod>2025-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
@@ -281,7 +281,7 @@
     <!-- Polski版本 -->
     <url>
         <loc>https://oneone.games/pl/</loc>
-        <lastmod>2025-01-XX</lastmod>
+        <lastmod>2025-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>
@@ -304,7 +304,7 @@
     <!-- Svenska版本 -->
     <url>
         <loc>https://oneone.games/sv/</loc>
-        <lastmod>2025-01-XX</lastmod>
+        <lastmod>2025-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://oneone.games/"/>

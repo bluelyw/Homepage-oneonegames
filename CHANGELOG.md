@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.12] - 2025-01-XX
+
+### Fixed
+- 修复所有语言版本中"Oneone"名字翻译错误问题
+- 统一所有语言版本中"Hello! I'm Oneone 👧"的翻译
+- 确保"Oneone"在所有非英语、简体中文、繁体中文语言中保持不变
+- 修复README.md中名字不一致问题
+
+### Changed
+- 更新所有11种新语言的翻译文件，确保"Oneone"名字正确
+- 统一README.md中的名字为"Oneone"
+- 重新生成所有语言版本的HTML文件
+
+### Technical
+- 修复日语、韩语、法语、德语、西班牙语、葡萄牙语（巴西）、葡萄牙语（葡萄牙）、意大利语、荷兰语、波兰语、瑞典语的翻译文件
+- 确保品牌标识在所有语言版本中保持一致
+- 完善多语言翻译质量
+
 ## [3.0.11] - 2025-01-XX
 
 ### Added
