@@ -62,7 +62,8 @@
 
 ### 语言版本
 - **English**: `/` - 默认语言版本（根路径）
-- **简体中文**: `/zh-hans/` - 中文版本
+- **简体中文**: `/zh-hans/` - 简体中文版本
+- **繁體中文**: `/zh-hant/` - 繁體中文版本
 
 ### 多语言版本要求
 
@@ -71,9 +72,12 @@
 /
 ├── index.html              # 英文版本（原语言，硬编码）
 ├── zh-hans/
-│   └── index.html          # 中文版本（预渲染静态文件）
+│   └── index.html          # 简体中文版本（预渲染静态文件）
+├── zh-hant/
+│   └── index.html          # 繁體中文版本（预渲染静态文件）
 ├── data/
-│   └── zh-hans.json        # 中文翻译数据
+│   ├── zh-hans.json        # 简体中文翻译数据
+│   └── zh-hant.json        # 繁體中文翻译数据
 ├── scripts/
 │   └── pre-render-multi.js # 多语言预渲染脚本
 ├── js/
@@ -139,12 +143,14 @@
 ```bash
 # 预渲染指定语言版本
 npm run pre-render zh-hans
+npm run pre-render zh-hant
 
 # 预渲染所有语言版本
 npm run pre-render-all
 
 # 或者直接使用脚本
 node scripts/pre-render-multi.js zh-hans
+node scripts/pre-render-multi.js zh-hant
 node scripts/pre-render-multi.js
 ```
 
@@ -159,6 +165,88 @@ node scripts/pre-render-multi.js
 - ✅ 搜索引擎爬取多语言内容
 - ✅ 配置驱动架构，易于扩展新语言
 - ✅ 只在内容更新时运行
+
+### 🌍 **添加新语言流程**
+
+#### **步骤1：更新语言配置**
+在 `scripts/pre-render-multi.js` 中添加新语言配置：
+
+```javascript
+const LANGUAGES = {
+    'zh-hans': { /* 现有配置 */ },
+    'zh-hant': { /* 现有配置 */ },
+    'ja': {  // 新语言示例
+        name: '日本語',
+        code: 'ja',
+        dir: 'ja',
+        title: 'OneOne Games - AI魔法遊園地',
+        description: '...',
+        canonical: 'https://oneone.games/ja/'
+    }
+};
+```
+
+#### **步骤2：创建翻译文件**
+创建 `data/{语言代码}.json` 翻译文件：
+
+```json
+{
+  "header": { "logoText": "..." },
+  "nav": { "freeGames": "...", "premiumGames": "...", "about": "...", "language": "..." },
+  "welcome": { "title": "...", "intro1": "...", "intro2": "...", "intro3": "...", "intro4": "..." },
+  "games": { "freeKingdom": "...", "premiumKingdom": "...", "comingSoon": "...", "comingSoonDesc": "..." },
+  "gameList": {
+    "strawberry": { "name": "...", "description": "..." },
+    "running": { "name": "...", "description": "..." },
+    "idiom": { "name": "...", "description": "..." },
+    "sudoku": { "name": "...", "description": "..." },
+    "fishy": { "name": "...", "description": "..." }
+  },
+  "footer": { "title": "...", "subtitle": "...", "builtWith": "...", "contact": "...", "contactEmail": "...", "copyright": "..." },
+  "modal": { "comingSoonTitle": "...", "comingSoonMessage": "...", "gotItButton": "..." },
+  "languages": { "zhHans": "...", "zhHant": "...", "en": "...", "ja": "..." }
+}
+```
+
+#### **步骤3：更新语言选择器**
+在所有现有语言版本中添加新语言选项：
+
+**英文版本** (`index.html`)：
+```html
+<a href="./{语言代码}/" class="language-option">{语言名称}</a>
+```
+
+**其他语言版本**：
+```html
+<a href="../{语言代码}/" class="language-option">{语言名称}</a>
+```
+
+#### **步骤4：更新预渲染脚本**
+在 `scripts/pre-render-multi.js` 中添加新语言的链接替换：
+
+```javascript
+// 修复语言切换器链接（使用相对路径）
+result = result.replace(/href="\.\/"/g, 'href="../"');
+result = result.replace(/href="\.\/zh-hans\/"/g, 'href="../zh-hans/"');
+result = result.replace(/href="\.\/zh-hant\/"/g, 'href="../zh-hant/"');
+result = result.replace(/href="\.\/{语言代码}\/"/g, 'href="../{语言代码}/"');  // 新语言
+```
+
+#### **步骤5：生成新语言版本**
+```bash
+node scripts/pre-render-multi.js {语言代码}
+```
+
+#### **步骤6：更新SEO配置**
+- 更新 `sitemap.xml` 添加新语言URL
+- 运行 `npm run update-hreflang` 自动更新英文版本hreflang标签
+- 确保所有版本的hreflang标签包含新语言
+
+#### **步骤7：测试验证**
+- 检查新语言版本是否正确生成
+- 验证语言选择器链接是否正确
+- 确认SEO标签配置正确
+- 运行 `npm run pre-render-all` 重新生成所有语言版本
 
 
 ## 脚本管理
@@ -179,6 +267,9 @@ npm run pre-render zh-hans
 # 预渲染所有语言
 npm run pre-render-all
 
+# 更新英文版本hreflang标签
+npm run update-hreflang
+
 # 本地服务器
 npm run serve
 
@@ -189,7 +280,7 @@ npm run build
 ## 版本控制
 
 ### 当前版本
-**V3.0.7** - 弹窗多语言管理、修复语言选择器和hreflang问题
+**V3.0.8** - 新增繁体中文版本、自动hreflang更新功能
 
 ### 版本号规范
 本项目使用语义化版本控制 (Semantic Versioning):

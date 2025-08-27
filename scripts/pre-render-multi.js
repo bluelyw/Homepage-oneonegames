@@ -12,6 +12,14 @@ const LANGUAGES = {
         title: 'OneOne Games - AI魔法游乐园',
         description: '由不到6岁的小女孩一一用AI工具打造的儿童游戏网站，每个游戏都是一一自己提出想法，和爸爸一起完成，自己测试，自己决定是否上线。',
         canonical: 'https://oneone.games/zh-hans/'
+    },
+    'zh-hant': {
+        name: '繁體中文',
+        code: 'zh-Hant',
+        dir: 'zh-hant',
+        title: 'OneOne Games - AI魔法遊樂園',
+        description: '由不到6歲的小女孩一一用AI工具打造的兒童遊戲網站，每個遊戲都是一一自己提出想法，和爸爸一起完成，自己測試，自己決定是否上線。',
+        canonical: 'https://oneone.games/zh-hant/'
     }
     // 可以轻松添加更多语言
     // 'ja': {
@@ -79,6 +87,7 @@ function replaceContent(html, translations) {
     // 修复语言切换器链接（使用相对路径）
     result = result.replace(/href="\.\/"/g, 'href="../"');
     result = result.replace(/href="\.\/zh-hans\/"/g, 'href="../zh-hans/"');
+    result = result.replace(/href="\.\/zh-hant\/"/g, 'href="../zh-hant/"');
     
     // 替换欢迎区域
     if (translations.welcome) {
@@ -161,6 +170,8 @@ function updateMetaTags(html, langConfig) {
         // 保持hreflang标签不变，所有语言版本都使用相同的配置
         // 不进行任何hreflang替换，直接复制英文版本的hreflang配置
         // 这样可以确保所有语言版本的hreflang标签完全一致
+        // 注意：英文版本需要手动维护完整的hreflang标签列表
+        // 非英语版本的hreflang标签必须与英语版本完全一致！
 }
 
 // 更新资源路径
@@ -169,6 +180,62 @@ function updateResourcePaths(html) {
         .replace(/href="css\//g, 'href="../css/')
         .replace(/src="js\//g, 'src="../js/')
         .replace(/src="images\//g, 'src="../images/');
+}
+
+// 生成完整的hreflang标签
+function generateHreflangTags() {
+    const hreflangTags = [];
+    
+    // 添加英文版本
+    hreflangTags.push('<link rel="alternate" hreflang="en" href="https://oneone.games/">');
+    
+    // 添加其他语言版本
+    Object.keys(LANGUAGES).forEach(langCode => {
+        const langConfig = LANGUAGES[langCode];
+        hreflangTags.push(`<link rel="alternate" hreflang="${langConfig.code}" href="https://oneone.games/${langConfig.dir}/">`);
+    });
+    
+    // 添加x-default
+    hreflangTags.push('<link rel="alternate" hreflang="x-default" href="https://oneone.games/">');
+    
+    return hreflangTags.join('\n    ');
+}
+
+// 更新英文版本的hreflang标签
+function updateEnglishHreflang() {
+    console.log('🔄 更新英文版本的hreflang标签...');
+    
+    try {
+        // 读取英文HTML文件
+        let englishHtml = fs.readFileSync('index.html', 'utf8');
+        
+        // 生成新的hreflang标签
+        const newHreflangTags = generateHreflangTags();
+        
+        // 替换hreflang标签块
+        const hreflangRegex = /<!-- Hreflang tags for multilingual SEO -->\s*[\s\S]*?(?=<!--)/;
+        const hreflangBlock = `<!-- Hreflang tags for multilingual SEO -->
+    ${newHreflangTags}
+    
+`;
+        
+        if (hreflangRegex.test(englishHtml)) {
+            englishHtml = englishHtml.replace(hreflangRegex, hreflangBlock);
+        } else {
+            console.warn('⚠️ 未找到hreflang标签块，请手动添加');
+            return false;
+        }
+        
+        // 写回英文HTML文件
+        fs.writeFileSync('index.html', englishHtml, 'utf8');
+        
+        console.log('✅ 英文版本hreflang标签更新完成');
+        return true;
+        
+    } catch (error) {
+        console.error('❌ 更新英文版本hreflang标签失败:', error.message);
+        return false;
+    }
 }
 
 // 预渲染单个语言
@@ -211,6 +278,13 @@ function preRenderLanguage(langCode) {
 // 主函数
 function main() {
     const args = process.argv.slice(2);
+    
+    // 检查是否是更新hreflang标签的命令
+    if (args.includes('--update-hreflang')) {
+        updateEnglishHreflang();
+        return;
+    }
+    
     const targetLang = args[0];
     
     try {

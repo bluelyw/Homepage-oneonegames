@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.8] - 2025-01-XX
+
+### Added
+- 新增繁体中文版本支持（/zh-hant/）
+- 新增自动hreflang标签更新功能
+- 新增 `npm run update-hreflang` 命令，自动更新英文版本hreflang标签
+- 完善新语言扩展流程文档
+
+### Changed
+- 优化预渲染脚本，支持多语言hreflang标签自动生成
+- 更新语言选择器，支持三种语言切换
+- 改进新语言扩展流程，增加7步详细指南
+
+### Fixed
+- 修复非英语版本hreflang标签配置错误问题
+- 确保所有语言版本hreflang标签与英文版本完全一致
+- 解决添加新语言时hreflang标签手动维护问题
+
+### Technical
+- 配置驱动的hreflang标签生成系统
+- 统一的hreflang标签配置原则：所有版本保持一致
+- 自动化的新语言扩展流程
+
 ## [3.0.7] - 2025-01-XX
 
 ### Added
