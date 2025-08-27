@@ -336,7 +336,7 @@ npm run build
 ## 版本控制
 
 ### 当前版本
-**V3.0.12** - 修复所有语言版本中"Oneone"名字翻译错误，统一品牌标识
+**V3.0.13** - 完善发版流程文档，优化版本控制管理
 
 ### 版本号规范
 本项目使用语义化版本控制 (Semantic Versioning):
@@ -356,6 +356,39 @@ npm run build
 - `perf:` - 性能优化，修订号+1
 - `test:` - 测试相关，修订号+1
 - `chore:` - 构建过程或辅助工具的变动，修订号+1
+
+### 发版流程
+由于项目使用纯静态网站架构，发版流程非常简单：
+
+#### **标准发版步骤**：
+1. **更新代码和文档**
+2. **修改版本号**：更新 `package.json` 中的 `"version"` 字段
+3. **更新变更日志**：在 `CHANGELOG.md` 开头添加新版本记录
+4. **提交代码**：`git add . && git commit -m "feat: V版本号 - 描述"`
+5. **推送到GitHub**：`git push origin main`
+6. **自动部署**：GitHub Pages 将在几分钟内自动更新
+
+#### **发版示例**：
+```bash
+# 1. 更新版本号（手动修改 package.json）
+# "version": "3.0.12" → "version": "3.0.13"
+
+# 2. 更新 CHANGELOG.md（在文件开头添加）
+## [3.0.13] - 2025-01-XX
+### Changed
+- 描述你的更改
+
+# 3. 提交并推送
+git add .
+git commit -m "feat: V3.0.13 - 描述"
+git push origin main
+```
+
+#### **优势**：
+- ✅ **零配置**：无需GitHub Actions或其他构建工具
+- ✅ **即时部署**：`git push` 直接部署到GitHub Pages
+- ✅ **简单可靠**：没有复杂的构建流程
+- ✅ **适合静态网站**：HTML/CSS/JS直接服务
 
 详细变更历史请查看 [CHANGELOG.md](./CHANGELOG.md)
 

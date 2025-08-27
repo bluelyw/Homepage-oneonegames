@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.13] - 2025-01-XX
+
+### Added
+- 在README.md中添加详细的发版流程说明
+- 记录纯静态网站架构的简单发版步骤
+
+### Changed
+- 更新版本控制文档，明确发版流程
+- 删除不必要的发版脚本，保持项目简洁
+
+### Technical
+- 文档化GitHub Pages自动部署流程
+- 强调零配置、即时部署的优势
+
 ## [3.0.12] - 2025-01-XX
 
 ### Fixed
